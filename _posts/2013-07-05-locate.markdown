@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Locate"
+date: 2013-07-05 18:58
+comments: true
+tags:
+- Utilities
+---
+
+`locate` is one extremely popular Unix command that allows you to
+search for files in a pre-built database.
+
+
+One little know fact is that Emacs provides a wrapper around the
+command you can invoke with `M-x locate`. You'll be prompted to enter
+a search string and you'll be presented with a list of matching
+filenames from `locate`'s database. Many of `dired` keybindings are
+available in the results buffer (which will be using `locate-mode` major mode).
+
+If you'd like you may change the command invoked by Emacs to supply the
+results by altering the `locate-command` variable. Here's how you can
+start using OSX's `mdfind` (the command-line interface to `Spotlight`)
+instead of `locate`:
+
+``` elisp
+(setq locate-command "mdfind")
+```
+
+Obviously any command that takes a string argument and returns a list
+of files would do here. In all likelihood you'll never want to use
+anything other than the default `locate` command, though.

@@ -1,0 +1,49 @@
+---
+layout: post
+title: "crux"
+date: 2016-01-30 11:37
+comments: true
+tags:
+- misc
+---
+
+I'd often blog about some useful utility functions here. Pretty much
+all of them get included in
+[Emacs Prelude](https://github.com/bbatsov/prelude), but I've decided I can do one better and extract those of
+them which are most useful/universal into a separate package.
+
+This package is [crux](https://github.com/bbatsov/crux) - a
+**C**ollection of **R**idiculously **U**seful e**X**tensions for
+Emacs.
+
+You can install it from MELPA and MELPA Stable. Once this is done you
+just have to pick keybindings for the commands shipped with
+`crux`. I've suggested some keybindings
+[here](https://github.com/bbatsov/crux#keybindings). And here's a
+small configuration snippet showing how to actually bind keys to some
+of `crux`'s commands:
+
+``` elisp
+(global-set-key [remap move-beginning-of-line] #'crux-move-beginning-of-line)
+(global-set-key (kbd "C-c o") #'crux-open-with)
+(global-set-key [(shift return)] #'crux-smart-open-line)
+(global-set-key (kbd "s-r") #'crux-recentf-ido-find-file)
+(global-set-key (kbd "C-<backspace>" #'crux-kill-line-backwards))
+(global-set-key [remap kill-whole-line] #'crux-kill-whole-line)
+```
+
+`crux` also ships with some handy advises that can enhance the operation of existing commands.
+
+For instance - you can use `crux-with-region-or-buffer` to make a
+command acting normally on a region to operate on the entire buffer in
+the absense of a region. Here are a few examples you can stuff in your
+config:
+
+``` elisp
+(crux-with-region-or-buffer indent-region)
+(crux-with-region-or-buffer untabify)
+```
+
+So, this is `crux` for you - simple and neat! I'd love it if you
+contributed more useful commands to it, so we can make it even more
+versatile!

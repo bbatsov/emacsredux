@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Emacs 24.4"
+date: 2014-10-21 17:36
+comments: true
+tags:
+- misc
+---
+
+Emacs 24.4 [is finally out](http://lists.gnu.org/archive/html/emacs-devel/2014-10/msg00713.html)!
+
+You can read about all the new features
+[here](http://www.gnu.org/software/emacs/news/NEWS.24.4).  I've
+published
+[a series of articles](http://emacsredux.com/blog/2013/12/31/a-peek-at-emacs-24-dot-4/)
+about some of the more interesting features.
+
+In related news - the Emacs Mac Port based on 24.4
+[has also been released](https://lists.gnu.org/archive/html/emacs-devel/2014-10/msg00725.html).

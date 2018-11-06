@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Uptime"
+date: 2014-12-23 17:28
+comments: true
+tags:
+- misc
+---
+
+Many Emacs users keep a single Emacs instance running for quite a while.
+I've had instances running for over a month. How do I know this? Unsurprisingly,
+there's a built-in command for that:
+
+```
+M-x emacs-uptime
+```
+
+Now it's time to start bragging to your vim-using friends!

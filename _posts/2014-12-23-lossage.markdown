@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Lossage"
+date: 2014-12-23 17:35
+comments: true
+tags:
+- misc
+---
+
+Are you sure you're using Emacs in an efficient way? Perhaps you're
+overusing commands like `C-f` and `C-b` to navigate around when you
+can be using more efficient alternatives like `M-f` and `M-b` (or a
+third-party package like
+[ace-jump-mode](http://emacsrocks.com/e10.html)).  Gaining such
+insight is somewhat hard, as we generally don't pay attention to our
+sub-optimal usage patterns. If we could only see what were the last
+few hundred keystrokes we entered in our current Emacs
+session... Turns out we can do this with the aptly-named command
+`view-lossage` (`C-h l`) (`lossage` means `malfunction`). It displays
+the last 300 keystrokes and its output looks like this:
+
+```
+n e r a l l y SPC d o n ' t SPC n o t i c e SPC o u
+r SPC s u b o p t i m a l SPC s u a g <backspace> <backspace>
+<backspace> <backspace> u s a g e SPC p a t e <backspace>
+t e r n s . SPC I f SPC w e SPC c o u l d SPC o n l
+y <return> s e e SPC w h a t SPC w e r e SPC t h e
+SPC l a s t SPC f <backspace> h e w SPC <backspace>
+<backspace> <backspace> <backspace> f e w SPC h u n
+d r e d SPC k e y s t r o k e s SPC w e SPC i <backspace>
+e n t e r e d SPC i n SPC o u r SPC c u r r e n t SPC
+E m a c s SPC s e s s i o n . . . SPC T u r n s SPC
+o u t SPC <backspace> SPC w e SPC c a n SPC d o SPC
+t h i s <company-dummy-event> . <backspace> SPC w i
+t h SPC t h e SPC m a c <backspace> g i c a l <backspace>
+<backspace> <backspace> <backspace> <backspace> <backspace>
+<backspace> <backspace> SPC c o m m a n d <return>
+` v i e w - l o s s a g e ` SPC ( b o u n <backspace>
+<backspace> <backspace> <backspace> ` C - h SPC l `
+) . C-p C-p M-q C-n C-n C-n C-e C-x b l o s s <return>
+C-x b l o s C-g C-h l
+```
+
+Inspecting it can be super enlightening! I do this all the time.
