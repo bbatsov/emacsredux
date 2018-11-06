@@ -8,8 +8,7 @@ tags:
 - misc
 ---
 
-After a long period of no development activity (mostly because it was
-perfect from the start),
+After a long period of no development activity[^1],
 [super-save](https://github.com/bbatsov/super-save/) gets an update
 today!
 
@@ -45,3 +44,5 @@ next release any time soon! ;-)
 **P.S.** `super-save` was extracted from
 [Prelude](https://github.com/bbatsov/prelude), but for some reason I
 actually forgot to add it to Prelude. Today that changes as well! :-)
+
+[^1]: Mostly because it was perfect from the start.
