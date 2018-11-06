@@ -7,12 +7,10 @@ tags:
 - Editing
 ---
 
-As a continuation of our previous topic of
-[indenting a buffer or a region](/blog/2013/03/27/indent-region-or-buffer),
-this time around I'll show you how to indent a single **defun**(Emacs
-slang/terminology for a function/procedure/method definition, originating
-from the way functions are defined in Emacs Lisp(and a few other Lisp
-dialects)). So here's the magic bit of code:
+As a continuation of our previous topic of [indenting a buffer or a
+region]({% post_url 2013-03-27-indent-region-or-buffer %}), this time around
+I'll show you how to indent a single **defun**[^1]. So here's the magic
+bit of code:
 
 ``` elisp
 (defun indent-defun ()
@@ -36,7 +34,7 @@ the keybinding for function evaluation in major modes for dynamic
 programming languages `C-M-x`).
 
 ``` elisp
-(global-set-key (kbd "C-M-z") 'indent-defun)
+(global-set-key (kbd "C-M-z") #'indent-defun)
 ```
 
 Special thanks to `Fuco` (who I assume is Matus Goljer, of
@@ -44,5 +42,8 @@ Special thanks to `Fuco` (who I assume is Matus Goljer, of
 suggested that command in the previous post.
 
 `indent-defun` is available in
-[Prelude](https://github.com/bbatsov/prelude)(but with a `prelude-`
+[crux](https://github.com/bbatsov/crux) (but with a `crux-`
 prefix).
+
+[^1]: Emacs slang/terminology for a function/procedure/method definition, originating
+from the way functions are defined in Emacs Lisp and a few other Lisp dialects.
