@@ -44,4 +44,4 @@ creative) writing there, so you might want to check it out.
 [^1]: <http://batsov.com/articles/2015/02/15/octopress-3-dot-0/>
 [^2]: Well, there are always plenty of excuses. :-)
 [^3]: <http://batsov.com/2008/05/05/first-post/>
-[^4]: <{{ site.url }}{% post_url 2013-03-16-blastoff %}>
+[^4]: <{{ site.url }}{% post_url 2013-03-26-blastoff %}>
