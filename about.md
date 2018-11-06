@@ -5,35 +5,21 @@ permalink: /about/
 sidebar_link: true
 ---
 
-My name is [Bozhidar](http://batsov.com). I'm an Emacs zealot (and a
-software engineer) from Bulgaria.
+## About Me
 
-I happen to maintain a few Emacs-related projects:
+I'm Bozhidar[^1] and I love computers in general and programming in
+particular[^2]. My fanatic devotion to Emacs is known
+world-wide. I spend a lot of my (free) time on GitHub, contributing
+to various open-source Ruby, Clojure and Emacs Lisp [projects](https:/metaredux.com/projects/).
 
-* [Prelude](https://github.com/bbatsov/prelude) - An Emacs distribution built on top of GNU Emacs
-* [Projectile](https://github.com/bbatsov/projectile) - Project Interaction Library for Emacs, that stays out of your way
-* [clojure-mode](https://github.com/clojure-emacs/clojure-mode) - A major mode for programming in Clojure
-* [CIDER](https://github.com/clojure-emacs/cider) - A Clojure programming environment for Emacs
-* [inf-clojure](https://github.com/clojure-emacs/inf-clojure) - Basic interaction with a Clojure subprocess
-* [guru-mode](https://github.com/bbatsov/guru-mode) - An annoying companion on your journey to Emacs mastery
-* [rubocop-emacs](https://github.com/bbatsov/projectile) - Emacs integration for [RuboCop](https://github.com/bbatsov/rubocop)
-* [zenburn-emacs](https://github.com/bbatsov/zenburn-emacs) - The Zenburn color theme, ported to Emacs
-* [solarized-emacs](https://github.com/bbatsov/solarized-emacs) - The Solarized color theme, ported to Emacs
-* [super-save](https://github.com/bbatsov/super-save) - Save your buffers when they lose focus
-* [crux](https://github.com/bbatsov/crux) - A collection of useful Emacs extensions
-* [puppet-mode](https://github.com/lunaryorn/puppet-mode) - A mode for editing Puppet 3 manifests
-* [swift-mode](https://github.com/chrisbarrett/swift-mode) - A mode for editing Swift code
-* [grizzl](https://github.com/grizzl/grizzl) - A fuzzy search index & completing-read for Emacs
+The above paragraph is actually what I typically use as my bio for
+[conference talks](https://metaredux.com/presentations/). I love speaking at conferences
+and I'm really bad at it![^3]
 
-I was also the original maintainer of [WikEmacs](http://wikemacs.org) - a community documentation portal for Emacs.
+I'm living in Sofia, Bulgaria and you should totally ping me if you're
+ever in my part of the world!
 
-If you like my projects you can support their development via Patreon, Liberapay or PayPal.
-
-[![Patreon](https://img.shields.io/badge/patreon-donate-orange.svg)](https://www.patreon.com/bbatsov)
-[![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/bbatsov/donate)
-[![Paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3J4QE5QBJU84Q)
-
-Why does **Emacs Redux** exist?
+## About Emacs Redux
 
 While many people consider Emacs (and *vim* for that matter) a remnant
 of the Dark Ages of computing, we (the crazy Emacs devotees) know
@@ -45,6 +31,27 @@ In this blog, dedicated to the One True
 Editor, I'll be sharing with you useful tips and tricks to make your
 experience with Emacs more productive and more enjoyable.
 
-Don't hesitate to contact me with questions, feedback and suggestions
-either via comments, email (my first name + the domain of my personal
-site) or [twitter](http://twitter.com/bbatsov).
+## Meta Redux
+
+I run a separate blog without any particular focus. It's called [Meta
+Redux](http://emacsredux.com).
+
+## Colophon
+
+This website is powered by [Jekyll](https://jekyllrb.com/) and uses
+the [Hydeout theme](https://github.com/fongandrew/hydeout).
+
+I write all of the articles in Emacs and publish them to GitHub
+pages. These days I'm a macOS user most of the time.  When I'm at home
+I do all my writing on my beloved [Leopold
+FC660C](https://deskthority.net/wiki/Leopold_FC660C)[^4].  When I'm on
+the road I do (or don't do) my writing on a Apple Magic Keyboard or
+the built-in MacBook keyboard[^5].
+
+The source code of the site is freely available at [GitHub](//github.com/bbatsov/metaredux).
+
+[^1]: Божидар in Bulgarian. I know, I know - that's both pretty hard to read and to pronounce. My friends call me Bug and so can you.
+[^2]: Especially Lisps! And Unix-like operating systems! And Emacs! And video games!
+[^3]: But at least I'm honest with myself.
+[^4]: Also known as the "best keyboard ever". Seriously!
+[^5]: Also known as the "worst keyboard ever". No shit!
