@@ -8,7 +8,7 @@ tags:
 ---
 
 I've written in the past about
-[electric-indent-mode](http://emacsredux.com/blog/2013/03/29/automatic-electric-indentation/),
+[electric-indent-mode]({% post_url 2013-03-29-automatic-electric-indentation %}),
 which was added in Emacs 24.1. In Emacs 24.4 one of the most prominent
 user visible changes is that it's enabled out-of-the box. That's a
 huge step towards the "modernization" of Emacs and one of the bigger

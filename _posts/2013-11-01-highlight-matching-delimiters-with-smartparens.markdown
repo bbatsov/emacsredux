@@ -8,7 +8,7 @@ tags:
 ---
 
 Some time ago I wrote about
-[highlighting matching parentheses](http://emacsredux.com/blog/2013/04/01/highlight-matching-parentheses/)
+[highlighting matching parentheses]({% post_url 2013-04-01-highlight-matching-parentheses %})
 with `show-paren-mode`. This is definitely useful, but it's kind of
 restrictive, since parentheses are just a specific kind of paired
 delimiter. Single and double quotes are also paired delimiters (at

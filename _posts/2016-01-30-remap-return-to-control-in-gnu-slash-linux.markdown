@@ -9,7 +9,7 @@ tags:
 ---
 
 A long time ago I wrote about
-[remapping Return to Control in OS X](http://emacsredux.com/blog/2013/11/12/a-crazy-productivity-boost-remap-return-to-control/).
+[remapping Return to Control in OS X]({% post_url 2013-11-12-a-crazy-productivity-boost-remap-return-to-control %}).
 This was the best productivity boost for my Emacs experience ever!
 
 Recently I've bought a Windows ultrabook (wanted something as light as

@@ -8,7 +8,7 @@ tags:
 ---
 
 Some time ago I wrote about
-[highlighting matching delimiters with show-smartparens-mode](http://emacsredux.com/blog/2013/11/01/highlight-matching-delimiters-with-smartparens/). In
+[highlighting matching delimiters with show-smartparens-mode]({% post_url 2013-11-01-highlight-matching-delimiters-with-smartparens %}). In
 Emacs 24.4, the built-in `show-paren-mode` is capable of highlighting
 more complex paired delimiters as well (like `do/end` in Ruby for
 instance). There is one limitation to `show-paren-mode` (compared to

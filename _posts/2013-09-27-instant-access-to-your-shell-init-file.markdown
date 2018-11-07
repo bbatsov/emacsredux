@@ -7,7 +7,7 @@ tags:
 - Utilities
 ---
 
-A while ago I showed you a way to [instantly edit your Emacs init file](http://emacsredux.com/blog/2013/05/18/instant-access-to-init-dot-el/). Today
+A while ago I showed you a way to [instantly edit your Emacs init file]({% post_url 2013-05-18-instant-access-to-init-dot-el %}). Today
 we'll adapt the original idea for shell init files like `.bashrc` and `.zshrc`. The code required is fairly short and simple:
 
 ``` elisp

@@ -8,7 +8,7 @@ tags:
 ---
 
 Some time ago I showed you how to do
-[Google queries from Emacs](http://emacsredux.com/blog/2013/03/28/google/). The
+[Google queries from Emacs]({% post_url 2013-03-28-google %}). The
 approach used in that articles is pretty generic and can be used for
 the creation of various similar commands. Let's create a command that
 searches in YouTube:

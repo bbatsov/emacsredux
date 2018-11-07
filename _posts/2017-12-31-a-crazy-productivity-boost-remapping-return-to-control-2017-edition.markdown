@@ -10,7 +10,7 @@ tags:
 
 Back in 2013 I wrote about my favourite productivity boost in Emacs,
 namely [remapping Return to
-Control](http://emacsredux.com/blog/2013/11/12/a-crazy-productivity-boost-remap-return-to-control/),
+Control]({% post_url 2013-11-12-a-crazy-productivity-boost-remap-return-to-control %}),
 which in combination with the classic remapping of `CapsLock` to
 `Control` makes it really easy to get a grip on Emacs's obsession with
 the Control key.

@@ -8,7 +8,7 @@ tags:
 ---
 
 In a previous post I wrote about
-[camel-case aware editing with subword-mode](http://emacsredux.com/blog/2013/04/21/camelcase-aware-editing/). Emacs
+[camel-case aware editing with subword-mode]({% post_url 2013-04-21-camelcase-aware-editing %}). Emacs
 24.4 adds a complementary minor mode called `superword-mode`, which
 also alters the behavior of word-based commands when enabled.
 

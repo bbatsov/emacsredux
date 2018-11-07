@@ -62,7 +62,7 @@ key. Remapping it is a bit more involved and requires the use of the
 third-party utility
 [Karabiner](http://pqrs.org/macosx/karabiner/).
 
-If you're adventurous you might even try [a crazier idea](http://emacsredux.com/blog/2013/11/12/a-crazy-productivity-boost-remap-return-to-control/).
+If you're adventurous you might even try [a crazier idea]({% post_url 2013-11-12-a-crazy-productivity-boost-remap-return-to-control %}).
 
 ## Setting the PATH variable
 
@@ -85,7 +85,7 @@ $ brew install aspell --lang=en
 ## Proced
 
 The mighty
-[proced](http://emacsredux.com/blog/2013/05/02/manage-processes-with-proced/)
+[proced]({% post_url 2013-05-02-manage-processes-with-proced %})
 doesn't work on OS X.  You can use
 [vkill](http://www.splode.com/~friedman/software/emacs-lisp/src/vkill.el)
 as a replacement. It's kind of basic, but it mostly works.

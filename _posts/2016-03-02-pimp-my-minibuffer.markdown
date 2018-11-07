@@ -8,7 +8,7 @@ tags:
 ---
 
 In Emacs you can evaluate Emacs Lisp pretty much anywhere - even
-[in the minibuffer](http://emacsredux.com/blog/2013/04/18/evaluate-emacs-lisp-in-the-minibuffer/). Writing
+[in the minibuffer]({% post_url 2013-04-18-evaluate-emacs-lisp-in-the-minibuffer %}). Writing
 Emacs Lisp in the minibuffer, however, is not exactly fantastic
 experience out-of-the-box - there's `TAB` completion, but what about
 `eldoc` and `paredit` for instance?
