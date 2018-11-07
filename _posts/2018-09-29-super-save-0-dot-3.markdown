@@ -39,10 +39,10 @@ You can now turn off `super-save` for remote files like this:
 ```
 
 It seems that now `super-save` is beyond perfect, so don't expect the
-next release any time soon! ;-)
+next release any time soon! :wink:
 
 **P.S.** `super-save` was extracted from
 [Prelude](https://github.com/bbatsov/prelude), but for some reason I
-actually forgot to add it to Prelude. Today that changes as well! :-)
+actually forgot to add it to Prelude. Today that changes as well! :smile:
 
 [^1]: Mostly because it was perfect from the start.

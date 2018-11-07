@@ -38,6 +38,7 @@ remote_theme: fongandrew/hydeout
 paginate: 5
 plugins:
   - jekyll-feed
+  - jemoji
 
 # Hydeout config
 sidebar_home_link:  true
