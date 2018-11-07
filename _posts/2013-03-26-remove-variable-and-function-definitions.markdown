@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Remove variable &amp; function definitions"
+title: "Remove Variable &amp; Function Definitions"
 date: 2013-03-26 17:15
 comments: true
 tags:

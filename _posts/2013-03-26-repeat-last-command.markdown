@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Repeat last command"
+title: "Repeat Last Command"
 date: 2013-03-26 18:32
 comments: true
 tags:

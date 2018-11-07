@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Manipulating word case"
+title: "Manipulating Word Case"
 date: 2013-03-26 17:19
 comments: true
 tags:

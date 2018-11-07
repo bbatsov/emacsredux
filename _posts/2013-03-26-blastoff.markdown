@@ -4,22 +4,24 @@ title: "Blastoff"
 date: 2013-03-26 13:17
 comments: true
 tags:
-- Generic
+- Meta
 ---
 
-While many people consider Emacs(and vim for that matter) a remnant of
-the Dark Ages of computing, we (the crazy Emacs devotees) know better!
+While many people consider Emacs (and _vim_ for that matter) a remnant of
+the Dark Ages of computing, we[^1] know better!
 It's time to bring Emacs under the spotlight once more and showcase
 its unique advantages over the more "traditional" (conventional) text
 editors and integrated development environments.
 
-Welcome to **Emacs Redux**! In this blog dedicated to the One True
-Editor I'll be sharing with you useful tips and tricks to make your
+Welcome to _Emacs Redux_! In this blog, dedicated to the One True
+Editor, I'll be sharing with you useful tips and tricks to make your
 experience with Emacs more productive and more enjoyable.
 
-My name is [Bozhidar](http://batsov.com/about) and I've been using
+My name is [Bozhidar](/about) and I've been using
 Emacs for about a decade now for just about everything. I guess you'll
 have to hope I spent my time with Emacs in a productive manner and
 that I've uncovered many interesting things to share with you.
 
 So here we begin...
+
+[^1]: The crazy Emacs devotees.

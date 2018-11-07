@@ -19,19 +19,19 @@ Emacs Lisp. Just add this snippet to your `.emacs` (or `.emacs.d/init.el` or
 whatever):
 
 ``` elisp
-(defun smart-open-line ()
+(defun er-smart-open-line ()
   "Insert an empty line after the current line.
 Position the cursor at its beginning, according to the current mode."
   (interactive)
   (move-end-of-line nil)
   (newline-and-indent))
 
-(global-set-key [(shift return)] 'smart-open-line)
+(global-set-key [(shift return)] #'er-smart-open-line)
 ```
 
 Evaluate the code (or restart Emacs) and you'll be able to use
-`M-x smart-open-line` or `Shift+Enter` (aka `S-return`).
+`M-x smart-open-line` or `Shift+Enter` (a.k.a. `S-return`).
 
 This command is part of
-[Prelude](https://github.com/bbatsov/prelude)(it's named
-`prelude-smart-open-line` there).
+[crux](https://github.com/bbatsov/crux) (it's named
+`crux-smart-open-line` there).
