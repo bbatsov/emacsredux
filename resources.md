@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Emacs Resources
+title: Resources
 permalink: /resources/
 sidebar_link: true
 ---
