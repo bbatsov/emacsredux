@@ -4,7 +4,7 @@ title: "A peek at Emacs 24.4: Focus Hooks"
 date: 2014-03-22 16:05
 comments: true
 tags:
-- Emacs24.4
+- Emacs 24.4
 ---
 
 A couple of years ago I

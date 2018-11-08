@@ -4,7 +4,7 @@ title: "A peek at Emacs 24.4: Smarter show-paren-mode"
 date: 2013-12-31 12:09
 comments: true
 tags:
-- Emacs24.4
+- Emacs 24.4
 ---
 
 Some time ago I wrote about

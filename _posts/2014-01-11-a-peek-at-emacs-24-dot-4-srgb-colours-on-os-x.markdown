@@ -5,7 +5,7 @@ date: 2014-01-11 13:40
 comments: true
 tags:
 - osx
-- Emacs24.4
+- Emacs 24.4
 ---
 
 A while ago I wrote about a

@@ -4,7 +4,7 @@ title: "A peek at Emacs 24.4: superword-mode"
 date: 2014-08-27 18:24
 comments: true
 tags:
-- Emacs24.4
+- Emacs 24.4
 ---
 
 In a previous post I wrote about

@@ -4,7 +4,7 @@ title: "A peek at Emacs 24.4: delete-duplicate-lines"
 date: 2014-03-01 17:33
 comments: true
 tags:
-- Emacs24.4
+- Emacs 24.4
 ---
 
 Emacs 24.4 introduces the command `delete-duplicate-lines`.

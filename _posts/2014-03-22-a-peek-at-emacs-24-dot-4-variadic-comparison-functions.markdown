@@ -4,7 +4,7 @@ title: "A peek at Emacs 24.4: Variadic Numeric Comparison Functions"
 date: 2014-03-22 16:48
 comments: true
 tags:
-- Emacs24.4
+- Emacs 24.4
 ---
 
 In most Lisps numeric comparison functions like `=`, `<`, `>`, `<=`

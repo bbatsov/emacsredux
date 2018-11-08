@@ -31,9 +31,9 @@ The first article in the series will be arriving momentarily!
 
 <ul>
 {% for post in site.posts reversed %}
-{% if post.categories contains 'Emacs24.4' %}
-<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endif %}  <!-- categories if -->
+  {% if post.tags contains 'Emacs 24.4' %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endif %}  <!-- categories if -->
 {% endfor %} <!-- posts for -->
 </ul>
 

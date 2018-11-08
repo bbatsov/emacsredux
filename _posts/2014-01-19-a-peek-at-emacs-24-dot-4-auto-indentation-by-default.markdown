@@ -4,7 +4,7 @@ title: "A peek at Emacs 24.4: auto-indentation by default"
 date: 2014-01-19 08:52
 comments: true
 tags:
-- Emacs24.4
+- Emacs 24.4
 ---
 
 I've written in the past about

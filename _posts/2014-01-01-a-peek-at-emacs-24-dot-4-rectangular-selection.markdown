@@ -4,7 +4,7 @@ title: "A peek at Emacs 24.4: Rectangular selection"
 date: 2014-01-01 12:03
 comments: true
 tags:
-- Emacs24.4
+- Emacs 24.4
 ---
 
 I'm extremely fond of rectangle editing (the ability to select a

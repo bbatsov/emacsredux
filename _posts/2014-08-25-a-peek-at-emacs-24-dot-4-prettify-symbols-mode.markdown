@@ -4,7 +4,7 @@ title: "A peek at Emacs 24.4: prettify-symbols-mode"
 date: 2014-08-25 16:30
 comments: true
 tags:
-- Emacs24.4
+- Emacs 24.4
 ---
 
 Emacs 24.4 ships with a new minor mode called
