@@ -21,7 +21,7 @@ functions to avoid potential name conflicts. `er` stands for Emacs Redux.
 ## How to evaluate code snippets in Emacs?
 
 Just copy the snippet to some Emacs Lisp source buffer, place your
-cursor inside the snippet and press `C-M-x`).
+cursor inside the snippet and press `C-M-x`.
 
 Alternative you can start an Elisp REPL using `M-x ielm` and paste the
 snippets there.
