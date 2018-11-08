@@ -14,7 +14,7 @@ query manually. Apart from cool it's also pretty simple to add such a
 feature to Emacs.
 
 ``` elisp
-(defun google ()
+(defun er-google ()
   "Google the selected region if any, display a query prompt otherwise."
   (interactive)
   (browse-url
@@ -30,9 +30,9 @@ This command will display the query results in your default browser.
 I'd suggest binding the command to `C-c g` if you plan to use it regularly.
 
 ``` elisp
-(global-set-key (kbd "C-c g") 'google)
+(global-set-key (kbd "C-c g") #'er-google)
 ```
 
-`google` is available in
-[Prelude](https://github.com/bbatsov/prelude)(but with a `prelude-`
+`er-google` is available in
+[Prelude](https://github.com/bbatsov/prelude) (but with a `prelude-`
 prefix).

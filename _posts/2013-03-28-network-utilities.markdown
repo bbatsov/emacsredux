@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Network utilities"
+title: "Network Utilities"
 date: 2013-03-28 18:56
 comments: true
 tags:
@@ -8,7 +8,7 @@ tags:
 ---
 
 A little known feature of Emacs is that it provides basic wrappers
-from various command-line network utilities. Here's a few Emacs
+for various command-line (unix) network utilities. Here are a few Emacs
 commands for you to try out:
 
 * `M-x ping`
