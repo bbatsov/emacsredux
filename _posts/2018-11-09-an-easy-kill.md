@@ -79,7 +79,7 @@ The full list of save to kill-ring commands is the following:
 * `M-w w`: save word at point
 * `M-w s`: save sexp at point
 * `M-w l`: save list at point (enclosing sexp)
-* `M-w d`: save defun[^1] at point
+* `M-w d`: save defun[^2] at point
 * `M-w D`: save current defun's name
 * `M-w f`: save filename at point
 * `M-w b`: save `buffer-file-name` (the name of the file a buffer is
@@ -118,7 +118,7 @@ line-wise, for lists or sexps, list-wise. Here's an example - if you want to sel
 several consecutive lines you can do it by pressing `M-w + + + +`.
 
 **Note:** List-wise expanding/shrinking works well in lispy modes
-(Emacs Lisp, Common Lisp, Scheme, Clojure, etc), and SMIE-based[^2]
+(Emacs Lisp, Common Lisp, Scheme, Clojure, etc), and SMIE-based[^3]
 modes (Prolog, SML, Modula2, Shell, Ruby, Octave, CSS, SQL etc),
 org-mode, nxml-mode and js2-mode. In other types of modes you can get
 some pretty weird results.
@@ -136,7 +136,7 @@ can be a handy replacement for `mark-sexp` allowing `+/-` to do list-wise
 expanding/shrinking and marks the whole sexp even when in the middle
 of one.
 
-Mark my words[^3] - that's a massive improvement over the default
+Mark my words[^4] - that's a massive improvement over the default
 behavior!
 
 ## Epilogue
@@ -153,6 +153,7 @@ that this post is going to change this.
 
 That's all for today, folks! Until next time!
 
-[^1]: Emacs lingo for function/method definition.
-[^2]: <https://www.gnu.org/software/emacs/manual/html_node/elisp/SMIE.html>
-[^3]: Pun intended.
+[^1]: <https://english.stackexchange.com/questions/40657/how-yank-came-about-in-vi-and-emacs>
+[^2]: Emacs lingo for function/method definition.
+[^3]: <https://www.gnu.org/software/emacs/manual/html_node/elisp/SMIE.html>
+[^4]: Pun intended.
