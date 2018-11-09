@@ -43,6 +43,10 @@ plugins:
 # Hydeout config
 sidebar_home_link:  true
 
+# jekyll-feed config
+feed:
+  path: atom.xml
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
