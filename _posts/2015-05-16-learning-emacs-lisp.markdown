@@ -4,7 +4,7 @@ title: "Learning Emacs Lisp"
 date: 2015-05-16 14:37
 comments: true
 tags:
-- elisp
+- Emacs Lisp
 ---
 
 People who have been using Emacs for a while often develop the desire

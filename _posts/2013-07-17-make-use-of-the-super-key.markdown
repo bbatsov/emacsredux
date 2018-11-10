@@ -4,7 +4,7 @@ title: "Make use of the Super key"
 date: 2013-07-17 16:16
 comments: true
 tags:
-- Utils
+- Keybindings
 ---
 
 Emacs users have a lot of power at their disposal, but in one

@@ -4,7 +4,9 @@ title: "Travel back and forward in git history"
 date: 2014-07-22 19:02
 comments: true
 tags:
-- util
+- Utilities
+- Package
+- Git
 ---
 
 I recently discovered an extremely cool package called

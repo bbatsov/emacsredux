@@ -4,7 +4,7 @@ title: "Clear Comint Buffers"
 date: 2015-01-18 21:57
 comments: true
 tags:
-- utils
+- Utilities
 - comint
 ---
 

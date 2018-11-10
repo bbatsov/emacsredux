@@ -4,7 +4,7 @@ title: "Customizing the Fringes"
 date: 2015-01-18 09:41
 comments: true
 tags:
-- appearance
+- UI
 ---
 
 On graphical displays, each Emacs window normally has narrow **fringes** (gutters/margins)

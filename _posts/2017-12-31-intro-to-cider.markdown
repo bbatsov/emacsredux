@@ -4,9 +4,9 @@ title: "Intro to CIDER"
 date: 2017-12-31 10:57
 comments: true
 tags:
-- cider
-- clojure
-- tools
+- CIDER
+- Clojure
+- Package
 ---
 
 [CIDER](https://github.com/clojure-emacs/cider) is a popular Clojure

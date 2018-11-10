@@ -4,7 +4,8 @@ title: "Emacs on OS X"
 date: 2015-05-09 13:31
 comments: true
 tags:
-- osx
+- OS X
+- macOS
 ---
 
 ## Prelude

@@ -4,7 +4,8 @@ title: "Display the Keybinding for a Command with substitute-command-keys"
 date: 2016-02-01 08:23
 comments: true
 tags:
-- keybindings
+- Keybindings
+- Help
 ---
 
 If you ever need to show the keybinding for a particular command to

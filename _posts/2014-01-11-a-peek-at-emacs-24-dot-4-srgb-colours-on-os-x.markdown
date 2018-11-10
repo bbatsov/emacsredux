@@ -4,7 +4,8 @@ title: "A peek at Emacs 24.4: sRGB colours on OS X"
 date: 2014-01-11 13:40
 comments: true
 tags:
-- osx
+- OS X
+- macOS
 - Emacs 24.4
 ---
 

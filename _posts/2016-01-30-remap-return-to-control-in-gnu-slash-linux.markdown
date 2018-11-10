@@ -4,8 +4,8 @@ title: "Remap Return to Control in GNU/Linux"
 date: 2016-01-30 11:48
 comments: true
 tags:
-- linux
-- misc
+- Linux
+- Keybindings
 ---
 
 A long time ago I wrote about

@@ -4,7 +4,8 @@ title: "Advise multiple commands in the same manner"
 date: 2013-07-17 16:15
 comments: true
 tags:
-- Utils
+- Utilities
+- Emacs Lisp
 ---
 
 One of the well known features of
