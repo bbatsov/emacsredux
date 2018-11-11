@@ -1,27 +1,31 @@
 ---
 layout: post
-title: "Highlight comment annotations"
+title: "Highlight Comment Annotations"
 date: 2013-07-24 16:15
 comments: true
 tags:
 - Utilities
 ---
 
-Programming code is often filled with comment annotations indicating stuff that should be done in the future.
+Programming code is often filled with comment annotations indicating
+stuff that should be done in the future.
 
 
 ``` ruby
 # REFACTOR: Decouple and clean up this crap.
-
-# crappy code omitted
+def foo
+  # crappy code omitted
+end
 ```
 
 Normally Emacs doesn't highlight such comment annotations, unless
 you're using some minor mode like
-[fic-mode](https://github.com/lewang/fic-mode/blob/master/fic-mode.el). I find such mode overkill given the fact we can cook a pretty decent solution in just about 5 lines of code:
+[fic-mode](https://github.com/lewang/fic-mode/blob/master/fic-mode.el). I
+find such mode overkill given the fact we can cook a pretty decent
+solution in just about 5 lines of code:
 
 ``` elisp
-(defun font-lock-comment-annotations ()
+(defun er-font-lock-comment-annotations ()
   "Highlight a bunch of well known comment annotations.
 
 This functions should be added to the hooks of major modes for programming."

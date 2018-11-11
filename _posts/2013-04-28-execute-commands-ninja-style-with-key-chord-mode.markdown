@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Execute commands ninja-style with key-chord-mode"
+title: "Execute Commands Ninja-style with key-chord-mode"
 date: 2013-04-28 08:45
 comments: true
 tags:
@@ -43,7 +43,7 @@ exclusively in English or some programming language (and Bulgarian and
 English are nothing alike).
 
 One other note - key chords don't play very well with
-`evil-mode`(Emacs's vim emulation layer) for obvious reasons. vim is
+`evil-mode` (Emacs's vim emulation layer) for obvious reasons. vim is
 kind of key-chord-mode's principle inspiration. If you're an `evil-mode` user you
 probably don't need key-chord-mode anyways.
 

@@ -14,7 +14,7 @@ the creation of various similar commands. Let's create a command that
 searches in YouTube:
 
 ``` elisp
-(defun youtube ()
+(defun er-youtube ()
   "Search YouTube with a query or region if any."
   (interactive)
   (browse-url
@@ -31,9 +31,9 @@ This command will display the query results in your default browser.
 I'd suggest binding the command to `C-c y` if you plan to use it regularly.
 
 ``` elisp
-(global-set-key (kbd "C-c y") 'youtube)
+(global-set-key (kbd "C-c y") #'er-youtube)
 ```
 
 `youtube` is available in
-[Prelude](https://github.com/bbatsov/prelude)(but with a `prelude-`
+[Prelude](https://github.com/bbatsov/prelude) (but with a `prelude-`
 prefix).

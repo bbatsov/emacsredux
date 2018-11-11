@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Using Emacs as a database client"
+title: "Using Emacs as a Database Client"
 date: 2013-06-13 15:15
 comments: true
 tags:
-- Utilities
+- Packages
+- Database
 ---
 
 Most people that use Emacs are programmers - that's a fact!

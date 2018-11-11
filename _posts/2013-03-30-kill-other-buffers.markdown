@@ -13,7 +13,7 @@ least it doesn't until you add a snippet such as this one to your
 Emacs setup:
 
 ``` elisp
-(defun kill-other-buffers ()
+(defun er-kill-other-buffers ()
   "Kill all buffers but the current one.
 Don't mess with special buffers."
   (interactive)
@@ -22,13 +22,13 @@ Don't mess with special buffers."
       (kill-buffer buffer))))
 ```
 
-Note that the command takes care not to kill *special* buffers(buffers
+Note that the command takes care not to kill *special* buffers (buffers
 that do not correspond to files).
 
 I'd suggest binding `kill-other-buffers` to `C-c k`.
 
 ``` elisp
-(global-set-key (kbd "C-c k") 'kill-other-buffers)
+(global-set-key (kbd "C-c k") #'er-kill-other-buffers)
 ```
 
 The command can be implemented in a more elegant manner if one chooses to
@@ -53,4 +53,4 @@ Doesn't mess with special buffers."
 
 According to your personal preference on functional programming the
 second version might seem either much more elegant, ghastly or just the
-same of the original.
+same as the original.

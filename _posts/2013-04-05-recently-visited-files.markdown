@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Recently visited files"
+title: "Recently Visited Files"
 date: 2013-04-05 14:50
 comments: true
 tags:
@@ -8,9 +8,9 @@ tags:
 ---
 
 Emacs does not keep track of recently visited files by default. Sad,
-but true.  On a more positive note - it has the feature(courtesy of
-`recentf`), but it's simply not enabled out-of-the-box. Let's see what
-we can do to change that:
+but true.  On a more positive note - it has the feature (courtesy of
+the built-in `recentf` package), but it's simply not enabled
+out-of-the-box. Let's see what we can do to change that:
 
 ``` elisp
 (require 'recentf)
@@ -33,7 +33,7 @@ If you're an `ido` user you might prefer to use some command based on
 it instead. Here's one:
 
 ``` elisp
-(defun recentf-ido-find-file ()
+(defun er-recentf-ido-find-file ()
   "Find a recent file using ido."
   (interactive)
   (let ((file (ido-completing-read "Choose recent file: " recentf-list nil t)))
@@ -46,10 +46,10 @@ I'd suggest binding whichever command you prefer to either `C-c f` or
 `find-file-read-only` command):
 
 ``` elisp
-(global-set-key (kbd "C-c f") 'recentf-ido-find-file)
+(global-set-key (kbd "C-c f") #'er-recentf-ido-find-file)
 ```
 
-As usual - both the command `recentf-ido-find-file` and its keybinding
+As usual - both the command `er-recentf-ido-find-file` and its keybinding
 `C-c f` are available in
-[Prelude](https://github.com/bbatsov/prelude)(obviously `recentf` is
+[Prelude](https://github.com/bbatsov/prelude) (naturally `recentf` is
 enabled there out-of-the-box).

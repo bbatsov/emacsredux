@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Switch to previous buffer"
+title: "Switch to Previous Buffer"
 date: 2013-04-28 08:43
 comments: true
 tags:
@@ -17,7 +17,7 @@ them. While this was good enough for me for many years, recently
 alternative:
 
 ``` elisp
-(defun switch-to-previous-buffer ()
+(defun er-switch-to-previous-buffer ()
   "Switch to previously open buffer.
 Repeated invocations toggle between the two most recently open buffers."
   (interactive)
@@ -25,17 +25,17 @@ Repeated invocations toggle between the two most recently open buffers."
 ```
 
 When you pair this command with a handy
-[key chord](/blog/2013/04/28/execute-commands-ninja-style-with-key-chord-mode/)
+[key chord]({% post_url 2013-04-28-execute-commands-ninja-style-with-key-chord-mode %})
 it becomes a great performance booster:
 
 ``` elisp
-(key-chord-define-global "JJ" 'switch-to-previous-buffer)
+(key-chord-define-global "JJ" #'er-switch-to-previous-buffer)
 ```
 
 If you're not fond of key chords I'd suggest a good old keybinding instead:
 
 ``` elisp
-(global-set-key (kbd "C-c b") 'switch-to-previous-buffer)
+(global-set-key (kbd "C-c b") #'er-switch-to-previous-buffer)
 ```
 
 The command and its key chord are part of [Prelude](https://github.com/bbatsov/prelude).

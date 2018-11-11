@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Go back to previous window"
+title: "Go Back to Previous Window"
 date: 2013-03-30 18:11
 comments: true
 tags:
 - Utilities
 ---
 
-Every Emacs user knows what `C-x o`(`other-window`) does - it moves
+Every Emacs user knows what `C-x o` (`other-window`) does - it moves
 your cursor to the next window. When you're out of windows - the
 command will take you back to the first one.
 

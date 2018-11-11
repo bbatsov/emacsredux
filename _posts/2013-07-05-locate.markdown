@@ -10,7 +10,6 @@ tags:
 `locate` is one extremely popular Unix command that allows you to
 search for files in a pre-built database.
 
-
 One little know fact is that Emacs provides a wrapper around the
 command you can invoke with `M-x locate`. You'll be prompted to enter
 a search string and you'll be presented with a list of matching
@@ -19,7 +18,7 @@ available in the results buffer (which will be using `locate-mode` major mode).
 
 If you'd like you may change the command invoked by Emacs to supply the
 results by altering the `locate-command` variable. Here's how you can
-start using OSX's `mdfind` (the command-line interface to `Spotlight`)
+start using OS X's `mdfind` (the command-line interface to `Spotlight`)
 instead of `locate`:
 
 ``` elisp

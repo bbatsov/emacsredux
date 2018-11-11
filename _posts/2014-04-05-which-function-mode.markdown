@@ -4,7 +4,7 @@ title: "which-function-mode"
 date: 2014-04-05 15:33
 comments: true
 tags:
-- Utilities
+- Packages
 ---
 
 Every developer is sometimes in the following situation - you're

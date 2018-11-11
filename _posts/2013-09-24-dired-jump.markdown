@@ -4,7 +4,8 @@ title: "Dired Jump"
 date: 2013-09-24 17:53
 comments: true
 tags:
-- Utilities
+- dired
+- Packages
 ---
 
 Most Emacs users know that they can start `dired` (Emacs's file

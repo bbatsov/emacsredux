@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Increment and decrement integer at point"
+title: "Increment and Decrement Integer at Point"
 date: 2013-07-25 18:49
 comments: true
 tags:
@@ -93,10 +93,10 @@ Internet, these two handle correctly numbers like `-3434` and
 I'd suggest binding these commands to `C-c +` and `C-c -`:
 
 ``` elisp
-(global-set-key (kbd "C-c +") 'increment-integer-at-point)
-(global-set-key (kbd "C-c -") 'decrement-integer-at-point)
+(global-set-key (kbd "C-c +") #'increment-integer-at-point)
+(global-set-key (kbd "C-c -") #'decrement-integer-at-point)
 ```
 
 Both commands are available in
-[Prelude](https://github.com/bbatsov/prelude)(but with a `prelude-`
+[Prelude](https://github.com/bbatsov/prelude) (but with a `prelude-`
 prefix).

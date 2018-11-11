@@ -36,7 +36,7 @@ redundancy by introducing a macro to generate multiple advices with
 the same body:
 
 ``` elisp
-(defmacro advise-commands (advice-name commands &rest body)
+(defmacro er-advise-commands (advice-name commands &rest body)
   "Apply advice named ADVICE-NAME to multiple COMMANDS.
 
 The body of the advice is in BODY."
@@ -51,15 +51,15 @@ Looks a bit scary, doesn't it? But it allows us to reduce the original code down
 
 ``` elisp
 ;; advise all window switching functions
-(advise-commands "auto-save"
-                 (switch-to-buffer other-window windmove-up windmove-down windmove-left windmove-right)
-                 (prelude-auto-save))
+(er-advise-commands "auto-save"
+                    (switch-to-buffer other-window windmove-up windmove-down windmove-left windmove-right)
+                    (prelude-auto-save))
 ```
 
 `macroexpand` can show us how the macro gets expanded:
 
 ``` elisp
-(macroexpand '(advise-commands "auto-save"
+(macroexpand '(er-advise-commands "auto-save"
                  (switch-to-buffer other-window windmove-up windmove-down windmove-left windmove-right)
                  (prelude-auto-save)))
 

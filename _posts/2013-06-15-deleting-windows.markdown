@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Deleting windows"
+title: "Deleting Windows"
 date: 2013-06-15 10:28
 comments: true
 tags:

@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Evaluate Emacs Lisp in the minibuffer"
+title: "Evaluate Emacs Lisp in the Minibuffer"
 date: 2013-04-18 14:44
 comments: true
 tags:
 - Utilities
+- Emacs Lisp
+- Paredit
 ---
 
 The Emacs Lisp interpreter's integration with Emacs is pervasive. One
@@ -24,12 +26,12 @@ least) and Paredit is not automatically enabled in the
 minibuffer. Let's change that:
 
 ``` elisp
-(defun conditionally-enable-paredit-mode ()
+(defun er-conditionally-enable-paredit-mode ()
   "Enable `paredit-mode' in the minibuffer, during `eval-expression'."
   (if (eq this-command 'eval-expression)
       (paredit-mode 1)))
 
-(add-hook 'minibuffer-setup-hook 'conditionally-enable-paredit-mode)
+(add-hook 'minibuffer-setup-hook 'er-conditionally-enable-paredit-mode)
 ```
 
 Evaluate this snippet and try `M-:` again. If you're like me - the

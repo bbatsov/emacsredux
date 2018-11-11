@@ -4,7 +4,7 @@ title: "Version checks"
 date: 2013-09-05 14:25
 comments: true
 tags:
-- utilities
+- Emacs Lisp
 ---
 
 Often the code you're writing would be depending on the version of

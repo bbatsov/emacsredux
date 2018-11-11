@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Highlight lines that exceed a certain length limit"
+title: "Highlight Lines that Exceed a Certain Length Limit"
 date: 2013-05-31 15:18
 comments: true
 tags:
-- Utilities
+- Configuration
 ---
 
 When you're writing code you usually have to take into account the

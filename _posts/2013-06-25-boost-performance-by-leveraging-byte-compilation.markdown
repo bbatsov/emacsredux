@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Boost performance by leveraging byte-compilation"
+title: "Boost Performance by Leveraging Byte-compilation"
 date: 2013-06-25 12:49
 comments: true
 tags:
@@ -28,7 +28,7 @@ emacs -batch -f batch-byte-compile ~/.emacs.d/**/*.el
 Of course we can easily create an Emacs command that does the same thing:
 
 ``` elisp
-(defun byte-compile-init-dir ()
+(defun er-byte-compile-init-dir ()
   "Byte-compile all your dotfiles."
   (interactive)
   (byte-recompile-directory user-emacs-directory 0))
@@ -46,10 +46,9 @@ files if present alongside the `.el` files, so you'll have to take
 steps to ensure you don't have stale `.elc` files lying around. I'd
 suggest the following solution:
 
-
 ``` elisp
-(defun remove-elc-on-save ()
-  "If you're saving an elisp file, likely the .elc is no longer valid."
+(defun er-remove-elc-on-save ()
+  "If you're saving an Emacs Lisp file, likely the .elc is no longer valid."
   (add-hook 'after-save-hook
             (lambda ()
               (if (file-exists-p (concat buffer-file-name "c"))
@@ -57,7 +56,7 @@ suggest the following solution:
             nil
             t))
 
-(add-hook 'emacs-lisp-mode-hook 'remove-elc-on-save)
+(add-hook 'emacs-lisp-mode-hook 'er-remove-elc-on-save)
 ```
 
 This code will make Emacs delete the `some_file.elc` file, every time the
@@ -65,14 +64,14 @@ This code will make Emacs delete the `some_file.elc` file, every time the
 
 A couple of closing notes:
 
-* If you don't have any custom computationally
-intensive `defuns` in your init directory - it probably doesn't make sense
-to byte-compile it.
-
-* Packages installed via `package.el` will be automatically byte-compiled during the installation process.
+* If you don't have any custom computationally intensive `defuns` in
+your init directory - it probably doesn't make sense to byte-compile
+it.
+* Packages installed via `package.el` will be automatically
+  byte-compiled during the installation process.
 
 The code presented here is part of
 [Prelude](https://github.com/bbatsov/prelude). As a matter of fact
 Prelude will byte-compile itself during the installation process (if
-you used the installed script, that is). Prelude will also recompile
+you used the installation script, that is). Prelude will also recompile
 itself when `M-x prelude-update` is invoked.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Erase buffer"
+title: "Erase Buffer"
 date: 2013-05-04 10:44
 comments: true
 tags:
@@ -9,7 +9,7 @@ tags:
 
 Some Emacs users find themselves wondering what's the fastest way to
 erase the contents of a buffer. As you know, I'm fond of
-[delete-selection-mode](/blog/2013/04/12/delete-selection-on-insert/)
+[delete-selection-mode]({% post_url 2013-04-12-delete-selection-on-insert %})
 and I find the combination of `C-x h` (`mark-whole-buffer`) + inserting
 anything afterwards pretty potent.
 
@@ -33,7 +33,7 @@ the command. Conversely - narrowing has an effect over
 If you like the command you might want to bind it to some keybinding like `C-c E`:
 
 ``` elisp
-(global-set-key (kbd "C-c E")  'erase-buffer)
+(global-set-key (kbd "C-c E") #'erase-buffer)
 ```
 
 Personally, I rarely need it, so I don't bind it to anything.
