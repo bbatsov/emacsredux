@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Disable annoying audio notifications"
+title: "Disable Annoying Audio Notifications"
 date: 2016-02-14 12:09
 comments: true
 tags:
-- misc
+- Configuration
 ---
 
 By default Emacs has some pretty annoying audio notifications for

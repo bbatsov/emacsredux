@@ -4,7 +4,7 @@ title: "Pragmatic Emacs"
 date: 2015-05-16 14:29
 comments: true
 tags:
-- misc
+- Blogs
 ---
 
 I recently noticed a new blog targeting beginner and intermediate

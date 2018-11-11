@@ -4,7 +4,7 @@ title: "My Personal Emacs Configuration"
 date: 2016-01-30 12:31
 comments: true
 tags:
-- misc
+- Configuration
 ---
 
 From time to time people ask me about my personal Emacs

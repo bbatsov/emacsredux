@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Removing/Altering key bindings from minor mode keymaps"
+title: "Removing/Altering Key Bindings from Minor Mode Keymaps"
 date: 2013-09-25 12:26
 comments: true
 tags:
-- Modes
+- Configuration
+- Keybindings
+- Minor Modes
 ---
 
 Often minor modes don't respect standard keybinding conventions and

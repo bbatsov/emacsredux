@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Configure the scratch buffer's mode"
+title: "Configure the Scratch Buffer's Mode"
 date: 2014-07-25 15:23
 comments: true
 tags:
-- misc
+- Configuration
 ---
 
 Pretty much every Emacs user knows of the `*scratch*` buffer - after

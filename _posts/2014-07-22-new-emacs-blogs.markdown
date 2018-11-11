@@ -4,7 +4,8 @@ title: "New Emacs blogs"
 date: 2014-07-22 17:43
 comments: true
 tags:
-- misc
+- Meta
+- Blogs
 ---
 
 The problem with Emacs blogs is one can never have enough of them (especially the good ones).

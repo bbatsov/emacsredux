@@ -4,7 +4,8 @@ title: "Emacs's Development has Migrated to Git"
 date: 2014-11-13 15:19
 comments: true
 tags:
-- misc
+- Git
+- Meta
 ---
 
 The long wait is over - Emacs's development

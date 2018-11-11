@@ -4,8 +4,8 @@ title: "super-save 0.3"
 date: 2018-09-29 20:22
 comments: true
 tags:
+- Packages
 - super-save
-- misc
 ---
 
 After a long period of no development activity[^1],

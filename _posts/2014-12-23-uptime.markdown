@@ -4,7 +4,8 @@ title: "Uptime"
 date: 2014-12-23 17:28
 comments: true
 tags:
-- misc
+- Built-in Commands
+- Misc
 ---
 
 Many Emacs users keep a single Emacs instance running for quite a while.

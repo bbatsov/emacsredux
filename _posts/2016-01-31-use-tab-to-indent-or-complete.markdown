@@ -4,8 +4,8 @@ title: "Use Tab to Indent or Complete"
 date: 2016-01-31 09:02
 comments: true
 tags:
-- misc
-- completion
+- Configuration
+- Completion
 ---
 
 By default in Emacs the `Tab` key does only indentation. If some major

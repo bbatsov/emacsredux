@@ -4,8 +4,9 @@ title: "Look up the keybindings for some command"
 date: 2016-02-14 18:10
 comments: true
 tags:
-- misc
-- help
+- Keybindings
+- Help
+- Built-in Commands
 ---
 
 If you know the name of some command, but you've forgotten its

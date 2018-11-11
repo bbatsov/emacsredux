@@ -4,7 +4,8 @@ title: "crux"
 date: 2016-01-30 11:37
 comments: true
 tags:
-- misc
+- crux
+- Packages
 ---
 
 I'd often blog about some useful utility functions here. Pretty much

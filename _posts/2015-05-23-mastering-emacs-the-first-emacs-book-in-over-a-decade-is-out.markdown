@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Mastering Emacs (the first Emacs book in over a decade) is out"
+title: "Mastering Emacs (the First Emacs Book in Over a Decade) is Out"
 date: 2015-05-23 15:19
 comments: true
 tags:
-- misc
+- Meta
+- Books
+- Learning Emacs
 ---
 
 [Mickey Petersen](https://www.masteringemacs.org/about) just released

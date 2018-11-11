@@ -4,7 +4,8 @@ title: "Lossage"
 date: 2014-12-23 17:35
 comments: true
 tags:
-- misc
+- Misc
+- Built-in Commands
 ---
 
 Are you sure you're using Emacs in an efficient way? Perhaps you're

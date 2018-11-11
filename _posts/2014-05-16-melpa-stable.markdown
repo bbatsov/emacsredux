@@ -4,7 +4,8 @@ title: "MELPA Stable"
 date: 2014-05-16 14:52
 comments: true
 tags:
-- misc
+- Package Management
+- MELPA
 ---
 
 We all know and love the

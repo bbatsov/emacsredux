@@ -4,7 +4,7 @@ title: "Emacs Chat Next Monday"
 date: 2014-05-16 12:15
 comments: true
 tags:
-- misc
+- Meta
 ---
 
 Next Monday (19.05.2014) I'll take part in

@@ -4,7 +4,8 @@ title: "super-save"
 date: 2016-01-30 11:26
 comments: true
 tags:
-- misc
+- Packages
+- super-save
 ---
 
 A while back I wrote

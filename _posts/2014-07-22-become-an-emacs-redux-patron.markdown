@@ -4,7 +4,7 @@ title: "Become an Emacs Redux patron"
 date: 2014-07-22 18:04
 comments: true
 tags:
-- misc
+- Meta
 ---
 
 Securing funding for OS projects and blogs (outside of displaying annoying ads)

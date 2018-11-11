@@ -4,7 +4,8 @@ title: "A peek at Emacs 24.4"
 date: 2013-12-31 11:07
 comments: true
 tags:
-- misc
+- Meta
+- Series
 ---
 
 Emacs 24.4 is now feature frozen and its release is (probably) just a
