@@ -37,7 +37,7 @@ The old tried and true `alien` method is still around, it's just no longer the d
 **P.S.** I encourage all of you to help out with some of the [open tickets](https://github.com/bbatsov/projectile/issues)
 marked with "Help Wanted" or "Good First Issue" here. I'm trying to
 clean-up shop after a long period of stagnation and I can certainly
-use some help! :smile:
+use some help!
 
 **P.P.S.** The recent 1.0 release was just a precursor to some bigger changes I
 had planned to do for quite a while. Stay tuned for more updates!
@@ -46,4 +46,4 @@ had planned to do for quite a while. Stay tuned for more updates!
 `turbo-alien` naming and I opted to rename the old `alien` method to
 `hybrid` (as it was truly a hybrid of `native` and `alien` indexing),
 and to change the name of `turbo-alien` to simply `alien`. Naming is
-hard! :smile:
+hard!

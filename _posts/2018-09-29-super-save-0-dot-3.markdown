@@ -43,6 +43,6 @@ next release any time soon!
 
 **P.S.** `super-save` was extracted from
 [Prelude](https://github.com/bbatsov/prelude), but for some reason I
-actually forgot to add it to Prelude. Today that changes as well! :smile:
+actually forgot to add it to Prelude. Today that changes as well!
 
 [^1]: Mostly because it was perfect from the start.

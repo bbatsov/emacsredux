@@ -63,4 +63,4 @@ third-party repositories (which you'll probably need sooner or later).
 `avy` and `ace-window` are naturally part of
 [Prelude](https://github.com/bbatsov/prelude).
 
-P.S. Oleh, one of those days you should rename `ace-window` to `avy-window`. :smile:
+P.S. Oleh, one of those days you should rename `ace-window` to `avy-window`.
