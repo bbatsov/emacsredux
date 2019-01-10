@@ -121,6 +121,21 @@ installing snapshots instead of stable package releases.
 
 Of course, that's on MELPA - it's on package maintainers who have adopt a more disciplined approach to releases.
 
+## Misc
+
+I really loved reading ["The Evolution of Emacs
+Lisp"](https://www.iro.umontreal.ca/~monnier/hopl-4-emacs-lisp.pdf)
+paper by Emacs's former head maintainer Stefan Monnier and Michael
+Sperber. I've been using Emacs for 15 year now and I still learned a
+lot of new things about the history of the language and the rationale
+behind certain design decisions. It was also a bit depressing to see
+how long certain features were being developed without ever making it
+to a stable Emacs release, but it is what it is...
+
+As usual, throughout the year my best source of Emacs news and updates
+was [Emacs News](http://sachachua.com/blog/category/emacs-news/) by
+Sacha Chua. I can't recommend it highly enough!
+
 ## Looking Forward
 
 Frankly, there's nothing big I'm looking forward to in 2019. I'd love for Emacs to finally start
@@ -139,7 +154,15 @@ On a personal note I hope that I'll write a few more articles here in 2019 and t
 1.0 release and Projectile to the next level. I'm also planning to work a bit on `project.el`, so it'd play nicer with
 Projectile and provide a better foundation for tools like Projectile.
 
-I'm try to be more active here, but I'm not making any promises.
+I also have some vary vague plans to work on improving
+`erlang-mode`, take a stab at creating a new `asciidoc-mode` and maybe
+play a bit with Haskell-related packages (if I finally manage to
+learn Haskell that is). Time will tell whether any of this is going to happen.
+
+I'm try to be more active here, but I'm not making any promises.  The
+last couple of years really drained me and as much I'd love to work on
+many things it would probably be best for me not to work on anything
+at all.
 
 ## Closing Thoughts
 
