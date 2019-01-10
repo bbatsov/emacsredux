@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Converting between symbols and strings"
+title: "Converting Between Symbols and Strings"
 date: 2014-12-05 17:28
 comments: true
 tags:
