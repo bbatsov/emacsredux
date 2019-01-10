@@ -139,7 +139,7 @@ Sacha Chua. I can't recommend it highly enough!
 ## Looking Forward
 
 Frankly, there's nothing big I'm looking forward to in 2019. I'd love for Emacs to finally start
-supporting better operating systems like Windows and macOS, but I know that's a pipe dream at this point.
+better supporting operating systems like Windows and macOS, but I know that's a pipe dream at this point.
 
 I do hope that more of the packages bundled with Emacs today would be moved to GNU ELPA, so they can be released
 separately and more frequently. Emacs's core should become smaller IMO and the big focus of the Core Team should be
