@@ -140,6 +140,9 @@ Sacha Chua. I can't recommend it highly enough!
 
 Frankly, there's nothing big I'm looking forward to in 2019. I'd love for Emacs to finally start
 better supporting operating systems like Windows and macOS, but I know that's a pipe dream at this point.
+Still, the need for something like an [Emacs Mac Port](https://bitbucket.org/mituharu/emacs-mac/) to exist
+makes me sad. Users of all operating systems should get a great user experience, regardless of whether
+their OS is free or proprietary.
 
 I do hope that more of the packages bundled with Emacs today would be moved to GNU ELPA, so they can be released
 separately and more frequently. Emacs's core should become smaller IMO and the big focus of the Core Team should be
@@ -149,6 +152,9 @@ develop a better version of Emacs Lisp instead.
 
 By the way, I think it might be nice if the Emacs Team started running some annual "State of Emacs" survey similar in
 spirit to say to the ["State of Clojure" survey](https://clojure.org/news/2019/01/07/clojure-2019-survey).
+The results of such a survey can help the Emacs Team decide where to focus their efforts. They'd also
+be a great gauge of the progress Emacs is making towards solving the problems its users are facing
+and providing the functionality they need.
 
 On a personal note I hope that I'll write a few more articles here in 2019 and that I'll manage to get CIDER to the coveted
 1.0 release and Projectile to the next level. I'm also planning to work a bit on `project.el`, so it'd play nicer with
