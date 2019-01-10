@@ -41,14 +41,17 @@ ever find the time for it.
 It was a super busy year at work for me, but still I got to release
 new versions of most of my [Emacs
 Packages](https://metaredux.com/projects).  I'm really proud of
-releasing several big CIDER updates, and making it to version 1.0 (and
-recently 2.0) for Projectile!
+releasing several big [CIDER](https://github.com/clojure-emacs/cider)
+updates, and of [Projectile](https://github.com/bbatsov/projectile)
+making it to version 1.0 (and recently 2.0)! By the way - this was the
+first of my bigger projects that made it to 1.0!
 
-Things were quieter on the Prelude front, but I think it's pretty
-good, useful and stable in its current form.  With everyone these days
-trying to pile every possible feature and package in an Emacs
-distribution, one has to appreciate the tenets of Prelude's
-philosophy:
+Things were quieter on the
+[Prelude](https://github.com/bbatsov/prelude) front, but I think
+it's pretty good, useful and stable in its current form.  With
+everyone these days trying to pile every possible feature and package
+in an Emacs distribution, one has to appreciate the tenets of
+Prelude's philosophy:
 
 * simple
 * easy to understand and extend
