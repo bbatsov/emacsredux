@@ -40,6 +40,8 @@ theme: minima
 paginate: 5
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 ## Hydeout config
 # sidebar_home_link:  true
