@@ -8,6 +8,8 @@ tags:
 
 This post is a brief summary of the past year for Emacs from my perspective.
 
+<!--more-->
+
 ## Emacs 26.1
 
 Probably the biggest news of the year was the release of [Emacs 26.1](https://www.gnu.org/software/emacs/news/NEWS.26.1).
