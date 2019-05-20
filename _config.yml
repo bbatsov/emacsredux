@@ -21,8 +21,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 permalink: "blog/:year/:month/:day/:title/"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://emacsredux.com" # the base hostname & protocol for your site, e.g. http://example.com
+
 twitter_username: bbatsov
 github_username:  bbatsov
+rss: rss
 
 disqus:
   shortname: emacsredux
@@ -33,14 +35,14 @@ excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
-#theme: jekyll-theme-hydeout
-remote_theme: fongandrew/hydeout
+theme: minima
+#remote_theme: fongandrew/hydeout
 paginate: 5
 plugins:
   - jekyll-feed
 
-# Hydeout config
-sidebar_home_link:  true
+## Hydeout config
+# sidebar_home_link:  true
 
 # jekyll-feed config
 feed:
