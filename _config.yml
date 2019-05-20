@@ -37,7 +37,6 @@ excerpt_separator: <!--more-->
 markdown: kramdown
 theme: minima
 #remote_theme: fongandrew/hydeout
-paginate: 5
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -45,6 +44,7 @@ plugins:
 
 ## Hydeout config
 # sidebar_home_link:  true
+# paginate: 5
 
 # jekyll-feed config
 feed:
