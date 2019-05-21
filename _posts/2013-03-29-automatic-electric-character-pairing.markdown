@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Automatic(electric) character pairing"
+title: "Automatic (electric) Character Pairing"
 date: 2013-03-29 12:38
 comments: true
 tags:
@@ -14,7 +14,7 @@ manner and that kind of sucks, since it's quite easy to misplace a
 closing parenthesis for instance.
 
 While there are several modes that target that particular problem, in
-this post I'll showcase just one of them - the built-in(since
+this post I'll showcase just one of them - the built-in (since
 Emacs 24.1) global minor mode `electric-pair-mode`. Enabling it is trivial:
 
 ``` elisp
@@ -23,7 +23,7 @@ Emacs 24.1) global minor mode `electric-pair-mode`. Enabling it is trivial:
 
 At this point typing an open parenthesis automatically inserts the
 corresponding closing parenthesis. (Likewise for brackets, etc.)  As
-an added bonus, consider the following scenario(the bar(`|`)
+an added bonus, consider the following scenario (the bar(`|`)
 represents your cursor):
 
 ``` ruby
