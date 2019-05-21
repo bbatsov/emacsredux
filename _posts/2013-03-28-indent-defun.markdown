@@ -44,6 +44,5 @@ suggested that command in the previous post.
 [crux](https://github.com/bbatsov/crux) (but with a `crux-`
 prefix).
 
-[^1]: Emacs slang/terminology for a function/procedure/method definition, originating
-from the way functions are defined in Emacs Lisp and a few other Lisp dialects.
+[^1]: Emacs slang/terminology for a function/procedure/method definition, originating from the way functions are defined in Emacs Lisp and a few other Lisp dialects.
 [^2]: Who I assume is Matus Goljer, of [smartparens](https://github.com/Fuco1/smartparens) fame.
