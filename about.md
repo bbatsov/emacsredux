@@ -39,7 +39,7 @@ Redux](https://metaredux.com).
 ## Colophon
 
 This website is powered by [Jekyll](https://jekyllrb.com/) and uses
-the [Hydeout theme](https://github.com/fongandrew/hydeout).
+the [Minima theme](https://github.com/jekyll/minima).
 
 I write all of the articles in Emacs and publish them to GitHub
 pages. These days I'm a macOS user most of the time.  When I'm at home
