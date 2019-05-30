@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "A crazy productivity boost: Remap Return to Control"
+title: "A Crazy Productivity Boost: Remap Return to Control"
 date: 2013-11-12 17:09
 comments: true
 tags:
 - Productivity
+- macOS
 ---
 
 People have always complained about the awkward positioning of
-the two `Control` keys on modern keyboards. That's a fact! Effective Emacs
+the two `Control` keys on modern keyboards.[^1] That's a fact! Effective Emacs
 usage is heavily dependent on the `Control` keys (yep, both of
 them). That's also a fact!
 
@@ -38,7 +39,7 @@ of your keyboard. Last, but not least - it's a great option for people
 using compact keyboards with no left `Control` key.
 
 Obviously you'll need some keyboard remapping software to make this
-trick work. OSX users can use
+trick work. OS X users can use
 [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/) to do
 that.  In its settings look up the `Change Return` section and under
 it `Return to Control_R (+ When you type Return only, send
@@ -48,3 +49,5 @@ Return)`. As far as I know this remapping can be done on GNU/Linux systems with 
 All in all - remapping `Return` to `Control` should be a big
 productivity win for some (the touch typists) of you and should make
 your right pinky's life easier.
+
+[^1]: If you are lucky enough to have two of them. Damn you Apple laptops!
