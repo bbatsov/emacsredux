@@ -5,6 +5,7 @@ date: 2013-05-22 17:48
 comments: true
 tags:
 - Editing
+- crux
 ---
 
 In Emacs there are two essential commands when you have to go the
@@ -69,6 +70,8 @@ This is a short example
 
 This functionality could also be implemented with `defadvice`, but I tend to avoid their use.
 
-`smarter-move-beginning-of-line` is part of [Prelude](https://github.com/bbatsov/prelude).
+This command is available in [crux](https://github.com/bbatsov/crux) as
+`crux-move-beginning-of-line`. This command is also available in
+[prelude](https://github.com/bbatsov/prelude) via the crux package.
 
 **P.S.** The credit for this tip goes to [Sebastian Wiesner](https://github.com/lunaryorn).

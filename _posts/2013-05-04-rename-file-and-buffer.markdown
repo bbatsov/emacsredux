@@ -53,7 +53,6 @@ command we should probably bind it to some each to press keys, like `C-c r`:
 (global-set-key (kbd "C-c r")  #'er-rename-file-and-buffer)
 ```
 
-As usual both the command and its keybinding are available in
-[Prelude](https://github.com/bbatsov/prelude).[^1]
-
-[^1]: Technically speaking the command is part of [crux](https://github.com/bbatsov/crux).
+This command is available in [crux](https://github.com/bbatsov/crux) as
+`crux-rename-file-and-buffer`. This command is also available in
+[prelude](https://github.com/bbatsov/prelude) via the crux package.

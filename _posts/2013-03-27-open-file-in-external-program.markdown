@@ -5,7 +5,7 @@ date: 2013-03-27 12:44
 comments: true
 tags:
 - Utilities
-- Crux
+- crux
 ---
 
 Sometimes it's useful to be able to open the file you're editing in
@@ -41,5 +41,6 @@ I find it convenient to bind the command to `C-c o`:
 (global-set-key (kbd "C-c o") #'er-open-with)
 ```
 
-[crux](https://github.com/bbatsov/crux) features a variant of this
-commands. (it is named `crux-open-with`).
+This command is available in [crux](https://github.com/bbatsov/crux) as
+`crux-open-with`. This command is also available in
+[prelude](https://github.com/bbatsov/prelude) via the crux package.

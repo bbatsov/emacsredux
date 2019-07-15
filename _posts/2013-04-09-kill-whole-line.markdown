@@ -5,6 +5,7 @@ date: 2013-04-09 14:49
 comments: true
 tags:
 - Editing
+- crux
 ---
 
 Let's continue our exploration of the fascinating topic of
@@ -39,5 +40,6 @@ Now we can rebind `C-S-Backspace`.
 `remap` is a pretty neat trick in its own right; maybe I'll write a
 bit more about it in the future.
 
-The `smart-kill-whole-line` command is available out-of-the-box in
-[Prelude](https://github.com/bbatsov/prelude).
+This command is available in [crux](https://github.com/bbatsov/crux) as
+`crux-kill-whole-line`. This command is also available in
+[prelude](https://github.com/bbatsov/prelude) via the crux package.

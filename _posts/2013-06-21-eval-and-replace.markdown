@@ -5,6 +5,7 @@ date: 2013-06-21 12:35
 comments: true
 tags:
 - Utilities
+- crux
 ---
 
 Sometimes people tend to overlook how well Emacs and Emacs Lisp are
@@ -43,6 +44,6 @@ expression. Pretty neat!
 
 I'll leave it up to you to think of more creative applications of the command.
 
-This command is part of
-[Prelude](https://github.com/bbatsov/prelude)(it's named
-`prelude-eval-and-replace` there).
+This command is available in [crux](https://github.com/bbatsov/crux) as
+`crux-eval-and-replace`. This command is also available in
+[prelude](https://github.com/bbatsov/prelude) via the crux package.

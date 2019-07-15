@@ -37,6 +37,6 @@ in.
 (global-set-key (kbd "C-c S") #'er-find-shell-init-file)
 ```
 
-`er-find-shell-init-file` is available in
-[crux](https://github.com/bbatsov/crux) (but with a `crux-`
-prefix).
+This command is available in [crux](https://github.com/bbatsov/crux) as
+`crux-find-shell-init-file`. This command is also available in
+[prelude](https://github.com/bbatsov/prelude) via the crux package.
