@@ -5,6 +5,7 @@ date: 2013-05-30 16:27
 comments: true
 tags:
 - Editing
+- crux
 ---
 
 Often, while editing, you'll want to compress a few lines into
@@ -50,6 +51,7 @@ sense to use something like `C-^` for the new command:
 
 That's mostly a personal preference I guess - feel free to use any other keycombo.
 
-This command is part of
-[Prelude](https://github.com/bbatsov/prelude)(it's named
-`prelude-top-join-line` there) and it's bound to `C-^` there.
+This command is available in [crux](https://github.com/bbatsov/crux) as
+`crux-top-join-line`. This command is also available in
+[prelude](https://github.com/bbatsov/prelude) via the crux package, and is
+bound to `C-^` there.

@@ -5,6 +5,7 @@ date: 2013-03-30 15:50
 comments: true
 tags:
 - Utilities
+- crux
 ---
 
 Many text editors and IDEs offer the ability to close all open files
@@ -54,3 +55,7 @@ Doesn't mess with special buffers."
 According to your personal preference on functional programming the
 second version might seem either much more elegant, ghastly or just the
 same as the original.
+
+This command is available in [crux](https://github.com/bbatsov/crux) as
+`crux-kill-other-buffers`. This command is also available in
+[prelude](https://github.com/bbatsov/prelude) via the crux package.

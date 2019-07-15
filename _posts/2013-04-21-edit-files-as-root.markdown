@@ -5,6 +5,7 @@ date: 2013-04-21 10:03
 comments: true
 tags:
 - Utilities
+- crux
 ---
 
 One area where Emacs traditionally falls short by default is editing
@@ -82,3 +83,7 @@ alias E="SUDO_EDITOR=\"emacsclient -t -a emacs\" sudoedit"
 ```
 
 This should (will) finally save you from reaching for `vim` in the terminal!
+
+This command is available in [crux](https://github.com/bbatsov/crux) as
+`crux-sudo-edit`. This command is also available in
+[prelude](https://github.com/bbatsov/prelude) via the crux package.

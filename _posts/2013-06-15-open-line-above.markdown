@@ -5,6 +5,7 @@ date: 2013-06-15 09:04
 comments: true
 tags:
 - Editing
+- crux
 ---
 
 This post continues a topic that was introduced in
@@ -17,7 +18,7 @@ and position the cursor at its beginning.  Such a feature is present
 in most IDEs, such as IntelliJ IDEA, Eclipse and NetBeans. It’s
 sometimes bound to `Control+Shift+Enter`. Last time I showed you how
 to implement a similar function called `smart-open-line`, this time
-will implement `smart-open-line-above`. Just add this snippet to your
+we will implement `smart-open-line-above`. Just add this snippet to your
 `.emacs` (or `.emacs.d/init.el` or whatever):
 
 ``` elisp
@@ -50,6 +51,7 @@ Another good option would be to fold the two commands into one and use a
 prefix argument to trigger the opening a new line above the current
 one.
 
-This command is part of
-[Prelude](https://github.com/bbatsov/prelude)(it's named
-`prelude-smart-open-line-above` there).
+These commands are available in [crux](https://github.com/bbatsov/crux) as
+`crux-smart-open-line-above` and `crux-smart-open-line`.
+These commands are also available in
+[prelude](https://github.com/bbatsov/prelude) via the crux package.

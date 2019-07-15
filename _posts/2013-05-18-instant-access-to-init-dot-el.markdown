@@ -5,6 +5,7 @@ date: 2013-05-18 19:00
 comments: true
 tags:
 - Utilities
+- crux
 ---
 
 One of the files Emacs users often edit is `init.el`(especially if they
@@ -30,3 +31,7 @@ Short and sweet! You might want to bind it to some keycombo:
 
 Thanks to [Sebastian Wiesner](https://github.com/lunaryorn) for
 bringing this tip to my attention!
+
+This command is available in [crux](https://github.com/bbatsov/crux) as
+`crux-find-user-init-file`. This command is also available in
+[prelude](https://github.com/bbatsov/prelude) via the crux package.

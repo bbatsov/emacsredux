@@ -5,6 +5,7 @@ date: 2013-04-28 08:43
 comments: true
 tags:
 - Utilities
+- crux
 ---
 
 Jumping between the current buffer and the one you were in before is a
@@ -38,4 +39,6 @@ If you're not fond of key chords I'd suggest a good old keybinding instead:
 (global-set-key (kbd "C-c b") #'er-switch-to-previous-buffer)
 ```
 
-The command and its key chord are part of [Prelude](https://github.com/bbatsov/prelude).
+This command is available in [crux](https://github.com/bbatsov/crux) as
+`crux-switch-to-previous-buffer`. This command is also available in
+[prelude](https://github.com/bbatsov/prelude) via the crux package.

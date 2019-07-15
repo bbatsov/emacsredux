@@ -6,6 +6,7 @@ comments: true
 tags:
 - Utilities
 - Emacs Lisp
+- crux
 ---
 
 From time to time[^1] I need to quickly[^2] delete a file and kill the
@@ -39,8 +40,9 @@ command we should probably bind it to some each to press keys, like `C-c D`:
 (global-set-key (kbd "C-c D")  #'er-delete-file-and-buffer)
 ```
 
-As usual both the command and its keybinding are available in
-[Prelude](https://github.com/bbatsov/prelude).
+This command is available in [crux](https://github.com/bbatsov/crux) as
+`crux-delete-file-and-buffer`. This command is also available in
+[prelude](https://github.com/bbatsov/prelude) via the crux package.
 
 [^1]: Most often when I refactor code.
 [^2]: This removes `dired` from the equation.
