@@ -9,7 +9,7 @@ sidebar_link: true
 
 I'm Bozhidar[^1] and I love computers in general and programming in
 particular[^2]. My fanatic devotion to Emacs is known
-world-wide. I spend a lot of my (free) time on GitHub, contributing
+world-wide. I spend a lot of my (free) time on [GitHub](https://github.com/bbatsov), contributing
 to various open-source Ruby, Clojure and Emacs Lisp [projects](https://metaredux.com/projects/).
 
 The above paragraph is actually what I typically use as my bio for
