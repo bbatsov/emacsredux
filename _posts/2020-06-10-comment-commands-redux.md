@@ -63,13 +63,22 @@ comment and indent it.
 
 This versatile command is bound to `M-;` by default.
 
+One thing that's quite annoying with `comment-dwim` is that it's not very clear/easy
+how to uncomment something that's already commented. As noted above your only option
+is to select the commented region and invoke `commend-dwim` on it.
+
 ## comment-line
 
 `comment-line` is a newer command that was added in Emacs 25.1, as a simpler
 alternative to `comment-dwim`. It will comment/uncomment the current line (or region) - nothing more, nothing less.
 
 The command is bound to `C-x C-;`. Personally, I like it way more than
-`comment-dwim`, as it's simpler and more consistent.
+`comment-dwim`, as it's simpler and more consistent. You might want to remap it to the more
+convenient `M-;` keybinding like this:
+
+``` emacs-lisp
+(global-set-key [remap comment-dwim] #'comment-line)
+```
 
 ## comment-box
 
