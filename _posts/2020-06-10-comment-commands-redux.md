@@ -63,9 +63,11 @@ comment and indent it.
 
 This versatile command is bound to `M-;` by default.
 
-One thing that's quite annoying with `comment-dwim` is that it's not very clear/easy
-how to uncomment something that's already commented. As noted above your only option
-is to select the commented region and invoke `commend-dwim` on it.
+One thing that's somewhat annoying about `comment-dwim` is that it's not very
+convenient to uncomment the current line. As noted above your only option is to
+select the commented region (in this case the current line) and invoke
+`commend-dwim` on it, but I think it would have been nice if repeated
+invocations of the command handled this somehow.
 
 ## comment-line
 
