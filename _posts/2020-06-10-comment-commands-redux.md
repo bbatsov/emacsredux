@@ -20,7 +20,23 @@ we're going to examine them.
 Let's start with `comment-region`. That's a very basic command that
 will comment/uncomment the active region. Nothing fancy here.
 
-The command is not bound to any key by default. There's a good reason for this -
+The behaviour of this command can be tweaked by the variable `comment-style`.
+All supported comment styles are defined in `comment-styles`:
+
+``` emacs-lisp
+((plain nil nil nil nil "Start in column 0 (do not indent), as in Emacs-20")
+ (indent-or-triple nil nil nil multi-char "Start in column 0, but only for single-char starters")
+ (indent nil nil nil t "Full comment per line, ends not aligned")
+ (aligned nil t nil t "Full comment per line, ends aligned")
+ (box nil t t t "Full comment per line, ends aligned, + top and bottom")
+ (extra-line t nil t t "One comment for all lines, end on a line by itself")
+ (multi-line t nil nil t "One comment for all lines, end on last commented line")
+ (box-multi t t t t "One comment for all lines, + top and bottom"))
+```
+
+I'll admit I never felt the need to change the default value of `comment-style` (`indent`).
+
+The `comment-region` command is not bound to any key by default. There's a good reason for this -
 there are at least two more capable commands that render `comment-region` useless.
 
 ## uncomment-region
@@ -54,6 +70,28 @@ alternative to `comment-dwim`. It will comment/uncomment the current line (or re
 
 The command is bound to `C-x C-;`. Personally, I like it way more than
 `comment-dwim`, as it's simpler and more consistent.
+
+## comment-box
+
+This command will put the selected region in a comment box. Here's an example:
+
+``` emacs-lisp
+(defgroup crux nil
+  "crux configuration."
+  :prefix "crux-"
+  :group 'convenience)
+
+;; becomes
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (defgroup crux nil      ;;
+;;   "crux configuration." ;;
+;;   :prefix "crux-"       ;;
+;;   :group 'convenience)  ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+```
+
+This command is not bound to any key by default.
 
 ## Closing Thoughts
 
