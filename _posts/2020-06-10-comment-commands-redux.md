@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Comment Commands Redux
+author: Bozhidar Batsov
+comments: true
+tags:
+- Editing
 ---
 
 Comments are an important aspect of every programming language
@@ -38,7 +42,7 @@ consists of comments, in which case it calls `uncomment-region`).
 `comment-insert-comment-function` if it is defined, otherwise insert a
 comment and indent it.
 * If a prefix argument is specified (e.g. `C-u`), call
-`comment-kill`.
+`comment-kill` (this command kills the first comment on the line, if any).
 * Else, call `comment-indent`, which simply indents the comment.
 
 This versatile command is bound to `M-;` by default.
@@ -50,5 +54,15 @@ alternative to `comment-dwim`. It will comment/uncomment the current line (or re
 
 The command is bound to `C-x C-;`. Personally, I like it way more than
 `comment-dwim`, as it's simpler and more consistent.
+
+## Closing Thoughts
+
+So many comment commands! On top of this there are packages like [comment-dwim-2](https://github.com/remyferre/comment-dwim-2) and some mode-specific
+comment commands like the one provided by [clojure-comment-dwim](https://github.com/dotemacs/clojure-comment-dwim.el).
+
+I've started writing this article about a year ago, I got interrupted by something, and I totally forgot about it. I'm pretty sure I meant to cover more
+ground in it, but I now longer remember what I had in mind. :D I'm just happy I finally got to sharing it with you!
+
+So, what's your approach for dealing with comments? Do you use some of the built-in commands or do you rely on custom commands or third-party extensions?
 
 [^1]: `dwim` stands for "Do What I Mean".
