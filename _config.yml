@@ -22,6 +22,16 @@ permalink: "blog/:year/:month/:day/:title/"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://emacsredux.com" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Some defaults that get applied to all posts, so you don't have repeat them
+# in the post metadata.
+# More details here https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+ - scope:
+     path: "" # an empty string here means all files in the project
+     type: "posts"
+   values:
+     author: "Bozhidar Batsov"
+
 twitter_username: bbatsov
 github_username:  bbatsov
 rss: rss
