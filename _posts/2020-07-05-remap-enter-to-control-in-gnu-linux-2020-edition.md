@@ -69,7 +69,7 @@ Then we need to create `/etc/udevmon.yaml` (you'll need `sudo` for this):
       EV_KEY: [KEY_ENTER, KEY_RIGHTCTRL]
 ```
 
-**Note:** Update the path the `.dual-function-keys.yml` accordingly.
+**Note:** Update the path the `.dual-function-keys.yaml` accordingly.
 
 Finally we need to create a `systemd` service definition file for `udevmon` and start the new service:
 
