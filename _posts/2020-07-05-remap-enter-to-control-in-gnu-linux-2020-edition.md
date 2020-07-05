@@ -19,7 +19,7 @@ for the [interception framework](https://gitlab.com/interception/linux/tools)),
 which does exactly what I needed and it does it splendidly.
 
 Unfortunately, the tool is not packaged for most
-GNU/Linux distros, but setting it up from source is not that complex. In this article
+GNU/Linux distros[^1], but setting it up from source is not that complex. In this article
 I'll share instructions that are specific to Ubuntu, but they should be
 easy to modify for other Linux distros.
 
@@ -107,3 +107,5 @@ Another option I considered was [xkeysnail](https://github.com/mooz/xkeysnail), 
 seemed a bit simpler to setup, as it's written in Python, and even has an [example config geared towards Emacs users](https://github.com/mooz/xkeysnail/blob/master/example/config.py). You might want to check it out.
 
 If someone's using another approach to achieve the same result I'd love to hear about it!
+
+[^1]: Seems currently it's only packaged for Arch Linux and family (e.g. Manjaro).
