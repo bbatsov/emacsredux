@@ -8,6 +8,8 @@ tags:
 - Keybindings
 ---
 
+**Note:** Check out my [original article from 2013]({% post_url 2013-11-12-a-crazy-productivity-boost-remap-return-to-control %}) about the rationale behind this remapping.
+
 Recently I've switched back from macOS to GNU/Linux, as my primary development
 environment, and I found out that my [old article]({% post_url 2016-01-30-remap-return-to-control-in-gnu-slash-linux %}) on remapping `Enter` to
 `Control` was no longer the optimal way to achieve this. It took me a bit of

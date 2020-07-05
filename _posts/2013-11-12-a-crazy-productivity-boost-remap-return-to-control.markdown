@@ -50,4 +50,6 @@ All in all - remapping `Return` to `Control` should be a big
 productivity win for some (the touch typists) of you and should make
 your right pinky's life easier.
 
+**Update:** In 2017 I've published [a small update]({% post_url 2017-12-31-a-crazy-productivity-boost-remapping-return-to-control-2017-edition %}) on this topic.
+
 [^1]: If you are lucky enough to have two of them. Damn you Apple laptops!
