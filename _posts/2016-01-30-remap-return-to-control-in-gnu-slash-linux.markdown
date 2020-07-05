@@ -8,6 +8,8 @@ tags:
 - Keybindings
 ---
 
+**Update:** I wrote an [updated article]({% post_url 2020-07-05-remap-enter-to-control-in-gnu-linux-2020-edition %}) on the subject in 2020.
+
 A long time ago I wrote about
 [remapping Return to Control in OS X]({% post_url 2013-11-12-a-crazy-productivity-boost-remap-return-to-control %}).
 This was the best productivity boost for my Emacs experience ever!
