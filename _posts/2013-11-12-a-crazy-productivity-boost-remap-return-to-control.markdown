@@ -52,5 +52,8 @@ your right pinky's life easier.
 
 **Update:** In 2017 I've published [a small update]({% post_url 2017-12-31-a-crazy-productivity-boost-remapping-return-to-control-2017-edition %}) on this topic.
 
+I also wrote a couple of articles
+about the Linux setup - [one based on xcape]({% post_url 2016-01-30-remap-return-to-control-in-gnu-slash-linux %}) and [another one based on dual-function-keys]({% post_url 2020-07-05-remap-enter-to-control-in-gnu-linux-2020-edition %}).
+
 [^1]: If you are lucky enough to have two of them. Damn you Apple laptops!
 [^2]: Like your truly.
