@@ -47,9 +47,10 @@ $ cd dual-functions-keys
 $ make && sudo make install
 ```
 
-That wasn't so hard, right? Now we have to create a couple of configuration files and we're ready for action. The first one is `.dual-function-keys.yaml`:
+That wasn't so hard, right? Now we have to create a couple of configuration files and we're ready for action. The first one is `.dual-function-keys.yaml` (normally placed in your home folder):
 
 ``` yaml
+# /home/username/.dual-function-keys.yaml
 TIMING:
   TAP_MILLISEC: 200
   DOUBLE_TAP_MILLISEC: 150
