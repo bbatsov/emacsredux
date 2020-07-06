@@ -23,7 +23,7 @@ people seem to be using only the left `Control` and I guess they're
 not particularly bothered by this, but touch typists like me are
 generally quite bothered by such things.
 
-A much better idea would be to leverage a little knows capability of
+A much better idea would be to leverage a little known capability of
 keyboard input systems and map the `Return` key to `Control` only
 when it's held down (it will behave like a normal `Return` key in all
 other situations). This sounds a bit crazy, but please bear with me for a while.
