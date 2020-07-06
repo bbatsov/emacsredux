@@ -35,6 +35,7 @@ $ mkdir src && cd src
 $ git clone https://gitlab.com/interception/linux/tools
 $ git clone https://gitlab.com/interception/linux/plugins/dual-function-keys
 # build and install the interception framework
+$ cd tools
 $ mkdir build
 $ cd build
 $ cmake ..
