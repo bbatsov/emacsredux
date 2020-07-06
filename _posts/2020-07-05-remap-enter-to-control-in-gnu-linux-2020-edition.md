@@ -12,7 +12,7 @@ tags:
 
 Recently I've switched back from macOS to GNU/Linux, as my primary development
 environment, and I found out that my [old article]({% post_url 2016-01-30-remap-return-to-control-in-gnu-slash-linux %}) on remapping `Enter` to
-`Control` was no longer the optimal way to achieve this. It took me a bit of
+`Control` was no longer the optimal way to achieve this (e.g. - it doesn't work with Wayland). It took me a bit of
 digging, but eventually I found
 [dual-function-keys](https://gitlab.com/interception/linux/plugins/dual-function-keys) (a plugin
 for the [interception framework](https://gitlab.com/interception/linux/tools)),
