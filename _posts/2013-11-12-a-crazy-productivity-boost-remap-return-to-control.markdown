@@ -36,7 +36,7 @@ to the short 2 row Returns found on European keyboards). Second, if
 you've already remapped `CapsLock` to `Control` (like you should have
 done) you're getting a pretty symmetrical mapping on the opposite side
 of your keyboard. Last, but not least - it's a great option for people
-using compact keyboards with no left `Control` key.
+using compact (Apple) keyboards with no left `Control` key.[^2]
 
 Obviously you'll need some keyboard remapping software to make this
 trick work. OS X users can use
@@ -53,3 +53,4 @@ your right pinky's life easier.
 **Update:** In 2017 I've published [a small update]({% post_url 2017-12-31-a-crazy-productivity-boost-remapping-return-to-control-2017-edition %}) on this topic.
 
 [^1]: If you are lucky enough to have two of them. Damn you Apple laptops!
+[^2]: Like your truly.
