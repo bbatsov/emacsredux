@@ -11,12 +11,15 @@ tags:
 **Note:** Check out my [original article from 2013]({% post_url 2013-11-12-a-crazy-productivity-boost-remap-return-to-control %}) about the rationale behind this remapping.
 
 Recently I've switched back from macOS to GNU/Linux, as my primary development
-environment, and I found out that my [old article]({% post_url 2016-01-30-remap-return-to-control-in-gnu-slash-linux %}) on remapping `Enter` to
-`Control` was no longer the optimal way to achieve this (e.g. - it doesn't work with Wayland). It took me a bit of
-digging, but eventually I found
-[dual-function-keys](https://gitlab.com/interception/linux/plugins/dual-function-keys) (a plugin
-for the [interception framework](https://gitlab.com/interception/linux/tools)),
-which does exactly what I needed and it does it splendidly.
+environment, and I found out that my [old article]({% post_url
+2016-01-30-remap-return-to-control-in-gnu-slash-linux %}) on remapping `Enter`
+to `Control` was no longer the optimal way to achieve this (e.g. - `xcape`
+operates at the X level, which means it doesn't work with Wayland or without a
+GUI). It took me a bit of digging, but eventually I found
+[dual-function-keys](https://gitlab.com/interception/linux/plugins/dual-function-keys)
+(a plugin for the [interception
+framework](https://gitlab.com/interception/linux/tools)), which does exactly
+what I needed and it does it splendidly.
 
 Unfortunately, the tool is not packaged for most
 GNU/Linux distros[^1], but setting it up from source is not that complex. In this article
