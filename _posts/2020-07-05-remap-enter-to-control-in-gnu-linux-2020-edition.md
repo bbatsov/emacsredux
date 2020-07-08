@@ -73,7 +73,7 @@ Then we need to create `/etc/udevmon.yaml` (you'll need `sudo` for this):
 - JOB: "intercept -g $DEVNODE | dual-function-keys -c /home/bozhidar/.dual-function-keys.yaml | uinput -d $DEVNODE"
   DEVICE:
     EVENTS:
-      EV_KEY: [KEY_ENTER, KEY_RIGHTCTRL]
+      EV_KEY: [KEY_ENTER]
 ```
 
 **Note:** Update the path the `.dual-function-keys.yaml` accordingly.
