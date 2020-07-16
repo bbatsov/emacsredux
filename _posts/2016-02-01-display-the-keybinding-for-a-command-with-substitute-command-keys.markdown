@@ -10,7 +10,7 @@ tags:
 
 If you ever need to show the keybinding for a particular command to
 the users of your package (e.g. you're adding some tips
-functionality), you should avoid resisting the urge to write something like
+functionality), you should resist the urge to write something like
 this:
 
 ``` elisp
@@ -18,8 +18,8 @@ this:
 ```
 
 Why is this a bad idea? Because you might change the keybinding of the
-command in question (e.g. `projectile-switch-project`, but you might
-forget to update messages like this. Is there a better way?
+command in question (e.g. `projectile-switch-project`), but you might
+forget to update messages like this.[^1] Is there a better way?
 `substitute-command-keys` to the rescue:
 
 ``` elisp
@@ -31,7 +31,7 @@ guaranteed the keybinding will always be in sync with the command.
 
 Neat!
 
-P.S. If you want to check interactively the keybinding of some command use `C-h f` (`describe-function`). Here's
+**P.S.** If you want to check interactively the keybinding of some command use `C-h f` (`describe-function`). Here's
 an example - `C-h f RET projectile-switch-project RET` will produce this:
 
 ```
@@ -46,3 +46,5 @@ to project>.
 ```
 
 You can also check which command is bound to some key with `C-h k`.
+
+[^1]: This happens to me all the time.
