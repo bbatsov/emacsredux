@@ -19,8 +19,8 @@ uniquely tailored to their needs & preferences.
 
 * [Emacs Lisp Manual](https://www.gnu.org/software/emacs/manual/elisp.html)
 * [Introduction to Emacs Lisp](https://www.gnu.org/software/emacs/manual/eintr.html)
-* [Learn Emacs Lisp in 15 Minutes](http://bzg.fr/learn-emacs-lisp-in-15-minutes.html)
-* [EmacsWiki](http://www.emacswiki.org/emacs/EmacsLisp)
+* [Learn Emacs Lisp in 15 Minutes](https://bzg.fr/learn-emacs-lisp-in-15-minutes.html)
+* [EmacsWiki](https://www.emacswiki.org/emacs/EmacsLisp)
 
 ## Wikis
 
@@ -30,9 +30,9 @@ uniquely tailored to their needs & preferences.
 ## Other Blogs
 
 * [Mastering Emacs](https://www.masteringemacs.org/)
-* [Endless Parentheses](http://endlessparentheses.com/)
+* [Endless Parentheses](https://endlessparentheses.com/)
 * [Pragmatic Emacs](http://pragmaticemacs.com/)
-* [Irreal](http://irreal.org/blog/)
+* [Irreal](https://irreal.org/blog/)
 * [(or emacs irrelevant)](https://oremacs.com/)
 
 ## Emacs Distributions
@@ -43,4 +43,4 @@ goals, focus of philosophy, so choose accordingly.
 
 * [Doom](https://github.com/hlissner/doom-emacs)
 * [Prelude](https://github.com/bbatsov/prelude)
-* [Spacemacs](http://spacemacs.org/)
+* [Spacemacs](https://spacemacs.org/)
