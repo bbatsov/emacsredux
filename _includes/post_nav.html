@@ -1,0 +1,13 @@
+<!-- Borrowed from https://www.bytedude.com/jekyll-previous-and-next-posts/ -->
+<div class="post-nav">
+    <div>
+        {% if page.previous.url %}
+        <a href="{{page.previous.url}}">&laquo;&nbsp;{{page.previous.title}}</a>
+        {% endif %}
+    </div>
+    <div class="post-nav-next">
+        {% if page.next.url %}
+        <a href="{{page.next.url}}">{{page.next.title}}&nbsp;&raquo;</a>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,15 @@
+.post-nav {
+    /* Insert your custom styling here. Example:
+
+       font-size: 14px;
+       margin-bottom: 1em;
+    */
+    display: flex;
+}
+.post-nav div {
+    /* flex-grow, flex-shrink, flex-basis */
+    flex: 1 1 0;
+}
+.post-nav-next {
+    text-align: right;
+}
