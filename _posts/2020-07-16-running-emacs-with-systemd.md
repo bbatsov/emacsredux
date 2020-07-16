@@ -11,11 +11,12 @@ Recently I've switched back to Linux, after having used macOS for the past 9 yea
 While I was generally happy with my overall macOS experience, I was also disappointed
 that Emacs simply didn't work as well there, as it does on Linux for various reasons.
 
-While I was a Linux user I'd always run Emacs as a daemon (server) and I'd
+When I was a Linux user I'd always run Emacs as a daemon (server) and I'd
 connect this daemon from multiple instances of `emacsclient`. This was both
-elegant and efficient - my clients started instantly. While this was doable to
-some extent in macOS, it never worked quite as well for me, and I abandoned
-that workflow eventually. Now, however, I'm back! Time to revive the workflow!
+elegant and efficient - my clients started instantly and shared access to
+everything that was running on the daemon instance. While this was doable to
+some extent in macOS, it never worked quite as well for me, and I abandoned that
+workflow eventually. Now, however, I'm back! Time to revive the workflow!
 
 Historically I ran the Emacs daemon by adding something like this to my shell init (e.g. `.bashrc`):
 
