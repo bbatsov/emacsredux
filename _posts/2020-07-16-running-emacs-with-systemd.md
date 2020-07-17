@@ -82,7 +82,7 @@ popular package
 [exec-path-from-shell](https://github.com/purcell/exec-path-from-shell).
 
 Alternatively you can use one of `systemd`'s own mechanisms for setting environment variables - e.g. [environment.d](https://www.freedesktop.org/software/systemd/man/environment.d.html).
-The [Arch Wiki](https://wiki.archlinux.org) has
+The [Arch Linux Wiki](https://wiki.archlinux.org) has
 a few [good examples](https://wiki.archlinux.org/index.php/Systemd/User#Environment_variables) of
 using `environment.d` and also mentions other approaches that you can consider.
 
