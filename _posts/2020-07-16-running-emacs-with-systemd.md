@@ -68,7 +68,7 @@ export EDITOR='emacsclient -t'
 export VISUAL='emacsclient -t'
 ```
 
-I typically add two more aliases just to be on safe side:
+I typically add two more aliases just to be on the safe side:
 
 ``` shell
 alias vi='emacsclient -t'
