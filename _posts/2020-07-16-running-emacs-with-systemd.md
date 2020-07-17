@@ -68,7 +68,7 @@ export EDITOR='emacsclient -t'
 export VISUAL='emacsclient -t'
 ```
 
-I typically add two more aliases just to be on the safe side:
+I typically add two more aliases just to be on the safe side:[^1]
 
 ``` shell
 alias vi='emacsclient -t'
@@ -81,4 +81,11 @@ won't read your user environment variables (at least not those coming from your
 popular package
 [exec-path-from-shell](https://github.com/purcell/exec-path-from-shell).
 
+Alternatively you can use one of `systemd`'s own mechanisms for setting environment variables - e.g. [environment.d](https://www.freedesktop.org/software/systemd/man/environment.d.html).
+The [Arch Wiki](https://wiki.archlinux.org) has
+a few [good examples](https://wiki.archlinux.org/index.php/Systemd/User#Environment_variables) of
+using `environment.d` and also mentions other approaches that you can consider.
+
 That's all I have for you today. I hope you've learned something useful. In parentheses we trust!
+
+[^1]: Old habits die hard.
