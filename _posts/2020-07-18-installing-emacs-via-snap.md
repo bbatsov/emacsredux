@@ -56,4 +56,4 @@ distro, or simply doesn't want to waste time on upgrading their Emacs.
 That's all I have for you today! Meta-end!
 
 [^1]: In the interest of full disclosure - I've also used pre-built binary packages for macOS from <https://emacsformacosx.com/>.
-[^2]: snapcraft.io provided setup instructions for all major Linux distros. Here are the [instructions for Fedora](https://snapcraft.io/install/emacs/fedora) as an example.
+[^2]: snapcraft.io provides [setup instructions for all major Linux distros](https://snapcraft.io/docs/installing-snapd). Here are the [instructions for Fedora](https://snapcraft.io/install/emacs/fedora) as an example.
