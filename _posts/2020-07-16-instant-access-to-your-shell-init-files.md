@@ -29,7 +29,7 @@ Pretty neat, right? Even in its updated state the command is not complex at all:
 (defun crux-find-shell-init-file ()
   "Edit the shell init file in another window."
   (interactive)
-  (let* ((shell (car (reverse (split-string (getenv "SHELL") "/" t))))
+  (let* ((shell (file-name-nondirectory (getenv "SHELL")))
          (shell-init-file (cond
                            ((string= "zsh" shell) crux-shell-zsh-init-files)
                            ((string= "bash" shell) crux-shell-bash-init-files)
