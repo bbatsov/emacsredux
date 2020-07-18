@@ -29,9 +29,9 @@ seems to be the most popular today, mostly because it was developed by the maker
 
 Emacs is available at [snapcraft.io](https://snapcraft.io/emacs) in 3 flavors:
 
-* latest stable version
-* latest release candidate
-* snapshot build
+* latest stable version (published to the `latest/stable` channel)
+* latest release candidate (published weekly to the `latest/beta` channel)
+* snapshot build (published weekly to the `latest/edge` channel)
 
 Provided you've already setup `snap`, installing Emacs is trivial:[^2]
 
