@@ -37,8 +37,8 @@ consider supporting my work via Gratipay.
 
 [![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.3/dist/gratipay.png)](https://gratipay.com/bbatsov)
 
-**P.S.**
-
 Alternatively you can use PayPal.
 
 [![Paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3J4QE5QBJU84Q)
+
+**Update:** Gratipay has been defunct for a few years now. You can find an updated list of the services you can support me over [here]({% post_url 2020-09-13-patronage-revisited %}).
