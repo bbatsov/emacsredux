@@ -36,6 +36,17 @@ experience with Emacs more productive and more enjoyable.
 I run a separate blog without any particular focus. It's called [Meta
 Redux](https://metaredux.com).
 
+## Patronage
+
+Please, consider supporting my Emacs work at one of the following patronage services:
+
+* [GitHub Sponsors](https://github.com/sponsors/bbatsov) (**recommended**)
+* [ko-fi](https://ko-fi.com/bbatsov)
+* [Paypal](https://www.paypal.me/bbatsov)
+* [Patreon](https://www.patreon.com/bbatsov)
+
+Note that CIDER also has an [Open Collective](https://opencollective.com/cider), which you might consider supporting instead of me directly.
+
 ## Colophon
 
 This website is powered by [Jekyll](https://jekyllrb.com/) and uses
