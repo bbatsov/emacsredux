@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Automatic (electric) Character Pairing"
+title: "Automatic (Electric) Character Pairing"
 date: 2013-03-29 12:38
 comments: true
 tags:
