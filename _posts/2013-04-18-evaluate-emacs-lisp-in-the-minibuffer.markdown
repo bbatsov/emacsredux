@@ -11,9 +11,9 @@ tags:
 
 The Emacs Lisp interpreter's integration with Emacs is pervasive. One
 can evaluate Emacs Lisp just about everywhere in so many different
-ways. One way I find particularly handy(especially for short snippets of
+ways. One way I find particularly handy (especially for short snippets of
 code) is evaluating Emacs Lisp directly in the minibuffer. This is
-done with `M-:`(bound to the command `eval-expression`).
+done with `M-:` (bound to the command `eval-expression`).
 
 Upon typing this magic keycombo you'll be presented with the prompt
 `Eval: ` in the minibuffer and there you can enter any Lisp
@@ -21,7 +21,7 @@ expression. Hitting `Return` will result in the expression's
 evaluation.
 
 There is one minor snafu with this, though - I'm addicted to
-[Paredit](http://emacsrocks.com/e14.html)(for editing Lisp code at
+[Paredit](http://emacsrocks.com/e14.html) (for editing Lisp code at
 least) and Paredit is not automatically enabled in the
 minibuffer. Let's change that:
 
