@@ -62,7 +62,14 @@ on my OSS projects, provided I already have a full-time job.  Obviously, until
 donations become sizable their main impact would be showing some appreciation
 for my efforts and keeping me motivated to spend my free time working on OSS,
 rather than binge-watching TV shows or spending more time with my family and
-friends.  Long-term my big dream has always been to accumulate enough backing to
+friends. A bit of extra cash can also help with:
+
+* hosting expenses
+* hardware expenses (e.g. getting gear needed for development/testing purposes)
+* travel expenses for conferences related to my projects
+* unpaid leave from work to focus on some project(s)
+
+Long-term my big dream has always been to accumulate enough backing to
 be able to work full-time on open-source projects, but whether I'll achieve this
 dream or not is entirely up to you.
 
