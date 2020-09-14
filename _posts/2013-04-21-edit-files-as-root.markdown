@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Edit files as root"
+title: "Edit Files as Root"
 date: 2013-04-21 10:03
 comments: true
 tags:

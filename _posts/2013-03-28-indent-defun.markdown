@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Indent defun"
+title: "Indent Defun"
 date: 2013-03-28 12:23
 comments: true
 tags:

@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "Custom config for shells"
+title: "Custom Config for Shells"
 date: 2013-04-21 15:06
 comments: true
 tags:
 - Utilities
+- Shells
 ---
 
-Anybody knows that you can run a shell inside Emacs with `M-x
-shell`. Few people know you can have Emacs run some additional
+Anybody knows that you can run a shell (e.g. Bash or Zsh) inside Emacs with `M-x
+shell`. Few people, however, know you can have Emacs run some additional
 configuration for the shell after it's started.
 
 Emacs sends the new shell the contents of the file

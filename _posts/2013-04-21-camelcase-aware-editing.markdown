@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CamelCase aware editing"
+title: "CamelCase-aware Editing"
 date: 2013-04-21 12:52
 comments: true
 tags:
@@ -13,7 +13,7 @@ names, identifiers, etc, but Emacs (unlike most IDEs) doesn't treat
 CamelCase words the same special way it treats `lisp-case` and `snake_case`
 words. Let me illustrate this with an example.
 
-If you invoke `kill-word`(`M-d`) when your cursor is before
+If you invoke `kill-word` (`M-d`) when your cursor is before
 `lisp-case` this would kill just `lisp` and leave you with `-case`. If
 you do the same with `CamelCase` the entire "word" CamelCase will be
 killed. Same goes for navigation-by-word commands like `forward-word`,
