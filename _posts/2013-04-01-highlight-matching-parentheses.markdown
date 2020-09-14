@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Highlight matching parentheses"
+title: "Highlight Matching Parentheses"
 date: 2013-04-01 14:40
 comments: true
 tags:

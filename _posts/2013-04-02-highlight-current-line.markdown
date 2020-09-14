@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Highlight current line"
+title: "Highlight Current Line"
 date: 2013-04-02 11:50
 comments: true
 tags:
