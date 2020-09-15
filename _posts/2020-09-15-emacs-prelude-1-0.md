@@ -2,6 +2,7 @@
 layout: post
 title: Emacs Prelude 1.0
 date: 2020-09-15 13:50 +0300
+tags:
 - Prelude
 ---
 
