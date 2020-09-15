@@ -60,7 +60,7 @@ expect anything massive to change.  Lately I've been pondering switching to
 `use-package` for the internals, although I don't see a strong reason to do so,
 and to leverage more of LSP here and there. Leveraging some Emacs 27 features is
 also on the agenda. Better documentation would be an awesome improvement as
-well!
+well![^2]
 
 One thing I've vowed to do going forward is to keep a better track of changes
 and to tag releases more often. As a result the project finally has a
@@ -74,3 +74,4 @@ announcement I felt like writing.  Thanks to everyone who helped and used
 Prelude for almost a decade! I love you all! Keep hacking!
 
 [^1]: Projectile was the very first one.
+[^2]: Did you notice that Prelude has a [docs site](https://prelude.emacsredux.com)?
