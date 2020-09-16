@@ -7,7 +7,7 @@ tags:
 ---
 
 I've got a big news to share with you today - after (over) 9 years of
-development, Emacs Prelude finally made it to version 1.0! There's nothing
+development, [Emacs Prelude](https://github.com/bbatsov/prelude) finally made it to version 1.0! There's nothing
 really big or groundbreaking there, as Prelude has been in a pretty good place for a very
 long time feature-wise, but I felt like tagging a 1.0 release, because it's 2020 and
 all sort of crazy things are happening the entire year. Most of you probably
