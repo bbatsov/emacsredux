@@ -63,7 +63,8 @@ went with scaling factor of 2 (200%) in Windows). I went for the following addit
 my Emacs config:
 
 ``` emacs-lisp
-/home/bozhidar/projects/prelude/personal/personal.el
+;; the default font size was 14
+(set-frame-font "DejaVu Sans Mono 28")
 ```
 
 Perhaps there are better way to handle this, but that gets the job done.
