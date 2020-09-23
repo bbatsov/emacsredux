@@ -2,6 +2,7 @@
 layout: post
 title: Using Emacs on Windows with WSL2
 date: 2020-09-23 10:24 +0300
+tags:
 - Windows
 - WSL2
 ---
