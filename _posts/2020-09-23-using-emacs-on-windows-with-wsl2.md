@@ -84,11 +84,12 @@ If you run into any problems with this setup, check out X410's [excellent
 documentation](https://x410.dev/cookbook/wsl/using-x410-with-wsl2/). That's
 the only resource I needed.
 
-If you feel strongly against paying for X410 there are some other options
-that you can consider:
+If you feel strongly against paying for X410 there are some other X
+server options that you can consider:
 
 * [mobaXterm](https://mobaxterm.mobatek.net/)
 * [VcXsrv](https://sourceforge.net/projects/vcxsrv/)
+* [Xming](http://www.straightrunning.com/XmingNotes/)
 
 I haven't tried them, however, so I can't comment on how good they are.
 If you're running Emacs using some other X server for Windows, please
