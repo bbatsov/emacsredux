@@ -75,9 +75,24 @@ One small annoyance to keep in mind is that putting your computer to sleep
 will kill your Emacs GUI frame. From what I got that's a limitation of WSL2 that
 can't be circumvented for now.
 
+Also note that `systemd` doesn't work on WSL2, so you won't be able to
+use it to start Emacs in daemon mode, as discussed [here]({% post_url
+2020-07-16-running-emacs-with-systemd %}). Not a big deal, by any
+means, just something to keep in mind.
+
 If you run into any problems with this setup, check out X410's [excellent
 documentation](https://x410.dev/cookbook/wsl/using-x410-with-wsl2/). That's
 the only resource I needed.
+
+If you feel strongly against paying for X410 there are some other options
+that you can consider:
+
+* [mobaXterm](https://mobaxterm.mobatek.net/)
+* [VcXsrv](https://sourceforge.net/projects/vcxsrv/)
+
+I haven't tried them, however, so I can't comment on how good they are.
+If you're running Emacs using some other X server for Windows, please
+share your experience in the comments.
 
 And that's a wrap for today. I'm happy to report that Windows has
 never been a better option for Emacs users, and developers in general,
