@@ -11,7 +11,7 @@ I don't know about you, but I've never been able to work productively
 on Windows in the past. Probably because my work requires a lot of
 Unix tools and libraries, probably because of the absence of certain
 Unix utilities Emacs wasn't as useful on Windows (e.g. `ls` powers `dired`, many
-search command shell out to `grep`, `ag`, etc).
+Emacs commands shell out to tools like `grep`, `ag`, `git`, etc).
 
 In recent years, however, Microsoft has been trying to make amends
 with the broader developer community in the form of the Windows
