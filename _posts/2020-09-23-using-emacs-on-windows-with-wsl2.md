@@ -84,6 +84,4 @@ than it is today. This post was authored in Emacs running on WSL2, and
 there's a high chance I'll keep using Windows and WSL2 for the
 foreseeable future.[^1] Keep hacking!
 
-[^1]: My intention was to use Linux directly, but some unfortunate driver issues with my
-GPU (Radeon RX 5500 XT) forced me to switch to Windows 10 for now. Once again I was reminded it's unwise to buy recent
-hardware and expect it to work properly with Linux. Better luck next time!
+[^1]: My intention was to use Linux directly, but some unfortunate driver issues with my GPU (Radeon RX 5500 XT) forced me to switch to Windows 10 for now. Once again I was reminded it's unwise to buy recent hardware and expect it to work properly with Linux. Better luck next time!
