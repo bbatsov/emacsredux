@@ -39,7 +39,12 @@ So, time for the step by step guide:
 
 * Setup WSL2 as documented [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (don't forget to enable Virtualization support from your CPU from your BIOS). This guide also covers installing Windows Terminal and some Linux distro. I'll assume you went with Ubuntu 20.04.
 * Install X410 from the Microsoft Store and start it.
-* Allow public access in X410's settings panel (it's in the systray, that's something I didn't notice at first)
+* Allow public access in X410's settings panel (it's in the systray,
+  that's something I didn't notice at first). Technically speaking,
+  you're punching a hole in your Windows firewall by doing this
+  (you'll be prompted by it to approve this), so be careful on public
+  networks like those at airports. My Windows computer is a desktop on
+  a secure home network, so that's not really a concern for me.
 * Add this to your `.bashrc`:
 
 ``` bash
@@ -57,10 +62,11 @@ how easy this was and how well it worked, even though running GUI apps over
 X is not officially supported by WSL (at least not yet).
 
 A note for HiDPI display owners - HiDPI scaling didn't work properly
-for me and the text in Emacs was tiny at first, but that was easy to
-address - just double your default font-size in Emacs (assuming you
-went with scaling factor of 2 (200%) in Windows). I went for the following addition to
-my Emacs config:
+for me (despite setting `GDK_SCALE` to 2 in my `.bashrc`) and the text
+in Emacs was tiny at first, but that was easy to address - just double
+your default font-size in Emacs (assuming you went with scaling factor
+of 2 (200%) in Windows). I went for the following addition to my Emacs
+config:
 
 ``` emacs-lisp
 ;; the default font size was 14
@@ -70,6 +76,8 @@ my Emacs config:
 Perhaps there are better way to handle this, but that gets the job done.
 I tried some HiDPI scaling options in X410, but the results were somewhat
 blurry, so I prefer my simple approach which resulted in crisp and sharp text.
+Check out [X410's documentation on HiDPI](https://x410.dev/cookbook/running-x410-on-hidpi-screens/)
+for more details.
 
 One small annoyance to keep in mind is that putting your computer to sleep
 will kill your Emacs GUI frame. From what I got that's a limitation of WSL2 that
