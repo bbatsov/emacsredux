@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Travel back and forward in git history"
+title: "Travel Back and Forward in Git History"
 date: 2014-07-22 19:02
 comments: true
 tags:
@@ -10,7 +10,7 @@ tags:
 ---
 
 I recently discovered an extremely cool package called
-[git-timemachine](https://github.com/pidu/git-timemachine) that allows
+[git-timemachine](https://gitlab.com/pidu/git-timemachine) that allows
 you to step though the git history of the file you're currently
 editing in Emacs.
 
