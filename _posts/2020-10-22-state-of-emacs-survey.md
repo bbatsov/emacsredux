@@ -12,7 +12,7 @@ named just "Emacs Survey", but it clearly draws a lot of inspiration from the nu
 "State of Technology X" surveys that have become popular in recent years. That's why
 I took the liberty to re-frame it in a way that will probably be familiar to more people.
 
-Those "State of Something" surveys are typically ran by the teams
+The "State of Something" surveys are typically ran by the teams
 maintaining some project to assess the health of its ecosystem, the
 needs of their users, the problems that need to be solved, the tools
 that people are using and so on. A good example would be the [State of
@@ -65,8 +65,8 @@ Emacs, but that's just my very personal take.[^3]
 In case someone is curious about my Emacs wish list - I don't really
 care about changing any defaults, package improvements or anything
 like this.  I'd like to see more efforts for improving Emacs Lisp, the
-standard library (efforts like `seq.el` and `map.el` were great IMO),
-making it possible to built rich UIs in some sane manner (overlays are
+standard library (libraries like `seq.el` and `map.el` were great additions IMO),
+making it possible to build rich UIs in some sane manner (overlays are
 quite limiting). I'd also love to see the bar to contributing to be lowered:
 
 * drop the contributor agreement
