@@ -32,14 +32,20 @@ doesn't list any clear purpose/goals for the survey. That definitely
 seems pretty weird to me. I saw the survey discussed on the Emacs
 mailing list and on
 [Reddit](https://www.reddit.com/r/emacs/comments/je3eht/emacs_user_survey_2020_is_open/),
-but sticking a paragraph of rationale on the survey site would have certainly helped. The
-survey is also not official in the sense, that it's not initiated by
-Emacs's development team, and judging by the hostility the topic
-generated on the `emacs-devel` mailing list it's not like they were particularly
-excited about it.[^2] I was especially upset about the hostility towards
-the amazing MELPA project on the mailing list. Implying that it'd be easy to replace MELPA with some
-core Emacs repository is like a bad joke, given how the deficiencies of GNU ELPA
-were the reason for the rise of MELPA in the first place. Anyways, I'm digressing.
+but sticking a paragraph of rationale on the survey site would have
+certainly helped. The survey is also not official in the sense, that
+it's not initiated by Emacs's development team, and judging by the
+hostility the topic generated on the `emacs-devel` mailing list it's
+not like they were particularly excited about it.[^2] It was funny
+that most of the comments were complaints about things like the use of
+non-free JavaScript in the survey form and topics like that, instead
+of some constructive conversation about the format of the survey. I
+was especially upset about the hostility towards the amazing MELPA
+project on the mailing list (in his typical style RMS even wanted
+MELPA to be denounced in the survey, as he considers it evil). Implying that it'd be
+easy to replace MELPA with some core Emacs repository is like a bad
+joke, given how the deficiencies of GNU ELPA were the reason for the
+rise of MELPA in the first place. Anyways, I'm digressing.
 
 Despite of all my concerns, I hope that the survey be a success in the
 sense that it will collect enough useful data points to influence the
@@ -65,7 +71,7 @@ quite limiting). I'd also love to see the bar to contributing to be lowered:
 
 * drop the contributor agreement
 * discuss ideas in an (modern) issue tracker, instead of on a mailing list
-* apply less political activism and more pragmatism in the conversation around new ideas/features
+* apply less political activism and more pragmatism in the conversation around new ideas/features[^4]
 
 I doubt anything like this is going to happen any time soon, but one can dream, right?
 
@@ -81,3 +87,4 @@ of November. You can fill out the survey form directly
 [^1]: CIDER is a personal project of mine.
 [^2]: That being said, way too many topics generate unwarranted hostility there.
 [^3]: Some degree of standardization is not a bad thing, though.
+[^4]: And in decision-making in general.
