@@ -80,7 +80,9 @@ Prelude and my packages like Projectile, crux and so on will fare in
 the survey. Are Zenburn and Solarized still the most popular color themes out there?
 You tell me! :-)
 
-The survey will be open until the end
+Big thanks to [Adrien Brochard](https://blog.abrochard.com/) for undertaking this daunting
+task and creating the "State of Emacs" survey!
+It will be open until the end
 of November. You can fill out the survey form directly
 [here](https://form.jotform.com/202884894078067). Share your perspective!
 
