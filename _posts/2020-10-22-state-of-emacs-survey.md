@@ -86,6 +86,9 @@ It will be open until the end
 of November. You can fill out the survey form directly
 [here](https://form.jotform.com/202884894078067). Share your perspective!
 
+**Update** You might also want to check [this follow-up discussion](https://lobste.rs/s/7ynrre/state_emacs_survey),
+triggered by my article.
+
 [^1]: CIDER is a personal project of mine.
 [^2]: That being said, way too many topics generate unwarranted hostility there.
 [^3]: Some degree of standardization is not a bad thing, though.
