@@ -2,6 +2,8 @@
 layout: post
 title: Disable global-hl-line-mode for Specific Modes
 date: 2020-11-21 14:17 +0200
+tags:
+- Editing
 ---
 
 A long time ago I suggested the use of [global-hl-line-mode]({% post_url 2013-04-02-highlight-current-line %}) for
