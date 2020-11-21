@@ -53,7 +53,7 @@ This website is powered by [Jekyll](https://jekyllrb.com/) and uses
 the [Minima theme](https://github.com/jekyll/minima).
 
 I write all of the articles in Emacs and publish them to GitHub
-pages. These days I'm a macOS user most of the time.  When I'm at home
+pages. These days I'm a Windows 10/WSL 2 user most of the time.  When I'm at home
 I do all my writing on my beloved [Leopold
 FC660C](https://deskthority.net/wiki/Leopold_FC660C)[^4].  When I'm on
 the road I do (or don't do) my writing on a Apple Magic Keyboard or
