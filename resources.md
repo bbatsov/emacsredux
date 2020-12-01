@@ -34,6 +34,7 @@ uniquely tailored to their needs & preferences.
 * [Pragmatic Emacs](http://pragmaticemacs.com/)
 * [Irreal](https://irreal.org/blog/)
 * [(or emacs irrelevant)](https://oremacs.com/)
+* [(with-emacs](https://with-emacs.com/)
 
 ## Emacs Distributions
 
