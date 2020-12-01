@@ -25,7 +25,7 @@ uniquely tailored to their needs & preferences.
 ## Wikis
 
 * [EmacsWiki](https://www.emacswiki.org)
-* [WikEmacs](https://wikemacs.org)
+* [WikEmacs](https://wikemacs.org)[^1]
 
 ## Other Blogs
 
@@ -36,6 +36,8 @@ uniquely tailored to their needs & preferences.
 * [(or emacs irrelevant)](https://oremacs.com/)
 * [(with-emacs](https://with-emacs.com/)
 
+You can discover many other Emacs-related blogs on [Planet Emacslife](https://planet.emacslife.com/).
+
 ## Emacs Distributions
 
 Emacs distributions are basically extensive Emacs configs aiming to
@@ -43,5 +45,8 @@ improve the default user experience. Various distros have different
 goals, focus of philosophy, so choose accordingly.
 
 * [Doom](https://github.com/hlissner/doom-emacs)
-* [Prelude](https://github.com/bbatsov/prelude)
+* [Prelude](https://github.com/bbatsov/prelude)[^2]
 * [Spacemacs](https://spacemacs.org/)
+
+[^1]: I've started WikEmacs, but I'm no longer involved in the project.
+[^2]: Created and maintained by yours truly.
