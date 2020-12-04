@@ -82,7 +82,6 @@ The difference between `fullboth` and `maximized` is that you can resize the for
 
 That's all I have for you today. I hope you learned something useful. Meta-X forever!
 
-[^1]: From time to time I even use it in full-screen mode, depending on how deep in the
-zone I am.
+[^1]: From time to time I even use it in full-screen mode, depending on how deep in the zone I am.
 [^2]: Not to mention it's a pretty decent window manager as well.
 [^3]: I find the name very confusing, but it is how it is.
