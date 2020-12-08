@@ -82,16 +82,20 @@ I'll stop here, as I realized I use quite a few packages all the time.
 
 ## Closing Words
 
+In my book, my favorite packages are ones that I'm using the
+most. They keep changing with time, but I doubt I'll stop using any of
+the packages that I mentioned in this article any time soon.
+
+That being said, I've been using Emacs for over 15 years and looking
+back at my list it seems to me that the only packages that I used back
+then (circa 2005) where probably `paredit` and `undo-tree`. The Emacs
+landscape has been very dynamic in recent years and everything has
+changed (for the better). I can only imagine what amazing packages
+will get created and become prominent in the next 15 years.
+
 I didn't really cover any niche/obscure packages today, but I hope that some of you will learn about a new package
 that they can experiment with. Playing with different packages and approaches to solving the same problem has always
 been a defining trait of the Emacs experience for me.
-
-I've been using Emacs for over 15 years and looking back at my list it
-seems to me that the only packages that I used back then (circa 2005)
-where probably `paredit` and `undo-tree`. The Emacs landscape has been
-very dynamic in recent years and everything has changed (for the
-better). I can only imagine what amazing packages will get created and become
-prominent in the next 15 years.
 
 That's all I have for you today. Down the road I plan to expand on some the packages I've mentioned in passing today.
 So, what are your favorite Emacs packages?
