@@ -36,8 +36,8 @@ twitter_username: bbatsov
 github_username:  bbatsov
 rss: rss
 
-disqus:
-  shortname: emacsredux
+# disqus:
+#   shortname: emacsredux
 google_analytics: UA-39624961-1
 
 show_excerpts: true
