@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Switching to a new Comments Service
+title: Switching to a New Comments Service
 date: 2020-12-08 11:08 +0200
 tags:
 - Disqus
