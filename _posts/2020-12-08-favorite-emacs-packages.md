@@ -56,7 +56,7 @@ supercharges the sorting and filtering algorithm.
 [crux](https://github.com/bbatsov/crux) is a collection of ridiculously useful Emacs commands. Like the Matrix it cannot be explained, you have to experience it for yourselves.
 
 **Note:** The package started life as an Emacs Prelude module, but was eventually extracted, so those commands could be used by anyone.
-A lot of the articles I wrote early on at Emacs Redux were dedicated to commands that are part of `crux`.
+[A lot of the articles](https://emacsredux.com/tags/#crux) I wrote early on at Emacs Redux were dedicated to commands that are part of `crux`.
 
 ## avy
 
