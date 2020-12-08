@@ -3,7 +3,8 @@ layout: post
 title: Instant Access to Your Shell Init Files
 date: 2020-07-16 13:01 +0300
 tags:
-- Crux
+- crux
+- utils
 ---
 
 A long time I presented a [simple hack]({% post_url
