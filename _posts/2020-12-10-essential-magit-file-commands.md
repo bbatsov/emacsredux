@@ -57,12 +57,12 @@ As a side note - if you're manually configuring Magit's keybindings you can stop
 If for some reason you don't like the default Magit keybindings, you can disable them via [`magit-define-global-keybindings`](https://magit.vc/manual/magit/Default-Bindings.html).
 
 I have to admit that for a very long time I'd use only `magit-status`
-(`C-x g`) and I'd go for file commands from Emacs's built-in `vc`
+(`C-x g`) and I'd go for the file commands from Emacs's built-in `vc`
 package like `vc-annotate` (`C-x v g`, a command similar to
 `magit-blame`), just because I've been using Emacs since before the
 creation of Git (and respectively Magit).  While the built-in `vc`
 package is nice (and VCS-agnostic), Magit is way nicer when it comes
-to Git support, so I'm glad I eventually managed to shed my old-time habits.
+to Git support, so I'm glad I eventually managed to shed my old habits.
 
 Magit probably has the best documentation of any Emacs package, but the problem with having a great documentation and lots of features
 is that someone has to do a lot of reading. Consider this article a cheatsheet of sorts.
