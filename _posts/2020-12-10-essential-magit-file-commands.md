@@ -18,7 +18,7 @@ all of you are familiar with this way to use Magit, as it dates back to the earl
 * `C-x M-g` (`magit-dispatch`) - that's pretty much the same as `magit-status`, but you get the opportunity to trigger a Magit command directly from the minibuffer. One can argue that's a (slightly) more effective way to work if you know it advance what you want to do (e.g. pressing `C-x M-g l l` will display the git log).
 * `C-c M-g` (`magit-file-dispatch`) - that's the way to invoke Magit commands on the current file (e.g. `blame`) and that's the hero of today's article.
 
-I've noticed that for some reason many people don't use `magit-file-dispatch` much, which seems like a wasted opportunity as it provides that
+I've noticed that for some reason many people don't use `magit-file-dispatch` much, which seems like a wasted opportunity as it provides the
 fastest way to do common things like:
 
 * `magit-blame` (`C-c M-g b`)
