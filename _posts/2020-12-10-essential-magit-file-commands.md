@@ -13,7 +13,7 @@ One thing that probably fewer people know is that once Magit is installed,
 it establishes automatically several keybindings in the global keymap[^1] that allow you to
 interact with Magit from any Emacs buffer in 3 different ways:
 
-* `C-x g` (`magit-status`) - that's the way in which most people use Magit. You get a dedicated Magit buffer where you can invoke all sorts of commands for everything that you can imagine (e.g. pulling, pushing, staging, committing, branching). Generally this seems to be the best way to work with multiple files. I'm pretty sure
+* `C-x g` (`magit-status`) - that's the way in which most people use Magit.[^2] You get a dedicated Magit buffer where you can invoke all sorts of commands for everything that you can imagine (e.g. pulling, pushing, staging, committing, branching). Generally this seems to be the best way to work with multiple files. I'm pretty sure
 all of you are familiar with this way to use Magit, as it dates back to the earliest days of the project.
 * `C-x M-g` (`magit-dispatch`) - that's pretty much the same as `magit-status`, but you get the opportunity to trigger a Magit command directly from the minibuffer. One can argue that's a (slightly) more effective way to work if you know it advance what you want to do (e.g. pressing `C-x M-g l l` will display the git log).
 * `C-c M-g` (`magit-file-dispatch`) - that's the way to invoke Magit commands on the current file (e.g. `blame`) and that's the hero of today's article.
@@ -53,3 +53,4 @@ That's all I have for you today. I hope you've learned something useful! Feel fr
 3 modes of operations.
 
 [^1]: That's a [recent change](https://github.com/magit/magit/pull/4237) from November 2020. Before it there was `global-magit-file-mode` that was serving the same purpose.
+[^2]: Based on my subjective observations.
