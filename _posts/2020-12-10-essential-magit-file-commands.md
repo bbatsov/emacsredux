@@ -28,7 +28,15 @@ fastest way to do common things like:
 * show the diff for the current file (`C-c M-g d`)
 
 I hope you'll agree those are pretty handy commands. `magit-file-dispatch` offers other commands as well, but let's stick to the
-essential ones today.
+essential ones today. One small improvement that you can do in terms of ergonomics is to map `magit-file-dispatch` to `C-c g` instead:
+
+``` emacs-lisp
+(global-set-key (kbd "C-c g") 'magit-file-dispatch)
+```
+
+The reasoning for this is pretty simple - it's much easier to use `C-c g` than `C-c M-g`. Unfortunately, there's a strong Emacs tradition forbidding packages
+to utilize directly such keybindings (they are reserved for user keybindings), so Magit settles for the next best thing by default. You, however, have the power
+to do anything you want with _your_ keybindings.
 
 As a side note - if you're manually configuring Magit's keybindings you can stop doing this:
 
@@ -38,11 +46,12 @@ As a side note - if you're manually configuring Magit's keybindings you can stop
   :ensure t
   :bind (("C-x g" . magit-status)
          ("C-x M-g" . magit-dispatch)
-         ("C-c g" . magit-file-dispatch))
+         ("C-c M-g" . magit-file-dispatch))
 
 ;; should be just
 (use-package magit
-  :ensure t)
+  :ensure t
+  :bind ((("C-c g" . magit-file-dispatch))
 ```
 
 If for some reason you don't like the default Magit keybindings, you can disable them via [`magit-define-global-keybindings`](https://magit.vc/manual/magit/Default-Bindings.html).
