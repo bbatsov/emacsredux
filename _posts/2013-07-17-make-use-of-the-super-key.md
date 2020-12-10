@@ -11,13 +11,12 @@ Emacs users have a lot of power at their disposal, but in one
 department they are always short - the number of available
 non-complex keybindings that they can leverage.
 
-Obviously nobody likes pressing keybindings like `C-p C-v k` (or
+Obviously nobody likes pressing keybindings like `C-c C-v k` (or
 something like that). One way to get your hands on some extra
 keybindings is to utilize the `Super` key (it's the `Windows` key on
-Win keyboards and the `Command` key on Mac keyboards (although most
-people remap `Command` to `Meta` and `Option` to `Super`)). One great
+Win keyboards and the `Command` key on Mac keyboards[^1]). One great
 thing about `Super` is that you generally have two of them, which
-makes them touch-typing friend. Since almost no packages use those
+makes them touch-typing friendly. What's more - since almost no packages use those
 keys you're left with plenty of options.
 
 [Prelude](https://github.com/bbatsov/prelude) defines a bunch of
@@ -46,3 +45,5 @@ potential to add quite a lot more keybindings to this list.
   that's also usable in Emacs keybindings. Somewhat funny that key is
   known in Emacs as `Hyper` (`Star Wars` fans are undoubtedly adding a
   **Hyper-Space** keybinding to their setups right about now).
+
+[^1]: Although many people remap `Command` to `Meta` and `Option` to `Super`.
