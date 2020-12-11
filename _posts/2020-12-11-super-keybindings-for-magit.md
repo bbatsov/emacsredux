@@ -18,7 +18,7 @@ I hope by now most of you know (and use) the 3 default global Magit keybindings:
 
 Typically you'd add to them `C-c g`, as a more convenient alternative of `C-c M-g`.[^2]
 
-So far, so good. Now you can invoke a lot of commands like with keybindings like `C-x g l l` or `C-c g b`, which
+So far, so good. Now you can invoke a lot of commands with keybindings like `C-x g l l` or `C-c g b`, which
 is not bad as far as Emacs keybindings go. Remembering when to use `C-x g`, `C-x M-g` and `C-c g` takes a bit
 of practice, but it's not very hard.
 
