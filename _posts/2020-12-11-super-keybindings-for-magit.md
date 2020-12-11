@@ -28,9 +28,11 @@ If you're not a traditionalist you can try something different - use a prefix ba
 Here's one such idea using the `Super-m` prefix (the `m`, of course, stands for Magit[^4]):
 
 ``` emacs-lisp
+;; essentials
 (global-set-key (kbd "s-m m") 'magit-status)
 (global-set-key (kbd "s-m j") 'magit-dispatch)
 (global-set-key (kbd "s-m k") 'magit-file-dispatch)
+;; a faster way to invoke very common commands
 (global-set-key (kbd "s-m l") 'magit-log-buffer-file)
 (global-set-key (kbd "s-m b") 'magit-blame)
 
