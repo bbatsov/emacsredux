@@ -22,10 +22,13 @@ So far, so good. Now you can invoke a lot of commands with keybindings like `C-x
 is not bad as far as Emacs keybindings go. Remembering when to use `C-x g`, `C-x M-g` and `C-c g` takes a bit
 of practice, but it's not very hard.
 
-But what if you wanted to have a lot of Magit commands under a single two-key (super convenient) prefix?
-Such prefixes are tight in Emacs these days, but only if we're talking about the commonly used prefixes based on `Control` (e.g. `C-c` and `C-x`).
-If you're not a traditionalist you can try something different - use a prefix based on the rarely utilized in Emacs `Super` key.[^3]
-Here's one such idea using the `Super-m` prefix (the `m`, of course, stands for Magit[^4]):
+But what if you wanted to have a lot of Magit commands under a single
+two-key (super convenient) prefix?  Such prefixes are tight in Emacs
+these days, but only if we're talking about the commonly used prefixes
+based on `Control` (e.g. `C-c` and `C-x`).  If you're not a
+traditionalist you can try something different - use a prefix based on
+the rarely utilized in Emacs `Super` key.[^3] Here's one such idea
+using the `Super-m` prefix (the `m`, of course, stands for Magit[^4]):
 
 ``` emacs-lisp
 ;; essentials
@@ -46,17 +49,25 @@ Here's one such idea using the `Super-m` prefix (the `m`, of course, stands for 
          ("s-m b" . magit-blame)))
 ```
 
-Not only are all essential Magit commands under a single mnemonic (`s-m`) right now, but you can also bind some "internal" commands that you'd
-normally invoke via `magit-dispatch` or `magit-file-dispatch` directly under this prefix. This makes it slightly more efficient to invoke
-frequently used commands.
+Not only are all essential Magit commands under a single mnemonic
+(`s-m`) right now, but you can also bind some "internal" commands that
+you'd normally invoke via `magit-dispatch` or `magit-file-dispatch`
+directly under this prefix. This makes it slightly more efficient to
+invoke frequently used commands.
 
-The keys `m`, `j` and `k` are clustered together on a typical QWERTY keyboard which makes it super easy to press them in sequence. Of course,
-you can find many other comfortable options.
+The suggested keys `m`, `j` and `k` are clustered together on a
+typical QWERTY keyboard which makes it super easy to press them in
+sequence. Of course, you can find many other comfortable options.
 
-One thing that you should keep in mind is that your mileage will vary based on your operating system/desktop environment. Windows, for instance,
-uses `Win + letter` keybindings a lot, so `s-m` is not an option there (it minimizes the current window). Frankly, I'm not sure if any `Win + letter`
-keybindings are available there at all.[^5] On macOS and Linux, however, such keybindings work fairly well, unless you happen to be using a window manager
-that's fond of them (e.g. [exwm](https://github.com/ch11ng/exwm)).
+One thing that you should keep in mind is that your mileage with
+`Super` keybindings will vary based on your operating system/desktop
+environment. Windows, for instance, uses `Win + letter` keybindings a
+lot, so `s-m` is not an option there (it minimizes the current
+window). Frankly, I'm not sure if any `Win + letter` keybindings are
+available there at all.[^5] On macOS and Linux, however, such
+keybindings work fairly well, unless you happen to be using a window
+manager that's fond of them
+(e.g. [exwm](https://github.com/ch11ng/exwm)).
 
 I first adopted the use of `Super` [several years ago]({% post_url 2020-12-10-essential-magit-file-commands %}), but I never promoted it enough,
 apart from including a few such keybindings in Emacs Prelude.
