@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deleting Git Branchs with Magit
+title: Deleting Git Branches with Magit
 date: 2021-03-23 18:25 +0200
 tags:
 - Magit
