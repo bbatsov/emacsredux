@@ -31,9 +31,12 @@ options at our disposal. With Magit the process is as simple as:
 2. Press `y` to get a listing of all branches and tags in the git repo
 3. Navigate to the branch you want to delete and press `k`
 
-That's it! As a bonus you can select multiple branches using a region (press `C-k` and start moving around) and you can remove them all at once!
-You'll get prompted to confirm the deletion, so there's nothing to be afraid of if you want to try this out.
-Note, however, that Magit does not support marking non-consecutive sections (something that `dired` allows you to do).
+That's it! As a bonus you can select multiple branches using a region (press
+`C-SPC` and start moving around to select several branches) and you can remove
+them all at once!  You'll get prompted to confirm the deletion, so there's
+nothing to be afraid of if you want to try this out.  Note, however, that Magit
+does not support marking non-consecutive branches (something that `dired` allows
+you to do for files and directories).
 
 Here's how this functionality looks:
 
