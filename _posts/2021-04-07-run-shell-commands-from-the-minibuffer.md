@@ -25,6 +25,12 @@ is useful for commands that are going to take a while to complete. There's
 also the command `async-shell-command` (bound to `M-&`) that always runs shell
 command asynchronously.
 
+One important thing to keep in mind is that the shell command will be executed in the
+directory (`default-directory`) of the current buffer. If your current buffer has a remote
+directory (you're using TRAMP), the shell command is executed on that
+remote host. Depending on your perspective that's either a very useful feature
+or a somewhat undesirable one.
+
 I have to admit that I use these commands quite rarely, but they are still useful from time to time when I want to check something really quick without switching buffers.
 
 As a reminder - you can also [evaluate Emacs Lisp code in the minibuffer]({% post_url 2013-04-18-evaluate-emacs-lisp-in-the-minibuffer %}).
