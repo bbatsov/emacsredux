@@ -25,6 +25,10 @@ is useful for commands that are going to take a while to complete. There's
 also the command `async-shell-command` (bound to `M-&`) that always runs shell
 command asynchronously.
 
+A cool trick with `shell-command` is to run it with a prefix (`C-u M-!`) -
+when you do this the output from the shell command is going to be inserted
+at point.
+
 One important thing to keep in mind is that the shell command will be executed in the
 directory (`default-directory`) of the current buffer. If your current buffer has a remote
 directory (you're using TRAMP), the shell command is executed on that
