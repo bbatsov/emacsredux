@@ -21,7 +21,7 @@ Recently I've decided that in the future I want to do a few things with Prelude:
   packages (e.g. [super-save](https://github.com/bbatsov/super-save)
   and [crux](https://github.com/bbatsov/crux))
 * adopt there [use-package](https://github.com/jwiegley/use-package)
-* improve the support for Windows (because now I have Windows computer)
+* improve the support for Windows (because now I have a Windows computer)
 
 As part of these efforts I reworked my personal config into something
 pretty simple (it's a single `init.el` file) and I've started
