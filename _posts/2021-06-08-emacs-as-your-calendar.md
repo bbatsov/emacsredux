@@ -50,6 +50,6 @@ And here's the final result:
 
 ![calendar_bulgarian.png](/assets/images/calendar_bulgarian.png)
 
-There are many more things that you can with the calendar (e.g. configure there national holiday, leverage integrations with `org-mode` and so on), but there are beyond the scope of this short intro.
+There are many more things that you can with the calendar (e.g. configure there national holidays, leverage integrations with `org-mode` and so on), but they are beyond the scope of this short intro.
 
 I hope you learning something useful today. Keep hacking!
