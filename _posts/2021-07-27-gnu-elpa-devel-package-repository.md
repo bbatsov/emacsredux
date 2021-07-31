@@ -15,7 +15,7 @@ want to install the development version of some package (e.g. for test purposes
 or to get a bug fix early):
 
 ``` emacs-lisp
-(add-to-list 'package-archives '("gnu-devel" . "https://elpa.gnu.org/devel"))
+(add-to-list 'package-archives '("gnu-devel" . "https://elpa.gnu.org/devel/"))
 ```
 
 You can think of this repository as something similar to the popular MELPA
