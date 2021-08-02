@@ -29,7 +29,12 @@ The Emacs development team tried to alleviate the situation last year, by
 [proposing](https://lists.gnu.org/archive/html/emacs-devel/2020-08/msg00152.html)
 a default NonGNU ELPA package repository, that eliminates the need for a
 copyright assignment. One year later the repository is a reality and it's
-available [here](https://elpa.nongnu.org/nongnu/).
+available [here](https://elpa.nongnu.org/nongnu/). NonGPU ELPA will be enabled
+by default in Emacs 28, but for the time being you'll need to enable it manually like this:
+
+``` emacs-lisp
+(add-to-list 'package-archives '("nongnu" . "https://elpa.nongnu.org/nongnu/"))
+```
 
 As you can see, however, currently the repo boasts a grand total of 5 packages.
 This implies that most people are probably too attached to their GitHub tool chain (and the reach that GitHub has) and are unwilling to move their projects to the
