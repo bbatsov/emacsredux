@@ -43,7 +43,7 @@ mostly on GitHub and the GitHub repo changes are applied afterwards to NonGNU EL
 
 This certainly applies for me - I wouldn't mind if it was easier for Emacs users to install my packages, but I'm extremely happy with GitHub and MELPA and I'm
 not willing to create additional work for myself just to make my work available on NonGNU ELPA. OSS maintainers are already way too busy and we should value
-and respect their time.
+and respect their time.[^1]
 
 As, with GNU ELPA, there's also a devel version of the NonGNU repository, for unstable releases of the packages hosted on NonGNU ELPA. You can enable it like this,
 if you ever need something from there:
@@ -72,3 +72,5 @@ a few on my own packages to NonGNU ELPA to assess first-hand how much of overhea
 be.
 
 That's all I have for you today. Keep hacking!
+
+[^1]: It was pointed out to me that I might be mistaken about the amount of work needed to add a package hosted on GitHub to (Non)GNU ELPA. I'll try the process myself and write an update afterwards.
