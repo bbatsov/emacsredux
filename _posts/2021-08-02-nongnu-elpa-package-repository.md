@@ -67,7 +67,7 @@ doesn't hurt either.
 
 Going back to the topic of NonGNU ELPA. It seems to me that going forward it doesn't
 make much sense to new packages to be added to GNU ELPA, unless they are going to be bundled with Emacs. Why limit the number of potential contributors for your projects for no good reason. I expect that over the course of time NonGNU ELPA will become
-the primary "standard" repository. Perhaps we'll even see some packages move between GNU ELPA and NonGNU ELPA. Time will tell. Going forward I plan to try to publish
+the primary "standard" repository. Perhaps we'll even see some packages move between GNU ELPA and NonGNU ELPA. Time will tell. Down the road I plan to try to publish
 a few on my own packages to NonGNU ELPA to assess first-hand how much of overhead does it add for package maintainers. Perhaps the process is easier than I imagine it to
 be.
 
