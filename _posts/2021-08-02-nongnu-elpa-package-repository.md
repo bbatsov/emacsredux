@@ -61,7 +61,7 @@ happening on GitHub/GitLab, but I'm well aware this is never going to
 happen. I'll just say that I doubt NonGNU ELPA will gain any meaningful traction
 and disrupt the dominance of MELPA in our community. I hope that at some point
 Emacs will start enabling by default [MELPA
-Stable](https://elpa.gnu.org/packages/), instead of trying to compete it with
+Stable](https://stable.melpa.org/), instead of trying to compete it with
 it. It's good have some consistent political views you abide by, but a bit of pragmatism
 doesn't hurt either.
 
