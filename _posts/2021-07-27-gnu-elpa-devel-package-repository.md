@@ -8,7 +8,7 @@ tags:
 ---
 
 [GNU ELPA](https://elpa.gnu.org/) is one of the most well-known package repositories for Emacs (and the
-only one enabled by default). Recently I learned there's also a GNU ELPA
+only one enabled by default).[^1] Recently I learned there's also a GNU ELPA
 repository for pre-release versions of the ELPA packages called
 `elpa-devel`/`gnu-devel`. You can add it to your Emacs config like this if you
 want to install the development version of some package (e.g. for test purposes
@@ -23,3 +23,7 @@ repository, but limited only to the packages part of GNU ELPA.  It seems that
 the repository is not mentioned anywhere in Emacs's documentation, that's why I
 decided to write this short article about it. I doubt that most of you will ever need it,
 but I guess it doesn't hurt to know about its existence.
+
+That's all I have for you today. Keep hacking!
+
+[^1]: In Emacs 28.1 another package repository is going to be available by default - [NonGNU ELPA]({% post_url 2021-08-02-nongnu-elpa-package-repository %}).

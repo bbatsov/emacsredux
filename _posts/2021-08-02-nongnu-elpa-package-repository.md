@@ -45,7 +45,7 @@ This certainly applies for me - I wouldn't mind if it was easier for Emacs users
 not willing to create additional work for myself just to make my work available on NonGNU ELPA. OSS maintainers are already way too busy and we should value
 and respect their time.[^1]
 
-As, with GNU ELPA, there's also a devel version of the NonGNU repository, for unstable releases of the packages hosted on NonGNU ELPA. You can enable it like this,
+As, with GNU ELPA, there's also a "devel" version of the NonGNU repository, for unstable releases of the packages hosted on NonGNU ELPA. You can enable it like this,
 if you ever need something from there:
 
 ``` emacs-lisp
@@ -66,8 +66,8 @@ it. It's good have some consistent political views you abide by, but a bit of pr
 doesn't hurt either.
 
 Going back to the topic of NonGNU ELPA. It seems to me that going forward it doesn't
-make much sense to new packages to be added to GNU ELPA, unless they are going to be bundled with Emacs. Why limit the number of potential contributors for your projects for no good reason. I expect that over the course of time NonGNU ELPA will become
-the primary "standard" repository. Perhaps we'll even see some packages move between GNU ELPA and NonGNU ELPA. Time will tell. Down the road I plan to try to publish
+make much sense for new packages to be added to GNU ELPA, unless they are going to be bundled with Emacs. Why limit the number of potential contributors for your projects for no good reason? I expect that over the course of time NonGNU ELPA will become
+the primary "standard" package repository. Perhaps we'll even see some packages move between GNU ELPA and NonGNU ELPA. Time will tell. Down the road I plan to try to publish
 a few on my own packages to NonGNU ELPA to assess first-hand how much of overhead does it add for package maintainers. Perhaps the process is easier than I imagine it to
 be.
 
