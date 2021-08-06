@@ -36,6 +36,30 @@ experience with Emacs more productive and more enjoyable.
 I run a separate blog without any particular focus. It's called [Meta
 Redux](https://metaredux.com).
 
+## Contact
+
+Today we're all on half a dozen social networks, plus another half a dozen of
+messaging (chat) services. I don't know about you, but I really hate juggling
+all of them. I'm an old-school person who loves the simplicity of e-mail and I encourage
+all of you who want to get in touch with me to just write me an e-mail.
+I promise to answer all of you, although I don't promise to do so in a timely fashion. :-)
+
+I welcome all feedback, ideas about future articles and any good conversation about
+Emacs, Lisp, Life, the Universe and everything else.
+
+I have a couple of options for you to choose from:
+
+* my first name at emacsredux dot com (you can use this one for questions and feedback)
+* topics at emacsredux dot com (you can suggest here topics for me to cover down the road)
+
+Apart from e-mail you can also get in touch with me on:
+
+* [Twitter](https://twitter.com/bbatsov) (my favorite social network)
+* [GitHub](https://github.com/bbatsov) (via issues, PRs and discussions on my projects)
+* [CIDER's Discord server](https://discord.com/invite/nFPpynQPME) (CIDER is my biggest Emacs Lisp project)
+
+Looking forward to hearing from you!
+
 ## Patronage
 
 Please, consider supporting my Emacs work at one of the following patronage services:
