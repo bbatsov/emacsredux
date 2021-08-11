@@ -72,7 +72,14 @@ built and published. Here's the [end
 result for clojure-mode](https://elpa.nongnu.org/nongnu/clojure-mode.html).  At this point you
 can install `clojure-mode` from NonGNU ELPA!
 
-That's all I have for you today. I hope this article will inspire some of you to submit their favorite packages to NonGNU ELPA! I've already submitted
+In the end of the day it turned out that submitting your packages on NonGNU ELPA is almost as easy as submitting them to
+MELPA. There's no overhead for the development process (everything stays the way you like), there are no additional copyright
+requirements. Actually, everything in this article applies to GNU ELPA as well, with the caveat that you'll have to
+assign the copyright for your packages to the FSF and you'll be limited when it comes to accepting contributions from people who haven't
+signed the FSF copyright agreement.
+
+That's all I have for you today. I hope this article will inspire some (more?) of you to submit their favorite packages to NonGNU ELPA![^2] I've already submitted
 patches for a few more packages that I maintain, and I hope to eventually have my entire Emacs "portfolio" available there. Keep hacking!
 
 [^1]: Packages on NonGNU ELPA can only have dependencies available in GNU ELPA and NonGNU ELPA.
+[^2]: Don't forget that this package repository will be enabled by default in Emacs 28.
