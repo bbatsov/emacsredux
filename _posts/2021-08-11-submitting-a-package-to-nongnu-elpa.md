@@ -18,8 +18,6 @@ I chose to use [clojure-mode](https://github.com/clojure-emacs/clojure-mode) for
 $ git clone https://git.savannah.gnu.org/cgit/emacs/nongnu.git
 ```
 
-
-
 * Create a new branch for your changes there:
 
 ``` shellsession
