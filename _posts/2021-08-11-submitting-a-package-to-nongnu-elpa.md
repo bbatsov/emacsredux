@@ -14,11 +14,11 @@ I chose to use [clojure-mode](https://github.com/clojure-emacs/clojure-mode) for
 
 * Clone NonGNU ELPA's git repository:
 
-    $ git clone https://git.savannah.gnu.org/cgit/emacs/nongnu.git
+  $ git clone https://git.savannah.gnu.org/cgit/emacs/nongnu.git
 
 * Create a new branch for your changes there:
 
-    $ git checkout -B add-new-package
+  $ git checkout -B add-new-package
 
 * Edit the file `elpa-packages` in the root of the repository. You basically need to add one section there for each package. Here's what I added for `clojure-mode`:
 
@@ -53,7 +53,7 @@ duplicate the instructions here. As most packages are trivial to build (e.g. the
 
 * Create a patch. This step might be a bit foreign to people who have only used git pull requests, but it's pretty simple:
 
-    $ git format-patch
+  $ git format-patch
 
 This will create a file named something like `0001-elpa-packages-clojure-mode-Add-package.patch`.
 
