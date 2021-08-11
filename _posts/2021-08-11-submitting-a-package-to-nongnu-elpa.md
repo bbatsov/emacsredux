@@ -52,6 +52,12 @@ to releases, as in this example:
  :version-map ((nil "17.2" "e72677668f5fc7cc148008e885a0f256e245dd43")))
 ```
 
+**Note:** As mentioned in the comments it seems I was mistaken about this part.
+In reality the build process checks only the `Version` metadata of the package to
+figure out the package version. I can imagine this causing problems in some cases (e.g.
+if you don't update your version metadata after doing a release), but I'll have to look
+more carefully into the implementation.
+
 * (Optional) Try to build your package locally. The process is [well-documented](https://git.savannah.gnu.org/cgit/emacs/nongnu.git/tree/README.org), so I won't
 duplicate the instructions here. As most packages are trivial to build (e.g. they are a single Emacs Lisp file), the majority of the time you don't really have to verify this.
 
