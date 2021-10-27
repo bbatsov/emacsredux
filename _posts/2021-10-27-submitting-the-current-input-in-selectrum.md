@@ -30,7 +30,7 @@ work just fine. Here's how this looks if you use `<up>`/`C-p`:
 
 ![selectrum_current_input2.png](/assets/images/selectrum_current_input2.png)
 
-Notice how now the current input is highlighted as the current candidate.
+Notice how now the current input is highlighted as the current candidate. At this point you can just press `RET` and have it accepted.
 
 By the way, you can do the same thing in `ivy` with `C-M-j`. I'm pretty sure I
 kept pressing `C-M-j` with Selectrum, and as you can imagine it didn't do
