@@ -2,6 +2,7 @@
 layout: post
 title: Submitting the Current Input in Selectrum
 date: 2021-10-27 15:18 +0300
+tags:
 - Packages
 - Selectrum
 ---
