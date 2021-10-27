@@ -18,7 +18,11 @@ selected instead. That's what happened to me the other day when I wanted to crea
 
 ![selectrum_current_input1.png](/assets/images/selectrum_current_input1.png)
 
-I hope you get the idea. Every minibuffer completion framework has some keybinding for this situation, but
+I hope you get the idea. In the above example I want to create a new tag, but its
+name matches several existing tags and the first of them gets selected as the most
+suitable candidate by Selectrum, which means that if I press `RET` the result will be `0.9.0-beta1`.
+
+Every minibuffer completion framework has some keybinding for this situation, but
 I started using Selectrum only a few months ago and I keep forgetting its. And that's why I'm writing this blog
 post - I hope it will help me remember it once and for all. So, what's the magical keybinding? There are a couple of options, actually.
 
