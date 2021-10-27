@@ -38,7 +38,7 @@ Notice how now the current input is highlighted as the current candidate. At thi
 
 By the way, you can do the same thing in `ivy` with `C-M-j`. I'm pretty sure I
 kept pressing `C-M-j` with Selectrum, and as you can imagine it didn't do
-anything there. If I recall correctly in `ido` the magic keybinding is `C-f`. If that's not the
+anything there. If I recall correctly in `ido` the magic keybinding is `C-f` for files and `C-b` for buffers. If that's not the
 case - please, correct me in the comments.
 
 That's all I have for you today. A short post for a small tip. I hope I'll finally remember `C-j`!
