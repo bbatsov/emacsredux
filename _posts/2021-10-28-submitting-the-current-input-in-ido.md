@@ -23,8 +23,8 @@ Here's a small example:
 
 ![ido_current_input_file.png](/assets/images/ido_current_input_file.png)
 
-If I want to create a file named "blast" I can either type `C-f` to go back to the regular `find-file` command
+If I want to create a file named "blast" I can either type `C-f` to go back to the regular `find-file` command,
 or `C-j` to immediately submit the text that I've already written. I guess that in almost all situations
-using `C-j` is going to the optimal course of action.
+using `C-j` is going to be the optimal course of action.
 
 By the way, turns out that the built-in `icomplete` mode, also uses `C-j` for submitting the current input.
