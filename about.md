@@ -56,7 +56,7 @@ Apart from e-mail you can also get in touch with me on:
 
 * [Twitter](https://twitter.com/bbatsov) (my favorite social network)
 * [GitHub](https://github.com/bbatsov) (via issues, PRs and discussions on my projects)
-* [CIDER's Discord server](https://discord.com/invite/nFPpynQPME) (CIDER is my biggest Emacs Lisp project)
+* [Emacs Redux's Discord server](https://discord.gg/3Cf2Qpyry5) (my favorite chat)
 
 Looking forward to hearing from you!
 
