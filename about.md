@@ -52,6 +52,9 @@ I have a couple of options for you to choose from:
 * my first name at emacsredux dot com (you can use this one for questions and feedback)
 * topics at emacsredux dot com (you can suggest here topics for me to cover down the road)
 
+I can heartily recommend Fastmail to everyone looking for a great email service
+that respects your privacy. Using my [affiliate link to sign up](https://ref.fm/u26676944) will give you a 10% discount for the first year.
+
 Apart from e-mail you can also get in touch with me on:
 
 * [Twitter](https://twitter.com/bbatsov) (my favorite social network)
