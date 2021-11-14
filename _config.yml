@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Return to the Essence of Text Editing
 permalink: "blog/:year/:month/:day/:title/"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://emacsredux.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://emacsredux.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Some defaults that get applied to all posts, so you don't have repeat them
 # in the post metadata.
@@ -46,15 +46,10 @@ excerpt_separator: <!--more-->
 # Build settings
 markdown: kramdown
 theme: minima
-#remote_theme: fongandrew/hydeout
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-
-## Hydeout config
-# sidebar_home_link:  true
-# paginate: 5
 
 # jekyll-feed config
 feed:
