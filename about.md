@@ -10,14 +10,13 @@ sidebar_link: true
 I'm Bozhidar[^1] and I love computers in general and programming in
 particular[^2]. My fanatic devotion to Emacs is known
 world-wide. I spend a lot of my (free) time on [GitHub](https://github.com/bbatsov), contributing
-to various open-source Ruby, Clojure and Emacs Lisp [projects](https://metaredux.com/projects/).
+to various open-source Ruby, Clojure and Emacs Lisp [projects](https://batsov.com/projects/).
 
 The above paragraph is actually what I typically use as my bio for
-[conference talks](https://metaredux.com/presentations/). I love speaking at conferences
+[conference talks](https://batsov.com/presentations/). I love speaking at conferences
 and I'm really bad at it![^3]
 
-I'm living in Sofia, Bulgaria and you should totally ping me if you're
-ever in my part of the world!
+You can learn more about me [here](https://batsov.com/about/).
 
 ## About Emacs Redux
 
