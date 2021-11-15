@@ -90,6 +90,10 @@ the built-in MacBook keyboard[^5].
 
 The source code of the site is freely available at [GitHub](https://github.com/bbatsov/emacsredux).
 
+## License
+
+All original content here is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+
 [^1]: Божидар in Bulgarian. I know, I know - that's both pretty hard to read and to pronounce. My friends call me Bug and so can you.
 [^2]: Especially Lisps! And Unix-like operating systems! And Emacs! And video games!
 [^3]: But at least I'm honest with myself.
