@@ -20,6 +20,11 @@ You can learn more about me [here](https://batsov.com/about/).
 
 ## About Emacs Redux
 
+> redux <br>
+> adjective
+>   1. brought back; resurgent: <br>
+>   the Emacs era redux.
+
 While many people consider Emacs (and *vim* for that matter) a remnant
 of the Dark Ages of computing, we (the crazy Emacs devotees) know
 better!  It's time to bring Emacs under the spotlight once more and
