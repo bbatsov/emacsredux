@@ -6,6 +6,14 @@ tags:
 - Meta
 ---
 
+> Back in black, I hit the sack <br/>
+> I've been too long, I'm glad to be back <br/>
+> Yes, I'm let loose <br/>
+> From the noose <br/>
+> That's kept me hanging about <br/>
+> I've been looking at the sky <br/>
+> 'Cause it's gettin' me high <br/>
+
 After 3 years of "waiting" for Octopress 3[^1], I've decided I waited
 long enough.  Today I (spontaneously) migrated [my personal
 blog](http://batsov.com) and Emacs Redux to a vanilla Jekyll setup and
