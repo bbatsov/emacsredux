@@ -37,7 +37,7 @@ experience with Emacs more productive and more enjoyable.
 
 ## Meta Redux
 
-I run a separate blog without any particular focus. It's called [Meta
+I run a separate blog focused mainly on programming and my open-source work. It's called [Meta
 Redux](https://metaredux.com).
 
 ## Contact
