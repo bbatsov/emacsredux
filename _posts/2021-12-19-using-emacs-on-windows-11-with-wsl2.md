@@ -31,7 +31,7 @@ $ sudo make install
 
 The instructions above are for Ubuntu 20.04, but the steps are quite similar for any Linux distro you might be using with (or without) WSL.
 
-Now you can type `emacs-29.0.50` in the WSL Ubuntu terminal and Emacs will start in GUI mode on Windows. It's as simple as this! If Emacs is properly packaged it will even appear in the Windows start menu, alongside any other Linux GUI apps you've installed. Epic!
+Now you can type `emacs` (or `emacs-29.0.50`) in the WSL Ubuntu terminal and Emacs will start in GUI mode on Windows. It's as simple as this! If Emacs is properly packaged it will even appear in the Windows start menu, alongside any other Linux GUI apps you've installed. Epic!
 
 I'm writing this article in Emacs 29 running on Windows 11 + WSL and it's gorgeous - gone are the blurry fonts and the need to use a 3rd party X server as a stop-gap measure. It also seems that Emacs is a bit snappier, but this might
 be just my wishful thinking. I think that `wslg` will eventually land in Windows 10 as well. The future seems bright!
