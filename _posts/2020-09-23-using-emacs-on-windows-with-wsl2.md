@@ -97,6 +97,7 @@ server options that you can consider:
 
 * [mobaXterm](https://mobaxterm.mobatek.net/)
 * [VcXsrv](https://sourceforge.net/projects/vcxsrv/)
+* [gwsl](https://opticos.github.io/gwsl/)
 * [Xming](http://www.straightrunning.com/XmingNotes/)
 
 I haven't tried them, however, so I can't comment on how good they are.
@@ -113,5 +114,7 @@ foreseeable future.[^1] Keep hacking!
 able run Linux GUI apps in WSL out-of-the-box! Check out [this
 article](https://devblogs.microsoft.com/commandline/whats-new-in-the-windows-subsystem-for-linux-september-2020/#gui-apps)
 for more details.
+
+**Update (Dec 2021):** I've written [updated instructions]({% post_url 2021-12-19-using-emacs-on-windows-11-with-wsl2 %}) for Windows 11 and Microsoft's WSLg solution.
 
 [^1]: My intention was to use Linux directly, but some unfortunate driver issues with my GPU (Radeon RX 5500 XT) forced me to switch to Windows 10 for now. Once again I was reminded it's unwise to buy recent hardware and expect it to work properly with Linux. Better luck next time!
