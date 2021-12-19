@@ -21,22 +21,13 @@ of any pre-built Ubuntu packages that enable `pgtk`, but it's trivial to build E
 
 ``` shellsession
 $ git clone git://git.savannah.gnu.org/git/emacs.git
-$ sudo apt install build-essential libgtk-3-dev libgnutls28-dev texinfo
+$ sudo apt install build-essential libgtk-3-dev libgnutls28-dev libtiff5-dev libgif-dev libjpeg-dev libpng-dev libxpm-dev libncurses-dev texinfo
 $ cd emacs
 $ ./autogen.sh
 $ ./configure --with-pgtk
 $ make -j8
 $ sudo make install
 ```
-
-You might also have to install some extra libraries, if the above commands don't work:
-
-``` shellsession
-$ sudo apt install libtiff5-dev libgif-dev libjpeg-dev libpng-dev libxpm-dev libncurses-dev
-```
-
-I had many libraries installed prior to building Emacs, so I'm not sure what exactly was a hard build dependency. At any rate - the `configure` command will give
-you clear indications if something's missing.
 
 The instructions above are for Ubuntu 20.04, but the steps are quite similar for any Linux distro you might be using with (or without) WSL.
 
