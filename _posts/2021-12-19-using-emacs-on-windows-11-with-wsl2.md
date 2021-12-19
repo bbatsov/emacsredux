@@ -20,7 +20,7 @@ Yesterday, however, the pure GTK (a.k.a. `pgtk`) feature branch was [finally mer
 of any pre-built Ubuntu packages that enable `pgtk`, but it's trivial to build Emacs 29 locally:
 
 ``` shellsession
-$ git clone git://git.savannah.gnu.org/git/emacs.git
+$ git clone git://git.sv.gnu.org/emacs.git
 $ sudo apt install build-essential libgtk-3-dev libgnutls28-dev libtiff5-dev libgif-dev libjpeg-dev libpng-dev libxpm-dev libncurses-dev texinfo
 $ cd emacs
 $ ./autogen.sh
