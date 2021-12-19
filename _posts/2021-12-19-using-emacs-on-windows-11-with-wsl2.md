@@ -29,11 +29,16 @@ $ make -j8
 $ sudo make install
 ```
 
-The instructions above are for Ubuntu 20.04, but the steps are quite similar for any Linux distro you might be using with (or without) WSL.
+The instructions above are for Ubuntu 20.04, but the steps are quite similar for any Linux distro you might be using with (or without) WSL.[^1]
 
 Now you can type `emacs` (or `emacs-29.0.50`) in the WSL Ubuntu terminal and Emacs will start in GUI mode on Windows. It's as simple as this! If Emacs is properly packaged it will even appear in the Windows start menu, alongside any other Linux GUI apps you've installed. Epic!
 
 ![emacs_with_pgtk.png](/assets/images/emacs_with_pgtk.png)
 
 I'm writing this article in Emacs 29 running on Windows 11 + WSL and it's gorgeous - gone are the blurry fonts and the need to use a 3rd party X server as a stop-gap measure. It also seems that Emacs is a bit snappier, but this might
-be just my wishful thinking. I think that `wslg` will eventually land in Windows 10 as well. The future seems bright!
+be just my wishful thinking. One more thing - the new setup solves the annoying "X connection closed" issue that plagued some Windows X servers (e.g. X410). Before I had to restart my Emacs session almost every time my computer went to sleep and now everything works as expected. I guess it's safe to say this was my biggest motivation to switch to Windows 11 and `wslg` as soon as possible.[^2]
+
+At this point the combination of Windows 11, WSL and Emacs is extremely powerful and enjoyable. The future seems bright!
+
+[^1]: I've written more detailed instructions [here](https://batsov.com/articles/2021/12/19/building-emacs-from-source-with-pgtk/).
+[^2]: I think that `wslg` will eventually land in Windows 10 as well.
