@@ -33,4 +33,16 @@ it, regardless of the operating system in question.
 
 We can make the font-selection code prettier, but that's not the point
 today. All I want for you is to learn how useful the functions `find-font` and
-`font-spec` are when you're building a truly portable Emacs configuration. Keep hacking!
+`font-spec` are when you're building a truly portable Emacs configuration.
+
+By the way, that's not the only way to check if a font is available in
+Emacs. Alternatively we can use something like this:
+
+``` emacs-lisp
+(member "Cascadia Code" (font-family-list))
+```
+
+`font-family-list` returns a list of all the font families that are available,
+so it's easy to simply check if some font is in this list. I'll leave it to you to decide which approach is easier/better.
+
+That's all I have for you today. Keep hacking!
