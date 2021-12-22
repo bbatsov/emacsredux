@@ -21,6 +21,10 @@ If you are using the same configuration on multiple systems there's a chance tha
   (set-frame-font "Inconsolata-12")))
 ```
 
+Basically `font-spec` creates a font spec from whatever parameters are passed to it
+and `find-font` will look for a font matching the font spec in question. For our
+purposes all we need to do is use the `:name` parameter for `font-spec`.
+
 In this list I have (great) fonts that are available by default on Windows,
 macOS and Linux, so wherever I run my config it's certainly going to find a
 decent font out-of-the-box. And because I'm not doing any checks like `(eq system-type
@@ -28,5 +32,5 @@ decent font out-of-the-box. And because I'm not doing any checks like `(eq syste
 it, regardless of the operating system in question.
 
 We can make the font-selection code prettier, but that's not the point
-today. All I want for you is to learn how useful the functions `find-fond` and
+today. All I want for you is to learn how useful the functions `find-font` and
 `font-spec` are when you're building a truly portable Emacs configuration. Keep hacking!
