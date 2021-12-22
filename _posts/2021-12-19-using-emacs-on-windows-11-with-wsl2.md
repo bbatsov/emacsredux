@@ -35,6 +35,22 @@ Now you can type `emacs` (or `emacs-29.0.50`) in the WSL Ubuntu terminal and Ema
 
 ![emacs_with_pgtk.png](/assets/images/emacs_with_pgtk.png)
 
+For some reason with the default `emacs.desktop` (installed by `make install` in
+`/usr/local/share/applications/`) Emacs's icon got replaced with a generic Linux
+icon in Windows, but I have been unable to figure out what exactly went
+wrong. I'll update the article when I figure this out.
+
+![emacs_windows_launcher.png](/assets/images/emacs_windows_launcher.png)
+
+Emacs 29 also ships with an improved global minor mode for scrolling with a
+mouse or a touchpad, that you might want to enable as well:
+
+``` elisp
+(pixel-scroll-precision-mode)
+```
+
+In my experience this resulted in much smoother scrolling. It's not very clear to me what's the difference with the older `pixel-scroll-mode`, but the new one definitely worked better.
+
 I'm writing this article in Emacs 29 running on Windows 11 + WSL and it's gorgeous - gone are the blurry fonts and the need to use a 3rd party X server as a stop-gap measure. It also seems that Emacs is a bit snappier, but this might
 be just my wishful thinking. One more thing - the new setup solves the annoying "X connection closed" issue that plagued some Windows X servers (e.g. X410). Before I had to restart my Emacs session almost every time my computer went to sleep and now everything works as expected. I guess it's safe to say this was my biggest motivation to switch to Windows 11 and `wslg` as soon as possible.[^2]
 
