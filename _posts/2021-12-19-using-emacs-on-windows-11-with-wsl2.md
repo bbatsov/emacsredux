@@ -49,13 +49,15 @@ mouse or a touchpad, that you might want to enable as well:
 (pixel-scroll-precision-mode)
 ```
 
-In my experience this resulted in much smoother scrolling. It's not very clear to me what's the difference with the older `pixel-scroll-mode`, but the new one definitely worked better. Here's the description of `pixel-scroll-precision-mode` from Emacs's NEWS:
+Here's the description of `pixel-scroll-precision-mode` from Emacs's NEWS:
 
 > When enabled, and if your mouse supports it, you can scroll the
 > display up or down at pixel resolution, according to what your mouse
 > wheel reports.  Unlike 'pixel-scroll-mode', this mode scrolls the
 > display pixel-by-pixel, as opposed to only animating line-by-line
 > scrolls.
+
+In my experience this resulted in much smoother scrolling. It's not very clear to me what's the difference with the older `pixel-scroll-mode`, but the new one definitely worked better.
 
 I'm writing this article in Emacs 29 running on Windows 11 + WSL and it's gorgeous - gone are the blurry fonts and the need to use a 3rd party X server as a stop-gap measure. It also seems that Emacs is a bit snappier, but this might
 be just my wishful thinking. One more thing - the new setup solves the annoying "X connection closed" issue that plagued some Windows X servers (e.g. X410). Before I had to restart my Emacs session almost every time my computer went to sleep and now everything works as expected. I guess it's safe to say this was my biggest motivation to switch to Windows 11 and `wslg` as soon as possible.[^2]
