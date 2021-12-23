@@ -34,12 +34,31 @@ it, regardless of the operating system in question.
 We can make the font-selection code prettier, but that's not the point
 today. All I want for you is to learn how useful the functions `find-font` and
 `font-spec` are when you're building a truly portable Emacs configuration.
+Probably the most important simplification we can do at this point is extracting a `fond-available-p` helper function:
+
+``` emacs-lisp
+(defun font-available-p (font-name)
+  (find-font (font-spec :name font-name)))
+
+(cond
+ ((font-available-p "Cascadia Code")
+  (set-frame-font "Cascadia Code-12"))
+ ((font-available-p "Menlo")
+  (set-frame-font "Menlo-12"))
+ ((font-available-p "DejaVu Sans Mono")
+  (set-frame-font "DejaVu Sans Mono-12"))
+ ((font-available-p "Inconsolata")
+  (set-frame-font "Inconsolata-12")))
+```
 
 By the way, that's not the only way to check if a font is available in
 Emacs. Alternatively we can use something like this:
 
 ``` emacs-lisp
 (member "Cascadia Code" (font-family-list))
+
+(defun font-available-p (font-name)
+  (member font-name (font-family-list)))
 ```
 
 `font-family-list` returns a list of all the font families that are available,
