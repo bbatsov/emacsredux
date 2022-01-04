@@ -59,6 +59,20 @@ Here's the description of `pixel-scroll-precision-mode` from Emacs's NEWS:
 
 In my experience this resulted in much smoother scrolling. It's not very clear to me what's the difference with the older `pixel-scroll-mode`, but the new one definitely worked better.
 
+I did encounter one minor issue and it's related to the Windows clipboard - I can't
+copy anything from Emacs to it. I believe [the issue](https://github.com/microsoft/wslg/issues/15) is well-knows and it's not Emacs specific. I've noticed that only
+yanking doesn't work, if I kill some text it will actually appear in Windows's clipboard. It's also easy to come up with a workaround that shells out to `clip.exe`:
+
+``` elisp
+(defun copy-selected-text (start end)
+  (interactive "r")
+    (if (use-region-p)
+        (let ((text (buffer-substring-no-properties start end)))
+            (shell-command (concat "echo '" text "' | clip.exe")))))
+```
+
+My solution shells out to `clip.exe` from WSL and it works reliably. The only problem with it is that you'll notice for a second the UI of `clip.exe` every time you use this command. I also didn't spend any time sanitizing the input - some texts might break the shell command (e.g. something with single quotes in it).
+
 I'm writing this article in Emacs 29 running on Windows 11 + WSL and it's gorgeous - gone are the blurry fonts and the need to use a 3rd party X server as a stop-gap measure. It also seems that Emacs is a bit snappier, but this might
 be just my wishful thinking. One more thing - the new setup solves the annoying "X connection closed" issue that plagued some Windows X servers (e.g. X410). Before I had to restart my Emacs session almost every time my computer went to sleep and now everything works as expected. I guess it's safe to say this was my biggest motivation to switch to Windows 11 and `wslg` as soon as possible.[^2]
 
