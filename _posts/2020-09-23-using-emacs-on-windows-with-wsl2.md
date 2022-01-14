@@ -51,6 +51,13 @@ So, time for the step by step guide:
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
 ```
 
+The above snippet is suggested in X410's installation instructions, but in practice you can go with
+something a lot simpler:
+
+``` bash
+export DISPLAY=${HOSTNAME}.local:0.0
+```
+
 * Reload your `.bashrc` using `source .bashrc`.
 * Start Emacs from a WSL terminal with `emacs &`.
 
