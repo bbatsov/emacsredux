@@ -21,4 +21,4 @@ Here's what [Wikipedia](https://en.wikipedia.org/wiki/Space-cadet_keyboard) has 
 >
 >Many keys had three symbols on them, accessible by means of the shift keys: a letter and a symbol on the top, and a Greek letter on the front. For example, the `G` key had a "G" and an up-arrow on the top, and the Greek letter gamma on the front.
 
-Pretty cool, right! That's one of the aspects of Emacs that I totally love - it carries a lot of history with it. If it weren't for Emacs the space-cadet keyboard would have probably been long forgotten by now.
+Pretty cool, right? That's one of the aspects of Emacs that I totally love - it carries a lot of history with it! If it weren't for Emacs the space-cadet keyboard would have probably been long forgotten by now.
