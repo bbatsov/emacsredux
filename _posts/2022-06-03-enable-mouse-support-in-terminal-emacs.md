@@ -22,6 +22,13 @@ GNU/Linux users should add this to their `init.el`:
 (gpm-mouse-mode 1)
 ```
 
+You might want to wrap this config in some check that you're actually running terminal Emacs (e.g. `emacs -nw`):
+
+``` emacs-lisp
+(unless (display-graphic-p)
+  (xterm-mouse-mode 1))
+```
+
 Now let's expand on this a bit.
 
 In a terminal emulator which is compatible with `xterm`, you can use `M-x xterm-mouse-mode` to give Emacs control over simple uses of the mouse - basically, only non-modified single clicks are supported. Newer versions of `xterm` also support mouse-tracking. The normal `xterm` mouse functionality for such clicks is still available by holding down the `Shift` key when you press the mouse button. `xterm-mouse-mode` is a global minor mode.
