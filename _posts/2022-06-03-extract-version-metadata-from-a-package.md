@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Extract Version Metadata from a Package
-date: 2022-06-03 12:01 +0300
+date: 2022-06-03 10:01 +0300
 tags:
 - Utils
 - Emacs Lisp
