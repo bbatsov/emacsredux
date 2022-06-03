@@ -2,6 +2,8 @@
 layout: post
 title: Enable Mouse Support in Terminal Emacs
 date: 2022-06-03 07:32 +0300
+tags:
+- Configuration
 ---
 
 I've started writing this article 1 year ago and for some reason I never finished. Today I'm changing this![^1]
