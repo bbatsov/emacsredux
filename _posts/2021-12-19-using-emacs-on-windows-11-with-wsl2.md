@@ -73,6 +73,16 @@ yanking doesn't work, if I kill some text it will actually appear in Windows's c
 
 My solution shells out to `clip.exe` from WSL and it works reliably. The only problem with it is that you'll notice for a second the UI of `clip.exe` every time you use this command. I also didn't spend any time sanitizing the input - some texts might break the shell command (e.g. something with single quotes in it).
 
+You might also encounter some warnings on Emacs startup that some files from the cursor theme cannot be loaded.
+Basically, the problem is that most likely no GNOME theme is currently selected (simply because you don't use GNOME directly).
+You can fix this by installing `gnome-tweaks`:
+
+``` shellsession
+$ apt install gnome-tweaks
+```
+
+Run the tool, select some theme from it and the warnings will go away. In general it's an useful tool to customize the visuals of GTK apps that you're running in WSL2.
+
 I'm writing this article in Emacs 29 running on Windows 11 + WSL and it's gorgeous - gone are the blurry fonts and the need to use a 3rd party X server as a stop-gap measure. It also seems that Emacs is a bit snappier, but this might
 be just my wishful thinking. One more thing - the new setup solves the annoying "X connection closed" issue that plagued some Windows X servers (e.g. X410). Before I had to restart my Emacs session almost every time my computer went to sleep and now everything works as expected. I guess it's safe to say this was my biggest motivation to switch to Windows 11 and `wslg` as soon as possible.[^2]
 
