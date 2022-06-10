@@ -6,7 +6,11 @@ tags:
 - Meta
 ---
 
-Yesterday it was announced that once popular Atom editor is going to be
+> Operating systems, GUI toolkits and competing editors come and go, but Emacs is forever!
+>
+> -- Unknown
+
+Yesterday it was announced that the once popular [Atom editor](https://atom.io/) is going to be
 [discontinued](https://github.blog/2022-06-08-sunsetting-atom/) at the end of this year.
 
 I've often said that one of the great advantages of Emacs is that it has stood the test of time[^1] and will likely be with us for a very long time to come. During the 25 years I've been into computers and programming I've seen a lot of editors and IDEs rise and fall:
