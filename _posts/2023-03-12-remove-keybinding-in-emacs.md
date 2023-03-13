@@ -37,7 +37,7 @@ As a bonus, `global-unset-key` and `local-unset-key` can also be used interactiv
 
 But wait, there's more! The
 [bind-key](https://elpa.gnu.org/packages/bind-key.html) package, that's used
-internally by `use-package` and is available on GNU ELPA can also come in handy
+internally by `use-package` and is available on GNU ELPA, can also come in handy
 for removing keybindings. It features the macro `unbind-key` that does exactly
 what we need. Here's one example usage:
 
