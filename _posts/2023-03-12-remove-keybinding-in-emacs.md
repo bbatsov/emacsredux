@@ -7,7 +7,7 @@ tags:
 ---
 
 Most of the time people ask how to add new keybindings to Emacs and that makes
-perfect sense. Occasionally, however, the topic of removing keybindings also emerges - e.g. recently Paredit added a keybinding that messed up some REPL mode that were enabling it. The solution was to remove (unset) the problematic keybinding:
+perfect sense. Occasionally, however, the topic of removing keybindings also emerges - e.g. recently Paredit added a keybinding that messed up some REPL mode that were enabling it. The solution was to remove (unset/unbind) the problematic keybinding:
 
 ``` emacs-lisp
 (define-key paredit-mode-map (kbd "RET") nil)
@@ -34,5 +34,18 @@ You can also use commands like `global-unset-key` and `local-unset-key`, e.g. li
 ```
 
 As a bonus, `global-unset-key` and `local-unset-key` can also be used interactively (with `M-x`).
+
+But wait, there's more! The
+[bind-key](https://elpa.gnu.org/packages/bind-key.html) package, that's used
+internally by `use-package` and is available on GNU ELPA can also come in handy
+for removing keybindings. It features the macro `unbind-key` that does exactly
+what we need. Here's one example usage:
+
+``` emacs-lisp
+;; To unbind a key within a keymap (for example, to stop your favorite major
+;; mode from changing a binding that you don't want to override everywhere),
+;; use `unbind-key':
+(unbind-key "C-c x" some-other-mode-map)
+```
 
 That's all I have for you today. Short, sweet and maybe even a bit useful.
