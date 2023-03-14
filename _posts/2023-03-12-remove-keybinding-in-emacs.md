@@ -52,7 +52,7 @@ Note that the terminology when it comes to removing keybinding is pretty messy
 as often people use "remove", "unset" or "unbind" interchangeably. That's usually fine, but there's a subtle difference when there's a parent keymap
 involved. When unsetting a key in a child map (e.g. with `define-key`), it will
 still shadow the same key in the parent keymap. Removing the binding will allow
-the key in the parent keymap to be used. Everything in this article except `unbind-key` unsets a keybinding.
+the key in the parent keymap to be used. Everything mentioned in this article so far, except `unbind-key`, unsets a keybinding.
 
 One more thing... To overwhelm you even further Emacs 29 introduces `keymap-unset` that can both unset or unbind a keybinding depending on how it's used:
 
