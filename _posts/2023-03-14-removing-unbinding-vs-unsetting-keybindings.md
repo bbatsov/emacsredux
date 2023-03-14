@@ -9,7 +9,7 @@ tags:
 Recently I wrote a short article on [removing keybindings]({% post_url 2023-03-12-remove-keybinding-in-emacs %}). Originally
 I failed to cover there one important nuance there that I'll tackle today - namely
 the difference between really removing (unbinding) a keybinding versus just
-unsetting it (setting it to `nil`). I know what you're thinking right now - is
+unsetting it (setting it to `nil`).[^1] I know what you're thinking right now - is
 there really any difference between the two?
 
 Most of the time there's no real difference and I guess that's why people often
@@ -37,3 +37,5 @@ keybinding depending on how it's used:
 By the way, you can use the `keymap-unset` even on older Emacs version if you install the [compat package](https://elpa.gnu.org/packages/compat.html), that brings newer Emacs functionality (mostly newer APIs) to older Emacs releases.
 
 I hope this article cleared some of the confusion with all the overloaded terminology in the field. That's all I have for you today. Keep hacking!
+
+[^1]: Special thanks to [Jonas Bernoulli](https://www.reddit.com/r/emacs/comments/11qblyt/comment/jc4158f/?utm_source=share&utm_medium=web2x&context=3) for flagging my omission.
