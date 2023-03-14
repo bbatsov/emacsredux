@@ -7,7 +7,7 @@ tags:
 ---
 
 Most of the time people ask how to add new keybindings to Emacs and that makes
-perfect sense. Occasionally, however, the topic of removing keybindings also emerges - e.g. recently Paredit added a keybinding that messed up some REPL mode that were enabling it. The solution was to remove (unset/unbind) the problematic keybinding:
+perfect sense. Occasionally, however, the topic of removing keybindings also emerges - e.g. recently Paredit added a keybinding that messed up some REPL mode that were enabling it. The solution was to remove the problematic keybinding:
 
 ``` emacs-lisp
 (define-key paredit-mode-map (kbd "RET") nil)
@@ -48,4 +48,24 @@ what we need. Here's one example usage:
 (unbind-key "C-c x" some-other-mode-map)
 ```
 
+Note that the terminology when it comes to removing keybinding is pretty messy
+as often people use "remove", "unset" or "unbind" interchangeably. That's usually fine, but there's a subtle difference when there's a parent keymap
+involved. When unsetting a key in a child map (e.g. with `define-key`), it will
+still shadow the same key in the parent keymap. Removing the binding will allow
+the key in the parent keymap to be used. Everything in this article except `unbind-key` unsets a keybinding.
+
+One more thing... To overwhelm you even further Emacs 29 introduces `keymap-unset` that can both unset or unbind a keybinding depending on how it's used:
+
+``` emacs-lisp
+;; unset a binding
+(keymap-unset clojure-mode-map (kbd "C-c C-z"))
+
+;; remove a binding
+(keymap-unset clojure-mode-map (kbd "C-c C-z") 'remove)
+```
+
+Probably that function will become the golden standard going forward.
+
 That's all I have for you today. Short, sweet and maybe even a bit useful.
+
+**P.S.** Also check out this [follow-up article]({% post_url 2023-03-14-removing-unbinding-vs-unsetting-keybindings %}) that discusses in more detail the topic of "unsetting vs unbinding".
