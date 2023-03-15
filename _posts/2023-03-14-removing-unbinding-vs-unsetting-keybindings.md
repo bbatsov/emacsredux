@@ -16,7 +16,7 @@ Most of the time there's no real difference and I guess that's why people often
 use the terms "remove", "unbind" and "unset" interchangeably. But they are not
 the same as there's a subtle difference when there's a parent keymap
 involved. When unsetting a key in a child map (e.g. with `define-key`), it will
-still shadow the same key in the parent keymap. Removing the binding will allow
+still shadow the same key in the parent keymap.[^2] Removing the binding will allow
 the key in the parent keymap to be used. That's why one can argue that unbinding
 is preferable to unsetting. The only problem with unbinding is that it was kind
 of hard to do in Emacs until very recently, unless you were relying on third-party
@@ -39,3 +39,4 @@ By the way, you can use the `keymap-unset` even on older Emacs version if you in
 I hope this article cleared some of the confusion with all the overloaded terminology in the field. That's all I have for you today. Keep hacking!
 
 [^1]: Special thanks to [Jonas Bernoulli](https://www.reddit.com/r/emacs/comments/11qblyt/comment/jc4158f/?utm_source=share&utm_medium=web2x&context=3) for flagging my omission.
+[^2]: In Emacs one keymap (child) can inherit bindings from another (parent). You can read more about keymap inheritance [here](https://www.gnu.org/software/emacs/manual/html_node/elisp/Inheritance-and-Keymaps.html).
