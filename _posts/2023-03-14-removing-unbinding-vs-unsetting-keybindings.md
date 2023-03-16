@@ -34,6 +34,8 @@ keybinding depending on how it's used:
 (keymap-unset clojure-mode-map (kbd "C-c C-z") 'remove)
 ```
 
+In the example above `clojure-mode-map` is a child map of `prog-mode-map`, as `clojure-mode` is derived from `prog-mode` (the standard parent for major modes related to programming languages). If `prog-mode-map` had some binding for `C-c C-z` it would not become available if you had only unset the binding in `clojure-mode-map`. Only removal/unbinding of the keybinding from the child map (`clojure-mode-map`) would allow you to use the binding in the parent map (`prog-mode-map`).
+
 By the way, you can use the `keymap-unset` even on older Emacs version if you install the [compat package](https://elpa.gnu.org/packages/compat.html), that brings newer Emacs functionality (mostly newer APIs) to older Emacs releases.
 
 I hope this article cleared some of the confusion with all the overloaded terminology in the field. That's all I have for you today. Keep hacking!
