@@ -67,7 +67,40 @@ code](https://github.com/emacs-straight/compat) of the library and its extensive
 notice how internally the code is organized in files matching various Emacs
 versions (e.g. `compat-25.el`, `compat-25.el`, etc) and that the library makes
 heavy use of custom macros like `compat-defun`, `compat-defalias` and
-`compat-defmacro` (all defined in `compat-macs.el`) for the backported APIs.
+`compat-defmacro` (all defined in `compat-macs.el`) for the backported APIs. Here are a few examples from `compat-29.el`:
+
+``` emacs-lisp
+(compat-defun list-of-strings-p (object) ;; <compat-tests:lists-of-strings-p>
+  "Return t if OBJECT is nil or a list of strings."
+  (declare (pure t) (side-effect-free t))
+  (while (and (consp object) (stringp (car object)))
+    (setq object (cdr object)))
+  (null object))
+
+(compat-defun plistp (object) ;; <compat-tests:plistp>
+  "Non-nil if and only if OBJECT is a valid plist."
+  (let ((len (proper-list-p object)))
+    (and len (zerop (% len 2)))))
+
+(compat-defun delete-line () ;; <compat-tests:delete-line>
+  "Delete the current line."
+  (delete-region (pos-bol) (pos-bol 2)))
+
+(compat-defmacro with-restriction (start end &rest rest) ;; <compat-tests:with-restriction>
+  "Execute BODY with restrictions set to START and END.
+The current restrictions, if any, are restored upon return.
+When the optional :label LABEL argument is present, in which
+LABEL is a symbol, inside BODY, `narrow-to-region' and `widen'
+can be used only within the START and END limits.  To gain access
+to other portions of the buffer, use `without-restriction' with the
+same LABEL argument.
+\(fn START END [:label LABEL] BODY)"
+  (declare (indent 0) (debug t))
+  `(save-restriction
+     (narrow-to-region ,start ,end)
+     ;; Locking is ignored
+     ,@(if (eq (car rest) :label) (cddr rest) rest)))
+```
 
 And that's a wrap. I think pretty much every package maintainer can benefit from
 this library in their packages (unless they have aversion to external
