@@ -62,10 +62,10 @@ I've done something similar for many packages and I've seen it in the wild count
 
 The above description is taken verbatim from the package and I don't really have
 much to add to it. I can recommend checking out the [source
-code](https://github.com/emacs-straight/compat) of the library and its extensive
-[changelog](https://github.com/emacs-straight/compat/blob/master/NEWS.org). You'll
+code](https://github.com/emacs-compat/compat) of the library and its extensive
+[changelog](https://github.com/emacs-compat/compat/blob/master/NEWS.org). You'll
 notice how internally the code is organized in files matching various Emacs
-versions (e.g. `compat-25.el`, `compat-25.el`, etc) and that the library makes
+versions (e.g. `compat-25.el`, `compat-26.el`, etc) and that the library makes
 heavy use of custom macros like `compat-defun`, `compat-defalias` and
 `compat-defmacro` (all defined in `compat-macs.el`) for the backported APIs. Here are a few examples from `compat-29.el`:
 
@@ -108,4 +108,4 @@ dependencies that is). I have to admit that I learned about its existence only
 recently and I can't believe I missed something so useful for so long. Mistake
 corrected! Keep hacking!
 
-[^1]: "Newer" here means means Emacs 25+.
+[^1]: "Newer" here means means Emacs 25+. Compat itself supports Emacs 24.4+.
