@@ -61,7 +61,28 @@ I've done something similar for many packages and I've seen it in the wild count
 > user options are implemented here.
 
 The above description is taken verbatim from the package and I don't really have
-much to add to it. I can recommend checking out the [source
+much to add to it. Here's also what one of the package's maintainers has to say about it
+and its use-cases:[^2]
+
+> Over time Emacs has seen useful standard library additions, for example
+> additional `string-*` functions or the new `keymap-*` functions in
+> Emacs 29. Compat provides many of these new functions and closes the gap
+> between Emacs core development and package development outside of Emacs, since
+> new Emacs additions become available early for all package developers.
+>
+> Packages outside of Emacs core can be written in the same style as Emacs core
+> packages by relying on Compat. Vice versa Emacs core packages can use Compat
+> for their separate GNU ELPA releases, as is done for example by ERC, the Emacs
+> IRC client. Compat should make it easy to move packages out of core or into
+> the core, while still allowing separate GNU ELPA releases. Using Compat may
+> increase the performance of your packages, since you can use optimized
+> functions like ntake, which will only fallback to a slower compatibility
+> version on older Emacs versions.
+
+In a nutshell `compat` bridges the gap between what's available for built-in Emacs
+packages and third-party (external) packages. And this is totally awesome!
+
+I can recommend checking out the [source
 code](https://github.com/emacs-compat/compat) of the library and its extensive
 [changelog](https://github.com/emacs-compat/compat/blob/master/NEWS.org). You'll
 notice how internally the code is organized in files matching various Emacs
@@ -109,3 +130,4 @@ recently and I can't believe I missed something so useful for so long. Mistake
 corrected! Keep hacking!
 
 [^1]: "Newer" here means means Emacs 25+. Compat itself supports Emacs 24.4+.
+[^2]: Taken from <https://www.reddit.com/r/emacs/comments/10iep0o/compat_29130>
