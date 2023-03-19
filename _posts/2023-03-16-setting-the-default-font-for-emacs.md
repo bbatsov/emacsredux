@@ -23,7 +23,7 @@ But I've got several computers and I use Emacs on macOS, Linux (I consider WSL L
 (set-frame-font "Cascadia Code 28")
 ```
 
-I recently, however, noticed that under X overlays are not using the same font and looked a lot smaller.
+I recently, however, noticed that under X child frames are not using the same font and looked a lot smaller.[^1]
 
 ![child_frames_font.png](/assets/images/child_frames_font.png)
 
@@ -66,3 +66,5 @@ Magic! Now the overlays had exactly the same font as the rest of my Emacs!
 Another Emacs lesson learned. That's all I have for you today. Keep hacking!
 
 **P.S.** By the way, if someone knows that does `KEEP-SIZE` do exactly please share this in the comments section. I'm utterly baffled by its description.
+
+[^1]: I finally got to trying out the popular [Corfu](https://github.com/minad/corfu) code-completion library and it's using child frames to display the completion candidates.
