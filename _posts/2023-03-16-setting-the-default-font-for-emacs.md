@@ -27,9 +27,9 @@ I recently, however, noticed that under X child frames are not using the same fo
 
 ![child_frames_font.png](/assets/images/child_frames_font.png)
 
-I was sure this had something to do with X not handling HiDPI screens properly, but it wasn't immediately obvious to me why was the font in the overlay different from the font used in the rest of the Emacs frame.
+I was sure this had something to do with X not handling HiDPI screens properly, but it wasn't immediately obvious to me why was the font in the child frame different from the font used in the primary Emacs frame.
 
-Turned out that `set-frame-font` by default doesn't apply to child frames of the main frame and overlays happen to be child frames. Fortunately you can easily address this by specifying an optional `set-frame-font` parameter:
+Turned out that `set-frame-font` by default doesn't apply to child frames of the main frame. Fortunately you can easily address this by specifying an optional `set-frame-font` parameter:
 
 > (set-frame-font FONT &optional KEEP-SIZE FRAMES INHIBIT-CUSTOMIZE)
 >
@@ -61,7 +61,7 @@ So, in the end all I needed to do was:
 (set-frame-font "Cascadia Code 28" nil t)
 ```
 
-Magic! Now the overlays had exactly the same font as the rest of my Emacs!
+Magic! Now the child frames had exactly the same font as the rest of my Emacs!
 
 Another Emacs lesson learned. That's all I have for you today. Keep hacking!
 
