@@ -6,7 +6,7 @@ tags:
 - Emacs 28
 ---
 
-In recent years I grew quite used to the functionality presented by e-readers, some browsers and other tools to look up quickly a word in a dictionary while you're reading something. English is not my first language and from time to time I come across something I don't know, so I appreciate being able to figure it out quickly.
+In recent years I grew quite used to the functionality presented by e-readers, some browsers and other tools to look up quickly a word in a dictionary while you're reading something.[^1] English is not my first language and from time to time I come across something I don't know, so I appreciate being able to figure it out quickly. That's also a great way to learn new words and improve your vocabulary.
 
 Turns out Emacs 28 has introduced some pretty similar functionality with the command `dictionary-lookup-definition` that will lookup the word at point. You can bind this command to something like `C-c l` (`l` for "lookup"):
 
@@ -14,7 +14,7 @@ Turns out Emacs 28 has introduced some pretty similar functionality with the com
 (global-set-key (kbd "C-c l") #'dictionary-lookup-definition)
 ```
 
-This command is part of the much bigger `dictionary` package, that is full of all sorts of features - e.g. a fully fledged `dictionary-mode` where you can search for words (you can start it with `M-x dictionary`). Looks of cool features there, but I need only the lookup word at point functionality.
+This command is part of the much bigger `dictionary` package, that is full of all sorts of features - e.g. a fully fledged `dictionary-mode` where you can search for words (you can start it with `M-x dictionary`). Lots of cool features there, but I need only the lookup word at point functionality most of the time.
 
 One thing to keep in mind is that by default Emacs will try to use a locally installed dictionary server (`dictd`) and fallback to `dict.org` if such a server is not available. Installing the server is quite easy (the instructions below are for Debian and friends):
 
@@ -37,6 +37,8 @@ You've got the following options for `dictionary-server`:
 - dict.org: Only use dict.org
 - User-defined: You can specify your own server here (e.g. "mydict.org")
 
-Chose wisely!
+Choose wisely!
 
 That's all I have for you today. Now you have one less reason to leave the comfort of Emacs and you'll get to learn a lot of new words quickly! Keep hacking!
+
+[^1]: I think the Kindle introduced to me this feature and macOS made me a huge fan of it (there you can access the macOS dictionary from pretty much every app that does something with text).
