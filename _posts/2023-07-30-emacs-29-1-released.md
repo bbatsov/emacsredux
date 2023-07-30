@@ -20,7 +20,7 @@ to see it bundled with Emacs going forward. This will certainly make Emacs bette
 
 **Reason #3** - built-in support for
 [TreeSitter](https://tree-sitter.github.io/tree-sitter/). This means that a few
-years down the road we'll have Emacs major modes that are much faster, robust
+years down the road we'll have many Emacs major modes that are much faster, robust
 and feature-rich. It's infinitely easier to built a major mode using a real
 parser instead of using regular expressions.  Lots of built-in modes have
 already been updated to have a version using `TreeSitter` internally. Frankly, I
