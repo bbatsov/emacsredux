@@ -7,7 +7,7 @@ tags:
 - Emacs 29
 ---
 
-Today is a great day for Emacs - Emacs 29.1 has just been released!
+Today is a great day for Emacs - Emacs 29.1 has just been released[^1]!
 Every Emacs release is special, but I haven't been so excited about a new version of Emacs
 in ages. Why so?
 
@@ -30,3 +30,5 @@ Emacs user. Exciting times ahead!
 You can read all about the new release [here](https://github.com/emacs-mirror/emacs/blob/master/etc/NEWS.29). I'll likely write a few articles about some of the new features in the weeks and months to come. In Emacs We Trust! M-x Forever!
 
 **P.S.** Feel free to share in the comments what are you most excited about.
+
+[^1]: You can read the official release announcement [here](https://lists.gnu.org/archive/html/emacs-devel/2023-07/msg00879.html).
