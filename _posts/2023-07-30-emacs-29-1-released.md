@@ -28,3 +28,5 @@ can't think of a bigger improvement in Emacs in the almost 20 years I've been an
 Emacs user. Exciting times ahead!
 
 You can read all about the new release [here](https://github.com/emacs-mirror/emacs/blob/master/etc/NEWS.29). I'll likely write a few articles about some of the new features in the weeks and months to come. In Emacs We Trust! M-x Forever!
+
+**P.S.** Feel free to share in the comments what are you most excited about.
