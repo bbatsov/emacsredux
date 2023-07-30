@@ -13,7 +13,7 @@ in ages. Why so?
 
 **Reason #1** - [pure GTK
 front-end](https://batsov.com/articles/2021/12/06/emacs-is-not-a-proper-gtk-application/)
-(a.k.a. `pgtk`). This also means that now Emacs supports natively Wayland. This is huge!
+(a.k.a. `pgtk`). This also means that now Emacs supports natively Wayland. Which in tern means that it's easier than ever to run [Emacs in Windows's WSL]({% post_url 2021-12-19-using-emacs-on-windows-11-with-wsl2 %}). This is huge!
 
 **Reason #2** - built-in support for the massively popular [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) via [eglot](https://github.com/joaotavora/eglot). `eglot` has existed for a while, but it's nice
 to see it bundled with Emacs going forward. This will certainly make Emacs better positioned to complete with "modern" editors like VS Code.
