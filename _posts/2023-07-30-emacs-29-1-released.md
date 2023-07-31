@@ -20,10 +20,10 @@ to see it bundled with Emacs going forward. This will certainly make Emacs bette
 
 **Reason #3** - built-in support for
 [TreeSitter](https://tree-sitter.github.io/tree-sitter/). This means that a few
-years down the road we'll have many Emacs major modes that are much faster, robust
+years down the road we'll have many Emacs major modes that are much faster, more robust
 and feature-rich. It's infinitely easier to built a major mode using a real
-parser instead of using regular expressions.  Lots of built-in modes have
-already been updated to have a version using `TreeSitter` internally. Frankly, I
+parser instead of using regular expressions.[^2]  Lots of built-in modes have
+already been updated to have a version using `TreeSitter` internally (e.g. `c-ts-mode`, `typescript-ts-mode`, `python-ts-mode` and `ruby-ts-mode`). Frankly, I
 can't think of a bigger improvement in Emacs in the almost 20 years I've been an
 Emacs user. Exciting times ahead!
 
@@ -32,3 +32,4 @@ You can read all about the new release [here](https://github.com/emacs-mirror/em
 **P.S.** Feel free to share in the comments what are you most excited about.
 
 [^1]: You can read the official release announcement [here](https://lists.gnu.org/archive/html/emacs-devel/2023-07/msg00879.html).
+[^2]: I wrote more about those benefits in the context of `clojure-mode` [here](https://metaredux.com/posts/2023/03/12/clojure-mode-meets-tree-sitter.html).
