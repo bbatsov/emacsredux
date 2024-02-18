@@ -4,6 +4,7 @@ title: Lookup the Documentation of Functions, Variables and Faces
 date: 2024-02-18 12:35 +0200
 tags:
 - Utils
+- Help
 ---
 
 Looking up the documentation for some command/function or configuration
