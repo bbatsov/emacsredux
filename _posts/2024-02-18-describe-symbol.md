@@ -29,7 +29,7 @@ When called from Lisp, FUNCTION may also be a function object.
 See the ‘help-enable-symbol-autoload’ variable for special
 handling of autoloaded functions.
 
-  Probably introduced at or before Emacs version 22.1.
+Probably introduced at or before Emacs version 22.1.
 ```
 
 `describe-variable` is also useful to check the current value of some variable. Here's an example:
