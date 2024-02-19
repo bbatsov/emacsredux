@@ -32,9 +32,17 @@ alternatives for everything Flycheck was using:
 
 And that was it! The whole process literally took me 10 minutes, most of them spent checking whether `seq-find` is the right replacement for `-any?` and `-first`.
 
+One small caveat to keep in mind, when depending on the built-in Emacs packages
+like `seq.el`, is that you should typically stick to whatever version of the
+package was bundled with the version of Emacs that you target (in my case Emacs
+26.1 bundles `seq.el` 2.20), otherwise you'll need to declare an explicit
+package dependency on the newer version. Keep in mind, however, this might
+cause some issues in packages that are depending on your package, but not declaring the same dependencies.[^2] Transitive dependencies in Emacs are a messy topic...
+
 So, all it all it was a very quick and easy process and I can totally recommend
 to other packages that are still relying only on basic `dash.el` functionality
 to replace it as well.  Now Flycheck is totally dependency-free and it's ready for submission
 to NonGNU ELPA!
 
 [^1]: Originally authored by yours truly.
+[^2]: See <https://github.com/flycheck/flycheck/issues/2054>.
