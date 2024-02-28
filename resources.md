@@ -44,7 +44,7 @@ Emacs distributions are basically extensive Emacs configs aiming to
 improve the default user experience. Various distros have different
 goals, focus of philosophy, so choose accordingly.
 
-* [Doom](https://github.com/hlissner/doom-emacs)
+* [Doom](https://github.com/doomemacs/doom-emacs)
 * [Prelude](https://github.com/bbatsov/prelude)[^2]
 * [Spacemacs](https://spacemacs.org/)
 
