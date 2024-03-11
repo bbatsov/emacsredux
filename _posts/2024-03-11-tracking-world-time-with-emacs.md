@@ -43,7 +43,7 @@ variable `world-clock-list`:
 
 Let's try `M-x world-clock` again now:
 
-``` emacs-lisp
+```
 Seattle      Monday 11 March 02:51 PDT
 New York     Monday 11 March 05:51 EDT
 London       Monday 11 March 09:51 GMT
@@ -57,6 +57,26 @@ Much better!
 
 By the way, you don't really have to edit `world-clock-list`, as by default it's configured to
 mirror the value of `zoneinfo-style-world-list`. The choice is yours.
+
+You can also configure the way the world time entries are displayed using `world-clock-time-format`. Let's switch to a style with shorter day and month names:
+
+``` emacs-lisp
+(setq world-clock-time-format "%a %d %b %R %Z")
+```
+
+This will result in:
+
+```
+Seattle      Mon 11 Mar 06:06 PDT
+New York     Mon 11 Mar 09:06 EDT
+London       Mon 11 Mar 13:06 GMT
+Paris        Mon 11 Mar 14:06 CET
+Sofia        Mon 11 Mar 15:06 EET
+Bangalore    Mon 11 Mar 18:36 IST
+Tokyo        Mon 11 Mar 22:06 JST
+```
+
+Check out the docstring of `format-time-string` (`C-h f` `format-time-string`) for more details, as the options here are numerous.
 
 That's all I have for you today. I hope you learned something useful. Keep hacking!
 
