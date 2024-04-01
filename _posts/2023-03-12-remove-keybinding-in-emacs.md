@@ -58,10 +58,10 @@ One more thing... To overwhelm you even further Emacs 29 introduces `keymap-unse
 
 ``` emacs-lisp
 ;; unset a binding
-(keymap-unset clojure-mode-map (kbd "C-c C-z"))
+(keymap-unset clojure-mode-map "C-c C-z")
 
 ;; remove a binding
-(keymap-unset clojure-mode-map (kbd "C-c C-z") 'remove)
+(keymap-unset clojure-mode-map "C-c C-z" 'remove)
 ```
 
 Probably that function will become the golden standard going forward.

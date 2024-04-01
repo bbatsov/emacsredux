@@ -28,10 +28,10 @@ keybinding depending on how it's used:
 
 ``` emacs-lisp
 ;; unset a binding
-(keymap-unset clojure-mode-map (kbd "C-c C-z"))
+(keymap-unset clojure-mode-map "C-c C-z")
 
 ;; remove a binding
-(keymap-unset clojure-mode-map (kbd "C-c C-z") 'remove)
+(keymap-unset clojure-mode-map "C-c C-z" 'remove)
 ```
 
 In the example above `clojure-mode-map` is a child map of `prog-mode-map`, as `clojure-mode` is derived from `prog-mode` (the standard parent for major modes related to programming languages). If `prog-mode-map` had some binding for `C-c C-z` it would not become available if you had only unset the binding in `clojure-mode-map`. Only removal/unbinding of the keybinding from the child map (`clojure-mode-map`) would allow you to use the binding in the parent map (`prog-mode-map`).
