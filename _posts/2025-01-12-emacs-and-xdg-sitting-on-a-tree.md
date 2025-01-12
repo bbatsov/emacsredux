@@ -46,6 +46,15 @@ Not the best defaults IMO (especially falling back to creating `.emacs.d`), but 
 
 I'm guessing that we're not really getting rid of `~/.emacs.d` any time soon (or ever), but I'm hoping that article like this one might speed up a bit the process. Time will tell.
 
+macOS users should keep in mind that unfortunately macOS doesn't set the standard XDG environment variables, as it has its own notion of where things like configuration files, application cache, etc should be stored. Still, it's fairly easy to just set the missing variables yourself (e.g. in your `.zshrc`):
+
+```bash
+export XDG_CONFIG_HOME = $HOME/.config
+export XDG_DATA_HOME = $HOME/.local/share
+export XDG_STATE_HOME = $HOME/.local/state
+export XDG_CACHE_HOME = $HOME/.cache
+```
+
 So, has anyone moved their Emacs config to respect the XDG conventions already? How smooth was the process for you?
 
 **P.S.** If you're curious to learn more about how Emacs's configuration discover process I'd suggest reading
