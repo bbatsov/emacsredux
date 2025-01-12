@@ -39,4 +39,5 @@ Which approach do you prefer? Are you the type of person who ensures every packa
     compared to something like Ruby's Bundler or Node's `npm`, but in practice
     I've rarely had issues with my approach and it has saved me a great deal of
     time.
+
 [^2]: `package-installed-p` will return `t` for those.
