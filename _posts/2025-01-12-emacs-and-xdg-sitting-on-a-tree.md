@@ -32,15 +32,13 @@ Just keep in mind a couple of things:
 
 - You'll have to make sure that folders like `~/.emacs.d` don't exist anymore, as they'd have precedence over the XDG config folder. The configuration resolution happens like this:
 
-```
-Emacs looks for your init file using the filenames `~/.emacs.el`, `~/.emacs`, or `~/.emacs.d/init.el` in that order; you can choose to use any one of these names. (Note that only the locations directly in your home directory have a leading dot in the location’s basename.)
-
-Emacs can also look in an XDG-compatible location for init.el, the default is the directory `~/.config/emacs`. This can be overridden by setting `XDG_CONFIG_HOME` in your environment, its value replaces `~/.config` in the name of the default XDG init file. However `~/.emacs.d`, `~/.emacs`, and `~/.emacs.el` are always preferred if they exist, which means that you must delete or rename them in order to use the XDG location.
-
-Note also that if neither the XDG location nor `~/.emacs.d` exist, then Emacs will create `~/.emacs.d` (and therefore use it during subsequent invocations).
-
-Emacs will set user-emacs-directory to the directory it decides to use.
-```
+> Emacs looks for your init file using the filenames `~/.emacs.el`, `~/.emacs`, or `~/.emacs.d/init.el` in that order; you can choose to use any one of these names. (Note that only the locations directly in your home directory have a leading dot in the location’s basename.)
+>
+> Emacs can also look in an XDG-compatible location for init.el, the default is the directory `~/.config/emacs`. This can be overridden by setting `XDG_CONFIG_HOME` in your environment, its value replaces `~/.config` in the name of the default XDG init file. However `~/.emacs.d`, `~/.emacs`, and `~/.emacs.el` are always preferred if they exist, which means that you must delete or rename them in order to use the XDG location.
+>
+> Note also that if neither the XDG location nor `~/.emacs.d` exist, then Emacs will create `~/.emacs.d` (and therefore use it during subsequent invocations).
+>
+> Emacs will set user-emacs-directory to the directory it decides to use.
 
 Not the best defaults IMO (especially falling back to creating `.emacs.d`), but you can't find tradition! Or rather - fighting tradition is pretty hard...
 
