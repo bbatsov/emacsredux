@@ -54,7 +54,7 @@ Just keep in mind a couple of things:
 >
 > Emacs will set user-emacs-directory to the directory it decides to use.
 
-Not the best defaults IMO (especially falling back to creating `.emacs.d`), but you can't find tradition! Or rather - fighting tradition is pretty hard...
+Not the best defaults IMO (especially falling back to creating `.emacs.d`), but you can't fight tradition! Or rather - fighting tradition is pretty hard...
 
 - Some packages might have hardcoded the path in which they store their own configuration. In general they should be relying on `user-emacs-directory`, which will be auto-set to whatever directory Emacs discovered its configuration in, but there will always be some packages that probably didn't do "the right thing".
 
