@@ -18,7 +18,21 @@ under the `.emacs.d` folder, where you usually have an `init.el` that potentiall
 other Emacs Lisp libraries
 
 But wait, there's more! Emacs 27.1 introduced `XDG_CONFIG_HOME` support, and Emacs 29.1 extended the
-level of XDG support in Emacs.[^1] Most of the time the XDG config home would be `~/.config` and there would be
+level of XDG base directory specification support in Emacs.[^1]
+
+XDG, which stands for X Desktop Group, is a set of standards and specifications
+developed by freedesktop.org to promote interoperability among different desktop
+environments, primarily in Unix-like operating systems. The group focuses on
+ensuring that applications can work seamlessly across various desktop
+environments by adhering to common guidelines.
+
+Their most notable work to date is the XDG base directory specification.  In a
+nutshell this specification outlines the environment variables that define where
+user-specific data files, configuration files, and cache files should be
+stored. For instance, it specifies directories like `$XDG_CONFIG_HOME` for
+configuration files and `$XDG_DATA_HOME` for data files.
+
+Most of the time the XDG config home would be `~/.config` and there would be
 a subfolder there for the configuration of each application. In Emacs's case that would be `~/.config/emacs`.
 I hope it's clear that the idea here is to reduce the clutter at the top-level and to make sure that each
 application stores its configuration in a predictable place.
