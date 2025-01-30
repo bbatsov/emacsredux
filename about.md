@@ -61,9 +61,9 @@ that respects your privacy. Using my [affiliate link to sign up](https://ref.fm/
 
 Apart from e-mail you can also get in touch with me on:
 
-* [Twitter](https://twitter.com/bbatsov) (my favorite social network)
+* [Bluesky](https://bsky.app/profile/batsov.net) (my favorite social network)
+* [Twitter](https://twitter.com/bbatsov)
 * [GitHub](https://github.com/bbatsov) (via issues, PRs and discussions on my projects)
-* [Emacs Redux's Discord server](https://discord.gg/3Cf2Qpyry5) (my favorite chat)
 
 Looking forward to hearing from you!
 
