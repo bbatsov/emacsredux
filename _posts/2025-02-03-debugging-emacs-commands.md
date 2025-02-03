@@ -20,7 +20,7 @@ you can either run `M-x toggle-debug-on-error` or add this to your Emacs config:
 
 Sometimes that will be enough, but other times you'll need to dig deeper...
 Fortunately for us Emacs features a super powerful built-in
-http://www.gnu.org/software/emacs/manual/html_node/elisp/Edebug.html[Emacs Lisp debugger]
+[Emacs Lisp debugger](http://www.gnu.org/software/emacs/manual/html_node/elisp/Edebug.html)
 and using it is the best way to diagnose problems of any kind.[^2]
 
 To debug some command you need to do the following:
@@ -41,4 +41,4 @@ to invest a bit of time into learning the basics of debugging Emacs Lisp code.
 That's all I have for you today. Keep hacking!
 
 [^1]: Emacs commands are simply Emacs Lisp functions that can be invoked interactively with `M-x`.
-[^2]: Here's a https://www.youtube.com/watch?v=odkYXXYOxpo[great crash course] on using the debugger.
+[^2]: Here's a [great crash course](https://www.youtube.com/watch?v=odkYXXYOxpo) on using the debugger.
