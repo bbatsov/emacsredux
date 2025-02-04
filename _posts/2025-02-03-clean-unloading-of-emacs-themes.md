@@ -49,8 +49,8 @@ resetting the theme to Emacs's default one:
 (defun er-disable-all-active-themes ()
   "Disable all currently active themes."
   (interactive)
-  (dolist (t custom-enabled-themes)
-    (disable-theme t)))
+  (dolist (theme custom-enabled-themes)
+    (disable-theme theme)))
 ```
 
 Now, you can simply do `M-x disable-all-active-themes` when you see
