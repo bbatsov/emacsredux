@@ -73,4 +73,11 @@ Pretty neat!
 
 That's all I have for you on this subject. Keep hacking!
 
+**P.S.** If you're afraid of Elisp there are a couple of alternative approaches you might consider:
+
+- The built-in command `M-x customize-themes`
+- The `consult-theme` from the popular [consult](https://github.com/minad/consult) package
+
+Both are also great options for previewing themes!
+
 [^1]: Zenburn is to this day my all time favorite theme, though. I rarely manage to spend more than a few days away from it.
