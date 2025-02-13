@@ -80,6 +80,30 @@ The example above also shows how to access the colors from the palette of some c
 outside of its definition. Usually themes provide some API like `theme-name-color` to
 get able to get the color codes easily.
 
+Funny enough, as I'm writing this I realized that `use-package` actually has built-in
+support for customizing faces that I could have used instead. Here's an example of that
+in action:
+
+``` emacs-lisp
+(use-package zenburn-theme
+  :preface
+  (setq my/zenburn-colors-alist
+        '((fg . "#DCDCCC") (bg . "#1C1C1C") (cyan . "#93E0E3")))
+  :custom-face
+  (region ((t (:background ,(alist-get my/zenburn-colors-alist 'cyan)))))
+  :config
+  (load-theme 'zenburn t))
+```
+
+This example also reminded me that I should expose the Zenburn colors via functions.
+
+So, to summarize:
+
+- If you're using `use-package` it's probably best to use it's `:custom-face` functionality.
+- The rest of the time you most likely need `custom-theme-set-faces`.
+
+One thing is certain - with Emacs there always numerous ways to achieve something!
+
 **Note:** To see the new font faces in action you'll either have to restart Emacs or
 evaluate Elisp code that sets them. (e.g. with `C-x C-e`)
 
