@@ -83,6 +83,23 @@ get able to get the color codes easily.
 **Note:** To see the new font faces in action you'll either have to restart Emacs or
 evaluate Elisp code that sets them. (e.g. with `C-x C-e`)
 
+One final tip - if you're wondering what's the face used by some text, the best
+way to figure it out is with the `M-x describe-char` command. It will give you a ton of
+information, including something like this near the end:
+
+```
+There are text properties here:
+  face                 (font-lock-keyword-face markdown-code-face)
+  font-lock-fontified  t
+  font-lock-multiline  t
+  fontified            t
+  markdown-gfm-code    (2617 3092)
+```
+
+I had placed my cursor over the word "use-package" in the code snippet above, while writing
+this article in `markdown-mode`, therefore the faces `font-lock-keyword-face` (coming from `elisp-mode`)
+and `markdown-code-face` (from `markdown-mode`).
+
 Do you have any tips on customizing color themes that you'd like share?
 
 That's all I have for you today. Keep hacking!
