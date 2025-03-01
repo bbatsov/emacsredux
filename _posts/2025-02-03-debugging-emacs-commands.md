@@ -36,7 +36,7 @@ pressing `n`) until you find the problem. The debugger is quite powerful and you
 can do way more than just stepping through the code, though. Here are some of
 the most useful commands to run in it:
 
-* `n` (next): Step to the next line of code
+* `n` (next): Step over the next expression
 * `d` (step): Step into a function call
 * `c` (continue): Continue execution until the next breakpoint
 * `e` (eval): Evaluate a Lisp expression in the current context
