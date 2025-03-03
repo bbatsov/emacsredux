@@ -45,6 +45,17 @@ than `Command` (`Super`), and historically I swapped them because of this, but t
 when I had to use someone else's keyboard. (or even my own, as I normally contained this rebinding only to Emacs). So, the ability to use `ESC` instead of `Meta` is definitely a welcome one, and I find myself
 doing this quite often.
 
+Before we wrap up consider keybindings like `M->`, `M-!` or `M-%` that require you to
+hold down both `Shift` and `Meta` when typing them. I think they way more pleasant as:
+
+- `Esc >`
+- `Esc !`
+- `Esc %`
+
+Admittedly, it took me a while to get used to this, as I didn't pay much to the
+`ESC` key until I was fairly far into my Emacs journey. Topics like RSI
+prevention and keybinding ergonomics rarely bother young people.
+
 So, did you know about the role of `ESC` in Emacs? Are you making use of it? If you have any other
 tips to share on the subject I'd be happy to read them.
 
