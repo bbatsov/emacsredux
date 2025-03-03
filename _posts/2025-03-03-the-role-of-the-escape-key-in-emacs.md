@@ -40,10 +40,12 @@ I don't know about you, but I think this is pretty handy, especially if you're u
 `macOS`, where on many keyboards the `Option` (`Meta`) keys are pretty short, or one of them
 is even missing (the right one).
 
-For me using Emacs on macOS has always been a bit of a struggle, as the `Meta` is way more useful
-than `Command` (`Super`), and historically I swapped them because of this, but then I struggled
-when I had to use someone else's keyboard. (or even my own, as I normally contained this rebinding only to Emacs). So, the ability to use `ESC` instead of `Meta` is definitely a welcome one, and I find myself
-doing this quite often.
+For me using Emacs on macOS has always been a bit of a struggle, as the `Meta`
+is way more useful than `Command` (`Super`), and historically I swapped them[^3]
+because of this, but then I struggled when I had to use someone else's
+keyboard. (or even my own, as I normally contained this rebinding only to
+Emacs). So, the ability to use `ESC` instead of `Meta` is definitely a welcome
+one, and I find myself doing this quite often.
 
 Before we wrap up consider keybindings like `M->`, `M-!` or `M-%` that require you to
 hold down both `Shift` and `Meta` when typing them. I think they way more pleasant as:
@@ -63,3 +65,4 @@ That's all I have for you today! `ESC x` forever!
 
 [^1]: HHKB is probably the most famous example, but there are many many others that do the same.
 [^2]: I'm using a dual-function keybinding for what's normally `Caps Lock` on most keyboards - it's `Control` wwhen held down and `Escape` otherwise. For me that's a good idea regardless of the editor someone's using.
+[^3]: See <https://batsov.com/articles/2012/10/14/emacs-on-osx/>.
