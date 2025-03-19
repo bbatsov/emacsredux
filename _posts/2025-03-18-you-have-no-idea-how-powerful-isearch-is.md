@@ -62,6 +62,10 @@ Last, but not least - you can directly search for the symbol/thing at point:
 * Type `M-s .` to search for the symbol at point. (useful in the context of programming languages)
 * Type `M-s M-.` to search for the thing (e.g. word or symbol) at point.
 
+One of the most useful parts of that is the fact that a *region* is a *thing*.
+So you can mark a region (e.g. with `expand-region` or `mark-*`) and `M-s M-.` to
+immediately search for other instances of that text. Powerful stuff!
+
 **Tip:** You don't really have to remember all those keybindings - just remember you can press `C-h b`
 to show them. (after you've started `isearch`)
 
@@ -72,6 +76,15 @@ forget about much of its functionality.
 There's more to `isearch`, though. Did you know it's widely customizable as well? If you check
 its options with `M-x customize-group isearch` you'll see there are over 30 (!!!) options there!
 Admittedly, I never used any of them, but you've got quite a lot of opportunities to tweak the
-behavior of `isearch` if you want to.
+behavior of `isearch` if you want to. Here's an example of a customization some of you might
+find useful:
+
+``` emacs-lisp
+;; When isearching, enable M-<, M->, C-v and M-v to skip between matches
+;; in an intuitive fashion.  Note that the `cua-selection-mode' bindings
+;; for C-v and M-v bindings are not supported.
+(setq isearch-allow-motion t
+      isearch-motion-changes-direction t)
+```
 
 I hope you learned something useful today! Keep searching (the Emacs docs)!
