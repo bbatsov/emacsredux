@@ -69,4 +69,9 @@ Most of the above text is coming straight from the docstring of `isearch`. It's 
 been using Emacs for almost 20 years, I use `isearch` numerous times every day and I still often
 forget about much of its functionality.
 
+There's more to `isearch`, though. Did you know it's widely customizable as well? If you check
+its options with `M-x customize-group isearch` you'll see there are over 30 (!!!) options there!
+Admittedly, I never used any of them, but you've got quite a lot of opportunities to tweak the
+behavior of `isearch` if you want to.
+
 I hope you learned something useful today! Keep searching (the Emacs docs)!
