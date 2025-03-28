@@ -17,7 +17,27 @@ my Emacs config for ages:
 ```
 
 Probably I should increase it to 100MB+ these days, given the proliferation of more resource-hungry
-tooling (e.g. LSP).
+tooling (e.g. LSP). On the other hand there are also some counter arguments to consider
+when it comes to setting a high GC threshold:
+
+> The GC threshold setting after init is too high, IMNSHO, and its value seems arbitrary.
+>
+> If the OP thinks that Emacs will GC as soon as it allocates 100 MiB, then
+> that's a grave mistake! What really happens is the first time Emacs considers
+> doing GC, if at that time more than 100 MiB have been allocated for Lisp
+> objects, Emacs will GC. And since neither Lisp programs nor the user have any
+> control on how soon Emacs will decide to check whether GC is needed, the
+> actual amount of memory by the time Emacs checks could be many times the value
+> of the threshold.
+>
+> My advice is to spend some time measuring the effect of increased GC threshold
+> on operations that you care about and that take a long enough time to annoy,
+> and use the lowest threshold value which produces a tangible
+> improvement. Start with the default value, then enlarge it by a factor of 2
+> until you see only insignificant speedups. I would not expect the value you
+> arrive at to be as high as 100 MiB.
+>
+> -- Eli Zaretsky, Emacs maintainer
 
 One thing that's not so common knowledge is that removing the GC limits during Emacs startup
 might improve the speedup quite a lot (the actual results will be highly dependent on your setup).
