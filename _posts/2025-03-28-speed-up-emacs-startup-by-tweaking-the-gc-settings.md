@@ -37,7 +37,7 @@ when it comes to setting a high GC threshold:
 > until you see only insignificant speedups. I would not expect the value you
 > arrive at to be as high as 100 MiB.
 >
-> -- Eli Zaretsky, Emacs maintainer
+> -- Eli Zaretskii, Emacs maintainer
 
 One thing that's not so common knowledge is that removing the GC limits during Emacs startup
 might improve the speedup quite a lot (the actual results will be highly dependent on your setup).
