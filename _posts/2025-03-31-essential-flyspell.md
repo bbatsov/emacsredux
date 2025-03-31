@@ -17,6 +17,14 @@ You can press it repeatedly to cycle through the list of candidates.
 - `C-.` (`flyspell-auto-correct-word`) - same as `M-t`
 - `C-;` (`flyspell-auto-correct-previous-word`) - automatically correct the last misspelled word. (you can cycle here as well)
 
+Last, but not least, there's the only command I never forget - `C-c $` (`flyspell-correct-word-before-point`).
+Why is this my go-to command? Well, its name is a bit misleading, as it can do two things:
+
+- auto-correct the word at (or before) point
+- add the same word to your personal dictionary, so Flyspell and ispell will stop flagging it
+
+Good stuff!
+
 There are more commands, but those are the ones you really need to know.[^1]
 
 If you ever forget any of them, just do a quick `C-h m RET flyspell-mode`.
