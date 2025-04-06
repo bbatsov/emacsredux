@@ -9,7 +9,7 @@ tags:
 
 For many years most Emacs users used `setq` to set the various configuration options of
 Emacs and the packages that they were using. This probably wasn't the best option (read on),
-but it was the most popular way of doing things. Now, however, it's finally time for a change!
+but it was the most popular way of doing things. Now, however, it's finally time for a change![^1]
 
 ## Why `setopt` Was Introduced in Emacs 29
 
@@ -73,6 +73,48 @@ with a number type to a string will signal an error.
 I'm pretty sure this will prevent a lot of (weird) configuration issues going forward! (and
 inspire more package authors to declare their `defcustom`s properly)
 
+Now let's update a bit of legacy code to use `setopt`:
+
+```emacs-lisp
+(setq user-full-name "Bozhidar Batsov"
+      user-mail-address "bozhidar@emacsninja.com")
+
+;; Always load newest byte code
+(setq load-prefer-newer t)
+
+;; reduce the frequency of garbage collection by making it happen on
+;; each 50MB of allocated data (the default is on every 0.76MB)
+(setq gc-cons-threshold 50000000)
+
+;; warn when opening files bigger than 100MB
+(setq large-file-warning-threshold 100000000)
+
+;; quit Emacs directly even if there are running processes
+(setq confirm-kill-processes nil)
+```
+
+This will be become:
+
+```emacs-lisp
+(setopt user-full-name "Bozhidar Batsov"
+        user-mail-address "bozhidar@emacsninja.com")
+
+;; Always load newest byte code
+(setopt load-prefer-newer t)
+
+;; reduce the frequency of garbage collection by making it happen on
+;; each 50MB of allocated data (the default is on every 0.76MB)
+(setopt gc-cons-threshold 50000000)
+
+;; warn when opening files bigger than 100MB
+(setopt large-file-warning-threshold 100000000)
+
+;; quit Emacs directly even if there are running processes
+(setopt confirm-kill-processes nil)
+```
+
+Pretty shocking, right?
+
 ## When to Use What?
 
 The introduction of `setopt` has sparked discussions within the Emacs community
@@ -108,3 +150,5 @@ I wrote and maintain. Going forward I'll certainly reconsider this.
 
 That's all I have for you today. If you haven't adopted `setopt` already, go wild and `setopt`
 all the things!
+
+[^1]: How big of a change? Depends on whether you're using `package.el` and how exactly are you using it! :D
