@@ -11,7 +11,7 @@ For many years most Emacs users used `setq` to set the various configuration opt
 Emacs and the packages that they were using. This probably wasn't the best option (read on),
 but it was the most popular way of doing things. Now, however, it's finally time for a change![^1]
 
-## Why `setopt` Was Introduced in Emacs 29
+## Why do we need setopt?
 
 In Emacs 29, a new macro `setopt` was introduced to provide a more appropriate method for setting user options (variables defined with `defcustom`).
 
