@@ -127,7 +127,7 @@ uncertainty about when to use `setq`, `customize-set-variable`, or the new
   - Shows a warning when a configuration value does not match its `:type` specification.
   - Unlike `setq`, it does not complain when a variable is not declared. (which is quite normal when dealing with a lot of autoloaded packages)
 - Use `setq` only for variables that are not defined in terms of `defcustom`.
-  - Amusingly, `setopt` will work with regular variables as well, but it won't be as efficient as `setopt`. Not to mention using it in such a way will be super confusing!
+  - Amusingly, `setopt` will work with regular variables as well, but it won't be as efficient as `setq`. Not to mention using it in such a way will be super confusing!
 
 The way I see it, unless you're running an older Emacs version, and you're not using
 `setopt` extensively in your Emacs config, you're missing out!
