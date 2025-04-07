@@ -151,4 +151,4 @@ I wrote and maintain. Going forward I'll certainly reconsider this.
 That's all I have for you today. If you haven't adopted `setopt` already, go wild and `setopt`
 all the things!
 
-[^1]: How big of a change? Depends on whether you're using `use-package` and how exactly are you using it! :D (in case you're wondering `:custom` settings are handled with `customize-set-variable` internally)
+[^1]: How big of a change? Depends on whether you're using `use-package` and how exactly are you using it! :D (in case you're wondering - `:custom` settings are handled with `customize-set-variable` internally)
