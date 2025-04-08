@@ -60,7 +60,7 @@ Exchange the URI with the correct URI of your organization."
 ```
 
 In case it's not obvious - the important thing is the `:set` property of `copilot-lsp-settings`.
-Basically, every this this option is changed, a callback function should be invoked, but this won't
+Basically, every time this option is changed, a callback function should be invoked, but this won't
 happen if you make the change using `setq`.
 
 The `setopt` macro addresses this by ensuring that when you set a user option,
