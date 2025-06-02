@@ -21,8 +21,10 @@ The generic `keyboard-quit' does not do the expected thing when
 the minibuffer is open.  Whereas we want it to close the
 minibuffer, even without explicitly focusing it."
   (interactive)
-  (if (> (minibuffer-depth) 0)
-    (abort-recursive-edit)
+  (if (active-minibuffer-window)
+      (if (minibufferp)
+          (minibuffer-keyboard-quit)
+        (abort-recursive-edit))
     (keyboard-quit)))
 ```
 
