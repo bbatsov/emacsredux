@@ -49,8 +49,41 @@ I'd suggest to just remap `keyboard-quit` to our improved version:
 ```
 
 **Note:** The command shown in this article is bundled with
-[crux](https://github.com/bbatsov/crux).
+[crux](https://github.com/bbatsov/crux) and it appeared
+originally [here](https://protesilaos.com/codelog/2024-11-28-basic-emacs-configuration/#h:1e468b2a-9bee-4571-8454-e3f5462d9321).
 
+There are other ways to tackle this particular issue, of course,
+and different people might prefer an even more complicated
+version of the smarter `keyboard-quit` or one that does fewer
+things. One of my readers suggested in the comments a similar
+solution using an advice:
+
+```emacs-lisp
+(define-advice keyboard-quit
+    (:around (quit) quit-current-context)
+  "Quit the current context.
+
+When there is an active minibuffer and we are not inside it close
+it.  When we are inside the minibuffer use the regular
+`minibuffer-keyboard-quit' which quits any active region before
+exiting.  When there is no minibuffer `keyboard-quit' unless we
+are defining or executing a macro."
+  (if (active-minibuffer-window)
+      (if (minibufferp)
+          (minibuffer-keyboard-quit)
+        (abort-recursive-edit))
+    (unless (or defining-kbd-macro
+                executing-kbd-macro)
+      (funcall-interactively quit))))
+```
+
+This has the benefit of directly modifying the original command, so you don't
+really need to rebind anything. On the other hand - advices are arguably
+a bit more complicated to understand and debug. Personally, I like
+to replace functions in my own setup with versions that I prefer,
+as I think this makes the modifications more obvious.
+
+Which of the two approaches do you prefer?
 How would you improve `er-keyboard-quit-dwim` further?
 
 That's all I have for you today! Keep hacking!
