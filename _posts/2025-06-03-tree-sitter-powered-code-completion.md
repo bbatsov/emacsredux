@@ -91,8 +91,8 @@ It's still early days and sky is the limit. Exciting times ahead!
 
 That's all I have for you today. Keep hacking!
 
-**P.S.** While I plan to write more on the topic of Tree-sitter and how to use it
-in Emacs major modes, in the mean time you might find some of my development notes
+**P.S.** I plan to write more on the topic of Tree-sitter and how to use it
+in Emacs major modes, but in the mean time you might find some of my development notes
 useful:
 
 - [Neocaml notes](https://github.com/bbatsov/neocaml/?tab=readme-ov-file#development-notes)
