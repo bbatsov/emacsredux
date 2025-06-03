@@ -8,6 +8,10 @@ Today's article is going to be a bit more weird than usual... mostly because I'v
 set to write about one topic, and ended up about writing something completely different
 in the end... Here we go!
 
+**TL;DR** Many common macOS keybindings (e.g. `Command-s`, `Command-z`,
+`Command-f`, etc) work in Emacs. And, of course, it's well known that
+macOS uses by default Emacs-like (readline) keybindings everywhere. (e.g. `C-a` and `C-e`)
+
 I'm guessing 99% of Emacs users know that the most common ways to start isearch
 are with `isearch-forward` (`C-s`) and `isearch-backward` (`C-r`). That's not
 the full story, though!  While working on my [recent isearch article]({%
@@ -127,6 +131,11 @@ if they haven't learned Emacs on Linux 20 years ago.
 
 **Tip:** Do a `M-x find-library RET ns-win` to see what else the library has in store
 for macOS users.
+
+All of this is, of course, made possible by the fact that macOS relies heavily on the
+`Command` key which normally isn't used in Emacs at all. For similar reasons it's
+"easier" to copy/paste text from/in your shell on macOS, compared to Linux and Windows, as
+keybindings like `Command + c` and `Command + v` are not used by any shell.
 
 That's all I have for you today! Keep hacking!
 
