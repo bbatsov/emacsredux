@@ -4,6 +4,10 @@ title: Little known macOS keybindings
 date: 2025-06-03 09:48 +0300
 ---
 
+Today's article is going to be a bit more weird than usual... mostly because I've
+set to write about one topic, and ended up about writing something completely different
+in the end... Here we go!
+
 I'm guessing 99% of Emacs users know that the most common ways to start isearch
 are with `isearch-forward` (`C-s`) and `isearch-backward` (`C-r`). That's not
 the full story, though!  While working on my [recent isearch article]({%
@@ -125,5 +129,9 @@ if they haven't learned Emacs on Linux 20 years ago.
 for macOS users.
 
 That's all I have for you today! Keep hacking!
+
+**P.S.** After writing this article I was really amused that I've been using macOS on and
+off for over 10 years and I never bothered to try whether something like `Command-s` or
+`Command-z` works in Emacs! Oh, well... habits!
 
 [^1]: Emacs stubbornly keeps refering to macOS by its ancient name NextStep in much of the code and its documentation.
