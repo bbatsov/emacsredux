@@ -86,7 +86,7 @@ find useful.  It seems that Nic Ferrier has been playing with this idea recently
 as well - check out his recent video on the subject
 [here](https://www.youtube.com/watch?v=Lt7vSgV2pv0).
 
-In time Tree-sitter will redefine how we're building Emacs major modes and what they can do.
+In time Tree-sitter will redefine how we're building Emacs major modes and what they can do.[^2]
 It's still early days and sky is the limit. Exciting times ahead!
 
 That's all I have for you today. Keep hacking!
@@ -99,3 +99,4 @@ useful:
 - [clojure-ts-mode design notes](https://github.com/clojure-emacs/clojure-ts-mode/blob/main/doc/design.md)
 
 [^1]: Kudos to Roman Rudakov, who put this prototype together earlier today after a short discussion we had on the topic.
+[^2]: I can easily imagine things like Tree-sitter based linters or complex refactoring commands.
