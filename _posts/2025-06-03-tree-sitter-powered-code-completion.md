@@ -74,7 +74,7 @@ just completion scaffolding.
 
 And the result looks like this:
 
-![clojure-ts-completion.png](/assets/images/clojure-ts-completion.png)
+[![clojure-ts-completion.png](/assets/images/clojure-ts-completion.png)](/assets/images/clojure-ts-completion.png)
 
 Not too shabby for 30 lines of code, right? With a bit more efforts this can be made
 smarter (e.g. to include local bindings as well), and potentially we can even be
