@@ -27,7 +27,7 @@ sweet given that it's trivial to implement and doesn't require any
 external dependencies.
 
 Below, you'll find a simple proof of concept for such a completion, in the context
-of `clojure-ts-mode`:
+of `clojure-ts-mode`:[^1]
 
 ```emacs-lisp
 (defvar clojure-ts--completion-query-globals
@@ -97,3 +97,5 @@ useful:
 
 - [Neocaml notes](https://github.com/bbatsov/neocaml/?tab=readme-ov-file#development-notes)
 - [clojure-ts-mode design notes](https://github.com/clojure-emacs/clojure-ts-mode/blob/main/doc/design.md)
+
+[^1]: Kudos to Roman Rudakov, who put this prototype together earlier today after a short discussion we had on the topic.
