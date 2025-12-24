@@ -47,4 +47,11 @@ From the docs you'll learn that hidden mode "lighters" (Emacs lingo for a mode's
 get compressed into one. It's `...` by default, but it can be customized via
 the variable `mode-line-collapse-minor-modes-to`.
 
+Apart from `diminish`, there are also the newer `delight` and
+`minions` packages that tackle more or less the same problem.
+As explained [here](https://www.reddit.com/r/emacs/comments/1k7zxjv/comment/mp4caxi/)
+for `minions`, they might still be useful, depending on your use-cases.
+One of the great aspects of Emacs is having options and when it comes
+to dealing with the minor mode lighters we have plenty of options!
+
 That's all I have for you today. Happy Christmas holidays! Keep hacking!
