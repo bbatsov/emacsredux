@@ -8,7 +8,7 @@ tags:
 ---
 
 Relative line numbers (relative to the current line) are super popular in the world of Vim,
-because there it's super easy to move `n` lines up or down wiht `j` and `k`.
+because there it's super easy to move `n` lines up or down with `j` and `k`.
 In the world of Emacs most of us tend to just go some line using `M-g g` using a absolute
 line number or using `avy` (`avy-goto-line`).
 

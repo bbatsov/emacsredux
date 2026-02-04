@@ -28,7 +28,7 @@ string "1" is higher (newer) than "1pre", which is higher than "1beta",
 which is higher than "1alpha".  Also, "-CVS" and "-NNN" are treated
 as alpha versions.
 
-If you're writing an Emacs package you can also add an explicit Emacs version dependency in the packge metadata:
+If you're writing an Emacs package you can also add an explicit Emacs version dependency in the package metadata:
 
 ``` elisp
 ;; Package-Requires: ((emacs "24.1"))

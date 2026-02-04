@@ -77,7 +77,7 @@ The library provides other useful commands as well - like
 If you don't like the keybindings I suggested you can use
 `find-function-setup-keys` instead.  This will give you keybindings
 like `C-x F`, `C-x V`, `C-f K` (plus a few extra for commands like
-`find-funtion-other-window`).
+`find-function-other-window`).
 
 ### elisp-slime-nav
 

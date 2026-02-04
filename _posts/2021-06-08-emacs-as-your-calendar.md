@@ -42,7 +42,7 @@ You can go a step further and localize the calendar like this:
 				                 "Октомври" "Ноември" "Декември"])
 ```
 
-If you already have the calendar open you'll have to do `M-x calendar` or `M-x calender-redraw` to reflect the new settings.
+If you already have the calendar open you'll have to do `M-x calendar` or `M-x calendar-redraw` to reflect the new settings.
 
 Did you notice that the configuration uses [Emacs Lisp arrays](https://www.gnu.org/software/emacs/manual/html_node/elisp/Arrays.html)? They are so uncommon that I'm pretty sure most people don't even know about their existence.
 

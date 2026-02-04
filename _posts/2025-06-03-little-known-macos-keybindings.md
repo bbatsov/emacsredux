@@ -143,4 +143,4 @@ That's all I have for you today! Keep hacking!
 off for over 10 years and I never bothered to try whether something like `Command-s` or
 `Command-z` works in Emacs! Oh, well... habits!
 
-[^1]: Emacs stubbornly keeps refering to macOS by its ancient name NextStep in much of the code and its documentation.
+[^1]: Emacs stubbornly keeps referring to macOS by its ancient name NextStep in much of the code and its documentation.

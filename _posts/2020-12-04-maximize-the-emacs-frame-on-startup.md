@@ -75,7 +75,7 @@ the `fullscreen`[^3] parameter to one of the following:
 
 * `fullwidth` (make the frame as wide as possible, don't touch the vertical)
 * `fullheight` (make the frame as tall as possible, don't touch the horizontal)
-* `fullboth` (set height and width to to size of the screen)
+* `fullboth` (set height and width to the size of the screen)
 * `maximized` (self-explanatory)
 
 The difference between `fullboth` and `maximized` is that you can resize the former with the mouse, while with the latter you cannot.

@@ -18,7 +18,7 @@ There are many ways to highlight lines that exceed a certain length in
 Emacs, but I find one to be particularly elegant - the use of the
 built-in `whitespace-mode`. Most people use `whitespace-mode` to
 visualize spaces, tabs and trailing whitespace, but it can actually do
-a bit more that that. Here's the magic config:
+a bit more than that. Here's the magic config:
 
 ``` elisp
 (require 'whitespace)
