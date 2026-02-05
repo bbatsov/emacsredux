@@ -21,7 +21,7 @@ probably have been named `auto-indent-mode`, as this is what it
 does. When you edit your code it will adjust the indentation
 automatically. It's easier to show this than to explain it.
 
-Here's one example showing `agressive-indent-mode` enabled in `emacs-lisp-mode`:
+Here's one example showing `aggressive-indent-mode` enabled in `emacs-lisp-mode`:
 
 ![lisp example](https://raw.githubusercontent.com/Malabarba/aggressive-indent-mode/master/lisp-example.gif)
 
