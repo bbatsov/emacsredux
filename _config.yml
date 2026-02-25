@@ -31,6 +31,7 @@ defaults:
      type: "posts"
    values:
      author: "Bozhidar Batsov"
+     image: /assets/og-image.png
 
 twitter_username: bbatsov
 github_username:  bbatsov
