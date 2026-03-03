@@ -51,8 +51,8 @@ better.
 [expreg](https://github.com/casouri/expreg) (short for "expand region")[^1] is a
 package by Yuan Fu -- the same person who implemented Emacs's built-in
 tree-sitter support. Yuan Fu created expreg in mid-2023, shortly after the
-tree-sitter integration shipped in Emacs 29, and it landed on GNU ELPA in August
-2023. It's a natural extension of his tree-sitter work: if you've given Emacs a
+tree-sitter integration shipped in Emacs 29, and it landed on GNU ELPA soon after.
+It's a natural extension of his tree-sitter work: if you've given Emacs a
 proper understanding of code structure, you might as well use it for selection
 too.
 
