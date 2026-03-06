@@ -311,7 +311,11 @@ would Just Work.[^1]
 
 [^1]: Full disclosure: I may know a thing or two about RuboCop's Emacs formatter.
 
-## next-error Is the Unifying Thread
+## next-error is not really an error
+
+> There is no spoon.
+>
+> -- The Matrix
 
 The most powerful insight about compilation mode is that it's not really about
 compilation. It's about **structured output with source locations**. Any tool
@@ -329,3 +333,5 @@ pattern, it works everywhere.
 I used `M-x compile` for two decades before I really understood the machinery
 underneath. Sometimes the tools you use every day are the ones most worth
 revisiting.
+
+That's all I have for you today. In Emacs we trust!
