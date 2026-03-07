@@ -31,6 +31,17 @@ One thing worth noting: `transpose-lines` is often used not for literal
 transposition but as a building block for [moving lines up and
 down]({% post_url 2013-04-02-move-current-line-up-or-down %}).
 
+One caveat: `transpose-lines` doesn't play well with `visual-line-mode`.
+Since `visual-line-mode` wraps long lines visually without inserting actual
+newlines, what looks like several lines on screen may be a single buffer line.
+`transpose-lines` operates on real (logical) lines, so it can end up swapping
+far more text than you expected. This is one of the reasons I'm not a fan of
+`visual-line-mode` -- it subtly breaks commands that operate on lines. If you
+must use `visual-line-mode`, your best workaround is to fall back to
+`transpose-sentences` or `transpose-paragraphs` (which rely on punctuation and
+blank lines rather than newlines), or temporarily disable `visual-line-mode`
+with `M-x visual-line-mode` before transposing.
+
 ## The Overlooked Ones
 
 Here's where it gets more interesting. Emacs has two more transpose
