@@ -309,6 +309,27 @@ used it here purely to illustrate how `define-compilation-mode` works. In
 practice you'd just `M-x compile RET rubocop --format emacs` and everything
 would Just Work.[^1]
 
+If you want a real, battle-tested `rubocop-mode` rather than rolling your own,
+check out [rubocop-emacs](https://github.com/rubocop/rubocop-emacs). It
+provides commands for running RuboCop on the current file, project, or
+directory, with proper compilation mode integration. Beyond compilation mode,
+RuboCop is also supported out of the box by both
+[Flymake](https://www.gnu.org/software/emacs/manual/html_node/flymake/) (via
+`ruby-flymake-rubocop` in Emacs 29+) and
+[Flycheck](https://www.flycheck.org/) (via the `ruby-rubocop` checker), giving
+you real-time feedback as you edit without needing to run a manual compilation
+at all.
+
+In practice, most popular development tools already have excellent Emacs
+integration, so you're unlikely to need to write your own compilation-derived
+mode any time soon. The last ones I incorporated into my workflow were
+[ag.el](https://github.com/Wilfred/ag.el) and
+[deadgrep.el](https://github.com/Wilfred/deadgrep) -- both compilation-derived
+modes for search tools -- and even those have been around for years. Still,
+understanding how compilation mode works under the hood is valuable for the
+occasional edge case and for appreciating just how much the ecosystem gives you
+for free.
+
 [^1]: Full disclosure: I may know a thing or two about RuboCop's Emacs formatter.
 
 ## next-error is not really an error
