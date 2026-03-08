@@ -16,7 +16,7 @@ you actually customize the highlighting?
 This is another article in a recent streak inspired by my work on
 [neocaml](https://github.com/bbatsov/neocaml),
 [clojure-ts-mode](https://github.com/clojure-emacs/clojure-ts-mode), and
-[adoc-ts-mode](https://github.com/bbatsov/adoc-ts-mode). Building three
+[asciidoc-mode](https://github.com/bbatsov/asciidoc-mode). Building three
 Tree-sitter modes across very different languages has given me a good feel for
 both sides of the font-lock equation -- and I keep running into users who are
 puzzled by how different the new system is from the old regex-based world.
