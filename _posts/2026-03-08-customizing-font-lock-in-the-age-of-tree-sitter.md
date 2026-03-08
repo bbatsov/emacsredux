@@ -121,6 +121,7 @@ Or per-mode via a hook:
 This is the equivalent of the old `font-lock-maximum-decoration` variable, but
 more principled -- features at each level are explicitly chosen by the mode
 author rather than being an arbitrary "how much highlighting do you want?" dial.
+
 **Note:** The Emacs manual describes this system in detail under
 [Font Lock and Syntax](https://www.gnu.org/software/emacs/manual/html_node/elisp/Parser_002dbased-Font-Lock.html#Font-Lock-and-Syntax).
 
@@ -203,6 +204,7 @@ Say you want to distinguish block-delimiting keywords (`begin`/`end`,
 The `:override t` is important -- without it, the new rule won't overwrite
 faces already applied by the mode's built-in rules. And the `:feature` keyword
 assigns the rule to a feature group, so it respects the level/feature system.
+
 **Note:** The full query syntax is documented in the
 [Pattern Matching](https://www.gnu.org/software/emacs/manual/html_node/elisp/Pattern-Matching.html)
 section of the Emacs manual -- it covers node types, field names, predicates,
@@ -269,4 +271,3 @@ more control than the old `font-lock-maximum-decoration` ever did. And
 If you haven't looked at your Tree-sitter mode's font-lock features yet, try
 `M-x describe-variable RET treesit-font-lock-feature-list` in a Tree-sitter
 buffer. You might be surprised by how much you can tweak.
-
