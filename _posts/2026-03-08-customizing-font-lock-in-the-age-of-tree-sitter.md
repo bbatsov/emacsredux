@@ -60,7 +60,7 @@ The trade-off is that customization works differently. You can't just add a
 regexp to a list anymore. But the new system offers its own kind of flexibility,
 and in many ways it's more powerful.
 
-The Emacs manual covers Tree-sitter font-lock in the
+**Note:** The Emacs manual covers Tree-sitter font-lock in the
 [Parser-based Font Lock](https://www.gnu.org/software/emacs/manual/html_node/elisp/Parser_002dbased-Font-Lock.html)
 section. For the full picture of Tree-sitter integration in Emacs, see
 [Parsing Program Source](https://www.gnu.org/software/emacs/manual/html_node/elisp/Parsing-Program-Source.html).
@@ -108,7 +108,7 @@ Or per-mode via a hook:
 This is the equivalent of the old `font-lock-maximum-decoration` variable, but
 more principled -- features at each level are explicitly chosen by the mode
 author rather than being an arbitrary "how much highlighting do you want?" dial.
-The Emacs manual describes this system in detail under
+**Note:** The Emacs manual describes this system in detail under
 [Font Lock and Syntax](https://www.gnu.org/software/emacs/manual/html_node/elisp/Parser_002dbased-Font-Lock.html#Font-Lock-and-Syntax).
 
 ## Cherry-Picking Features: The Fine Knob
@@ -190,7 +190,7 @@ Say you want to distinguish block-delimiting keywords (`begin`/`end`,
 The `:override t` is important -- without it, the new rule won't overwrite
 faces already applied by the mode's built-in rules. And the `:feature` keyword
 assigns the rule to a feature group, so it respects the level/feature system.
-The full query syntax is documented in the
+**Note:** The full query syntax is documented in the
 [Pattern Matching](https://www.gnu.org/software/emacs/manual/html_node/elisp/Pattern-Matching.html)
 section of the Emacs manual -- it covers node types, field names, predicates,
 wildcards, and more.
@@ -257,6 +257,3 @@ If you haven't looked at your Tree-sitter mode's font-lock features yet, try
 `M-x describe-variable RET treesit-font-lock-feature-list` in a Tree-sitter
 buffer. You might be surprised by how much you can tweak.
 
-For mode authors looking to build Tree-sitter support from scratch, the Emacs
-manual has a comprehensive guide:
-[Developing Major Modes with Tree-sitter](https://www.gnu.org/software/emacs/manual/html_node/elisp/Tree_002dsitter-Major-Modes.html).
