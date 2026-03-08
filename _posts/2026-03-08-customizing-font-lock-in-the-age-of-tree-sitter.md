@@ -69,7 +69,20 @@ section. For the full picture of Tree-sitter integration in Emacs, see
 
 Every Tree-sitter major mode organizes its font-lock rules into *features* --
 named groups of related highlighting rules. Features are then arranged into 4
-levels, from minimal to maximal.
+levels, from minimal to maximal. The Emacs manual recommends the following
+conventions for what goes into each level:
+
+- **Level 1:** The absolute minimum -- typically `comment` and `definition`
+- **Level 2:** Key language constructs -- `keyword`, `string`, `type`
+- **Level 3:** Everything that can be reasonably fontified (this is the default level)
+- **Level 4:** Marginally useful highlighting -- things like `bracket`, `delimiter`, `operator`
+
+In practice, many modes don't follow these conventions precisely. Some put
+`number` at level 2, others at level 3. Some include `variable` at level 1,
+others at level 4. The inconsistency across modes means that setting
+`treesit-font-lock-level` to the same number in different modes can give you
+quite different results -- which is one more reason you might want the
+fine-grained control described in the next section.
 
 For example, clojure-ts-mode defines:
 
