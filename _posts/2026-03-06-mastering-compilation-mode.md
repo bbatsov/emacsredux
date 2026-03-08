@@ -222,10 +222,13 @@ Compilation mode isn't just for compilers. Several built-in modes derive from it
 
 The `grep` family deserves special mention. `M-x rgrep` is recursive grep with
 file-type filtering, and it's surprisingly powerful for a built-in tool. The
-results buffer supports all the same navigation, plus `M-x wgrep` (from the
-[wgrep](https://github.com/mhayashi1120/Emacs-wgrep) package) lets you *edit*
-grep results and write the changes back to the original files. That's a workflow
-that rivals any modern IDE.
+results buffer supports all the same navigation, and you can even edit results
+and write changes back to the original files. `M-x occur` has had this built-in
+for a long time via `occur-edit-mode` (just press `e` in the `*Occur*` buffer).
+For grep, the [wgrep](https://github.com/mhayashi1120/Emacs-wgrep) package has
+been the go-to solution, but starting with Emacs 31 there will be a built-in
+`grep-edit-mode` as well. That's a multi-file search-and-replace workflow that
+rivals any modern IDE, no external tools required.
 
 ## Building a Derived Mode
 
