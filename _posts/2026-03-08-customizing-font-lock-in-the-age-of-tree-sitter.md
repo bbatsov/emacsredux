@@ -56,6 +56,18 @@ because a regexp happened to match quote characters. If the code has a syntax
 error, the parser still produces a (partial) tree, and highlighting degrades
 gracefully instead of going haywire.
 
+There's also a significant performance difference. With regex font-lock, every
+regexp in `font-lock-keywords` runs against every line in the visible region on
+each update -- more rules means linearly more work, and a complex major mode can
+easily have dozens of regexps. Poorly written patterns with nested quantifiers
+can trigger catastrophic backtracking, causing visible hangs on certain inputs.
+Multi-line font-lock (via `font-lock-multiline` or `jit-lock-contextually`)
+makes things worse, requiring re-scanning of larger regions that's both expensive
+and fragile. Tree-sitter sidesteps all of this: after the initial parse, edits
+only re-parse the changed portion of the syntax tree, and font-lock queries run
+against the already-built tree rather than scanning raw text. The result is
+highlighting that scales much better with buffer size and rule complexity.
+
 The trade-off is that customization works differently. You can't just add a
 regexp to a list anymore. But the new system offers its own kind of flexibility,
 and in many ways it's more powerful.
