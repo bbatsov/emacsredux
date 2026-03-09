@@ -180,10 +180,13 @@ enable or disable individual features, regardless of level:
 You can also call it interactively with `M-x treesit-font-lock-recompute-features`
 to experiment in the current buffer before committing to a configuration.
 
-This is something that was hard to do cleanly in the old regex world. You'd have
-to dig into `font-lock-keywords`, figure out which entries corresponded to which
-syntactic elements, and surgically remove them. With Tree-sitter, it's a
-declarative list of names.
+This used to be hard in the old regex world -- you'd have to dig into
+`font-lock-keywords`, figure out which entries corresponded to which syntactic
+elements, and surgically remove them. Emacs 29 improved the situation with
+`font-lock-ignore`, which lets you declaratively suppress specific font-lock
+rules by mode, face, or regexp. Still, the Tree-sitter approach is arguably
+cleaner: features are named groups designed for exactly this kind of
+cherry-picking, rather than an escape hatch bolted on after the fact.
 
 ## Customizing Faces
 
@@ -283,6 +286,7 @@ Here's a quick reference for the key differences:
 | Granularity control     | `font-lock-maximum-decoration`       | `treesit-font-lock-level` + features      |
 | Adding rules            | `font-lock-add-keywords`             | Append to `treesit-font-lock-settings`    |
 | Removing rules          | `font-lock-remove-keywords`          | `treesit-font-lock-recompute-features`    |
+| Suppressing rules       | `font-lock-ignore` (Emacs 29+)       | Disable features via level or cherry-pick |
 | Debugging               | `re-builder`                         | `treesit-explore-mode`                    |
 | Handles nesting         | Poorly                               | Correctly (by definition)                 |
 | Multi-line constructs   | Fragile                              | Works naturally                           |
