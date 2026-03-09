@@ -96,6 +96,23 @@ others at level 4. The inconsistency across modes means that setting
 quite different results -- which is one more reason you might want the
 fine-grained control described in the next section.[^1]
 
+It's also worth noting that the feature names themselves are not standardized.
+There are many common ones you'll see across modes -- `comment`, `string`,
+`keyword`, `type`, `number`, `bracket`, `operator`, `definition`, `function`,
+`variable`, `constant`, `builtin` -- but individual modes often define features
+specific to their language. Clojure has `quote`, `deref`, and `tagged-literals`;
+OCaml might have `attribute`; a markup language mode might have `heading` or
+`link`. Different modes also vary in how granular they get: some expose a rich
+set of features that let you fine-tune almost every aspect of highlighting, while
+others are more spartan and stick to the basics.
+
+The bottom line is that you'll always have to check what your particular mode
+offers. The easiest way is `M-x describe-variable RET
+treesit-font-lock-feature-list` in a buffer using that mode -- it shows all
+features organized by level. You can also inspect the mode's source directly by
+looking at how it populates `treesit-font-lock-settings` (try `M-x find-library`
+to jump to the mode's source).
+
 For example, clojure-ts-mode defines:
 
 | Level | Features                                                    |
