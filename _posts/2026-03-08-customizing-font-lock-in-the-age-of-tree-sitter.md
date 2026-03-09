@@ -8,7 +8,7 @@ tags:
 ---
 
 I recently wrote about
-[building major modes with Tree-sitter](https://batsov.com/articles/2026/02/28/building-emacs-major-modes-with-tree-sitter/)
+[building major modes with Tree-sitter](https://batsov.com/articles/2026/02/27/building-emacs-major-modes-with-treesitter-lessons-learned/)
 over on batsov.com, covering the mode author's perspective. But what about the
 *user's* perspective? If you're using a Tree-sitter-powered major mode, how do
 you actually customize the highlighting?
