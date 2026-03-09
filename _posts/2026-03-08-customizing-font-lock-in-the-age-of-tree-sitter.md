@@ -26,10 +26,14 @@ font-lock work exactly the way you want.
 
 ## The Old World: Regex Font-Lock
 
-Traditional font-lock in Emacs is built on regular expressions. A major mode
-defines `font-lock-keywords` -- a list of regexps paired with faces. Emacs runs
-each regexp against the buffer text and applies the corresponding face to
-matches. This has worked for decades, and it's beautifully simple.
+Traditional font-lock in Emacs actually has two phases. First, *syntactic
+fontification* handles comments and strings using the buffer's syntax table and
+`parse-partial-sexp` (implemented in C) -- this isn't regexp-based at all.
+Second, *keyword fontification* runs the regexps in `font-lock-keywords` against
+the buffer text to highlight everything else: language keywords, types, function
+names, and so on. When people talk about "regex font-lock," they usually mean
+this second phase, which is where most of the mode-specific highlighting lives
+and where most of the customization happens.
 
 If you wanted to customize it, you'd manipulate `font-lock-keywords` directly:
 
