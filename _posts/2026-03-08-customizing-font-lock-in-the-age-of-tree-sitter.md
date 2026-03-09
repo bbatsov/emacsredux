@@ -94,7 +94,7 @@ In practice, many modes don't follow these conventions precisely. Some put
 others at level 4. The inconsistency across modes means that setting
 `treesit-font-lock-level` to the same number in different modes can give you
 quite different results -- which is one more reason you might want the
-fine-grained control described in the next section.
+fine-grained control described in the next section.[^1]
 
 For example, clojure-ts-mode defines:
 
@@ -283,3 +283,5 @@ more control than the old `font-lock-maximum-decoration` ever did. And
 If you haven't looked at your Tree-sitter mode's font-lock features yet, try
 `M-x describe-variable RET treesit-font-lock-feature-list` in a Tree-sitter
 buffer. You might be surprised by how much you can tweak.
+
+[^1]: Writing this article has been more helpful than I expected -- halfway through, I realized my own neocaml had `function` banished to level 4 and `number` promoted to level 2. Physician, heal thyself.
