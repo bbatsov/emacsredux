@@ -153,9 +153,10 @@ A few things to keep in mind:
 
 ## The End
 
-I don't know about you, but I really wish that this got added to Emacs a long time
-ago. Still, the transition to Tree-sitter modes is bound to take years, so many
-of us will still get to leverage `font-lock-ignore` and benefit from it.
+I don't know about you, but I really wish that `font-lock-ignore` got added to
+Emacs a long time ago. Still, the transition to Tree-sitter modes is bound to
+take years, so many of us will still get to leverage `font-lock-ignore` and
+benefit from it.
 
 That's all I have for you today. Keep hacking!
 
