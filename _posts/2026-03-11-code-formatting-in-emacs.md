@@ -82,7 +82,7 @@ You can wrap this in a command for repeated use:
   (let ((point (point)))
     (shell-command-on-region
      (point-min) (point-max)
-     "prettier --stdin-filepath buffer.js"
+     "prettier --stdin-filepath foo.js"
      (current-buffer) t)
     (goto-char point)))
 ```
@@ -195,11 +195,9 @@ server handles the formatting logic, and Emacs just sends the request.
 
 ### eglot (built-in since Emacs 29)
 
-```emacs-lisp
-;; Manual formatting
-M-x eglot-format          ;; formats region or buffer
-M-x eglot-format-buffer   ;; formats the entire buffer
-```
+The main commands are `eglot-format` (formats the active region, or the entire
+buffer if no region is active) and `eglot-format-buffer` (always formats the
+entire buffer).
 
 Format-on-save requires a hook -- eglot doesn't provide a toggle for it:
 
@@ -214,11 +212,7 @@ buffers.
 
 ### lsp-mode
 
-```emacs-lisp
-;; Manual formatting
-M-x lsp-format-buffer
-M-x lsp-format-region
-```
+The equivalents here are `lsp-format-buffer` and `lsp-format-region`.
 
 lsp-mode has a built-in option for format-on-save:
 
@@ -284,8 +278,10 @@ issue endorsing packages created by them.
 
 I'm in camp LSP most of the time these days, and I'd guess most people are too.
 But if I weren't, I'd probably take `apheleia` for a spin. Either way, it's
-never bad to have options, right? There are languages where LSP isn't as prevalent -- all
-sorts of Lisp dialects, for instance -- where something like `apheleia` or
+never bad to have options, right?
+
+There are languages where LSP isn't as prevalent -- all sorts of Lisp dialects,
+for instance -- where something like `apheleia` or
 `reformatter.el` might come in handy. But then again, in Lisps `indent-region`
 works so well that you rarely need anything else. I'm a huge fan of
 `indent-region` myself -- for any good Emacs mode, it's all the formatting you
