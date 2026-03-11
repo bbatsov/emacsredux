@@ -267,7 +267,6 @@ unformatted codebase on save is a recipe for noisy diffs.
 ((python-mode . ((eval . (black-format-on-save-mode)))))
 ```
 
-
 ## Epilogue
 
 So many options, right? That's so Emacs!
@@ -275,12 +274,13 @@ So many options, right? That's so Emacs!
 I'll admit that I don't actually use any of the packages mentioned in this
 article -- I learned about all of them while doing a bit of research for
 alternatives to the DIY and LSP approaches. That said, I have a very high
-opinion of everything done by
-[Steve Purcell](https://github.com/purcell) (author of `reformatter.el` and
-the popular [Emacs Prelude-like config](https://github.com/purcell/emacs.d)) and
-[Radon Rosborough](https://github.com/radian-software) (author of `apheleia`,
-`straight.el`, and the [Radian](https://github.com/radian-software/radian) Emacs
-config), so I have no issue endorsing packages created by them.
+opinion of everything done by [Steve Purcell](https://github.com/purcell)
+(author of `reformatter.el`, many other Emacs packages, a popular [Emacs
+Prelude-like config](https://github.com/purcell/emacs.d), and co-maintainer of
+MELPA) and [Radon Rosborough](https://github.com/radian-software) (author of
+`apheleia`, `straight.el`, and the
+[Radian](https://github.com/radian-software/radian) Emacs config), so I have no
+issue endorsing packages created by them.
 
 I'm in camp LSP most of the time these days, and I'd guess most people are too.
 But if I weren't, I'd probably take `apheleia` for a spin. Either way, it's
