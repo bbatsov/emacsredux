@@ -175,8 +175,8 @@ pair" command without pulling in a big package, here's a little hack that does t
 CHAR should be an opening delimiter like (, [, {, or \".
 Works by searching backward for the opener and forward for the closer."
   (interactive "cDelete surrounding pair: ")
-  (let* ((pairs '((?( . ?))
-                  (?[ . ?])
+  (let* ((pairs '((?\( . ?\))
+                  (?\[ . ?\])
                   (?{ . ?})
                   (?\" . ?\")
                   (?\' . ?\')
