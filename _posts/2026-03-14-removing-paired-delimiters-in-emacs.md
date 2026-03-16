@@ -187,12 +187,11 @@ Works by searching backward for the opener and forward for the closer."
       (let ((orig (point)))
         ;; Find and delete the opener
         (when (search-backward (char-to-string char) nil t)
-          (let ((open-pos (point)))
-            (delete-char 1)
-            ;; Find and delete the closer (adjust for removed char)
-            (goto-char (1- orig))
-            (when (search-forward (char-to-string closer) nil t)
-              (delete-char -1))))))))
+          (delete-char 1)
+          ;; Find and delete the closer (adjust for removed char)
+          (goto-char (1- orig))
+          (when (search-forward (char-to-string closer) nil t)
+            (delete-char -1)))))))
 
 (global-set-key (kbd "M-s-d") #'delete-surrounding-pair)
 ```
