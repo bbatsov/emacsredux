@@ -202,12 +202,22 @@ deliberately naive -- no syntax awareness, no nesting support -- so it won't pla
 delimiters inside strings or comments (it'll happily match a paren in a comment if that's what
 it finds first). But for quick, straightforward edits it gets the job done.
 
+**TIP:** If you're looking for something closer to the `surround.vim` experience in Emacs (without going
+full `smartparens`), check out [surround.el](https://github.com/mkleehammer/surround). It's a
+lightweight package (available on MELPA) that provides `surround.vim`-style operations --
+deleting, changing, and adding surrounding pairs -- all through a single keymap. It supports both
+"inner" and "outer" text selection modes and works uniformly across file types, which makes it a
+nice middle ground between `delete-pair` and `smartparens`.
+
 ### When to Use What
 
 My current setup is:
 
 - **Lisp languages** (Emacs Lisp, Clojure, Common Lisp, etc.): `paredit`, no contest.
-- **Everything else**: `electric-pair-mode` for auto-pairing, plus `delete-pair` when I need to unwrap something.
+- **Everything else**: `electric-pair-mode` for auto-pairing (I rarely need to unwrap something outside of Lisps)
+
+I think `surround.el` will pair well with `electric-pair-mode`, but I discovered it only recently
+and I've yet to try it out in practice.
 
 If you want a more powerful structural editing experience across all languages, `smartparens` is
 hard to beat. It's just more than I personally need outside of Lisp.
@@ -219,3 +229,9 @@ every other day. Even after decades of daily use, there are always more commands
 corners, patiently waiting to be discovered.
 
 Now, if you'll excuse me, I'm going to immediately forget about `delete-pair` again. Keep hacking!
+
+**Update:** A reader pointed me to [this Reddit
+thread](https://www.reddit.com/r/emacs/comments/1ohr4uy/tip_use_deletepair_to_change_surroundings_similar/)
+with more tips on using `delete-pair` (including using it to change surrounding
+delimiters, `surround.vim`-style). Worth a read if you want to get more mileage
+out of it.
