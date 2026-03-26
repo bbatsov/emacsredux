@@ -19,11 +19,11 @@ front-end](https://batsov.com/articles/2021/12/06/emacs-is-not-a-proper-gtk-appl
 to see it bundled with Emacs going forward. This will certainly make Emacs better positioned to complete with "modern" editors like VS Code.
 
 **Reason #3** - built-in support for
-[TreeSitter](https://tree-sitter.github.io/tree-sitter/). This means that a few
+[Tree-sitter](https://tree-sitter.github.io/tree-sitter/). This means that a few
 years down the road we'll have many Emacs major modes that are much faster, more robust
 and feature-rich. It's infinitely easier to built a major mode using a real
 parser instead of using regular expressions.[^2]  Lots of built-in modes have
-already been updated to have a version using `TreeSitter` internally (e.g. `c-ts-mode`, `typescript-ts-mode`, `python-ts-mode` and `ruby-ts-mode`). Frankly, I
+already been updated to have a version using `Tree-sitter` internally (e.g. `c-ts-mode`, `typescript-ts-mode`, `python-ts-mode` and `ruby-ts-mode`). Frankly, I
 can't think of a bigger improvement in Emacs in the almost 20 years I've been an
 Emacs user. Exciting times ahead!
 
