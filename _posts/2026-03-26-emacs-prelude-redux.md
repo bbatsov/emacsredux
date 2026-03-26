@@ -18,8 +18,8 @@ occasion to also ship something I've been working towards for a while --
 
 ## A Long Time Coming
 
-The last tagged Prelude release (1.1) happened all the way back in February
-2021. Five years without a release might sound alarming, but I'd argue it's a
+The last tagged Prelude release (1.1) happened all the way back in February 2021.
+Five years without a release might sound alarming, but I'd argue it's a
 feature, not a bug. Prelude has always aimed to be a *foundation* -- simple,
 stable, easy to understand. I never wanted users to dread pulling upstream
 because everything moved under their feet. If you look at some of the more
