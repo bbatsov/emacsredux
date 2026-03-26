@@ -87,7 +87,7 @@ over the past few months. Two reasons for that:
   [neocaml](https://github.com/bbatsov/neocaml), and new projects always
   generate a steady stream of interesting findings worth sharing. I've made it a
   rule of mine to turn those into blog posts instead of letting them fade from
-  memory.
+  memory.[^2]
 - I wanted to celebrate this birthday in style, so I promised myself to push a
   bit harder on the blogging front until today. No promises for the rest of the year, though!
 
@@ -111,4 +111,5 @@ well and relevant for many years to come!
 
 In Emacs we trust! Keep hacking!
 
-[^1] Same here I guess, given I was born on the 13th.
+[^1]: Same here I guess, given I was born on the 13th.
+[^2]: I've also been gradually updating most of my Emacs packages, especially those that didn't get much love in the last couple of years.
