@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Emacs Prelude: Redux"
-date: 2026-03-26 14:00 +0200
+date: 2026-03-26 13:50 +0200
 tags:
 - Prelude
 ---
