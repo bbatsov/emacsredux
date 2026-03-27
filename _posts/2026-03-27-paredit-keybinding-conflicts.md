@@ -227,20 +227,19 @@ trade-off most Lisp programmers are happy to make.
 
 ## What about me?
 
-I don't use much of the commands shadowed by Paredit, so I didn't
+I don't use most of the commands shadowed by Paredit, so I didn't
 even think about the conflicts much before today. Given that I'm a
 macOS user these days I like Magnar's approach to solving the
 conflicts. But I'm also sooo used to pressing `M-s`... Decisions,
 decisions...
 
-I definitely think everyone should free up `M-?`, given the default is
-quite important command. For me this was never much of a problem as
-I've always used Projectile's wrappers around `xref` commands --
+I definitely think everyone should free up `M-?`, given the default is quite
+important command. For me this was never much of a problem in the past (until
+the LSP era) as I've always used Projectile's wrappers around `xref` commands --
 `projectile-find-references` (`s-p ?` or `C-c p ?`) instead of
-`xref-find-references`, and `projectile-find-tag` (`s-p j` or
-`C-c p j`) instead of `xref-find-definitions`. Projectile scopes
-these to the current project automatically, which is what I usually
-want anyway.
+`xref-find-references`, and `projectile-find-tag` (`s-p j` or `C-c p j`) instead
+of `xref-find-definitions`. Projectile scopes these to the current project
+automatically, which is what I usually want anyway.
 
 I don't really care about any commands with arrows in them, as I'm
 using an HHKB keyboard and it's not really fun to press arrows on
