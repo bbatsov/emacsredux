@@ -3,7 +3,6 @@ layout: post
 title: "Automatic Light/Dark Theme Switching"
 date: 2026-03-29 11:30 +0300
 tags:
-- Emacs 29
 - macOS
 - Packages
 - Themes
@@ -19,12 +18,15 @@ to automate it.
 
 <!--more-->
 
-## Following the OS Appearance (macOS)
+## Following the OS Appearance (macOS + Emacs Plus)
 
-Since Emacs 29, the macOS (aka `ns`/NextStep port) build can detect when the OS
-switches between light and dark mode. The hook
-`ns-system-appearance-change-functions` fires whenever that happens, passing the
-symbol `light` or `dark` as an argument. All you need is:
+If you're using [Emacs Plus](https://github.com/d12frosted/homebrew-emacs-plus)
+on macOS (which many Mac users do), you get the hook
+`ns-system-appearance-change-functions`. This is **not** part of core Emacs --
+it's a [patch](https://github.com/d12frosted/homebrew-emacs-plus/blob/master/patches/emacs-28/system-appearance.patch)
+that Emacs Plus applies on top of the NS build. The hook fires
+whenever macOS switches between light and dark mode, passing the symbol `light`
+or `dark` as an argument. All you need is:
 
 ``` emacs-lisp
 (defun my-apply-theme (appearance)
@@ -43,11 +45,11 @@ currently active themes first -- without it, `load-theme` stacks the new theme
 on top of the old one, which can cause weird color bleed between the two.
 
 This approach is nice because it keeps Emacs in sync with every other app on
-your system. If you're on macOS and running Emacs 29+, this is probably what you
-want.
+your system. If you're on macOS with Emacs Plus, this is probably the simplest
+option.
 
-**Note:** This only works with the native macOS build. If you're running Emacs
-under X11 on macOS or on Linux/Windows, read on.
+**Note:** This only works with Emacs Plus's patched NS build. If you're using a
+vanilla Emacs build, or you're on Linux/Windows, read on.
 
 ## Following the OS Appearance (Cross-Platform)
 
@@ -121,8 +123,8 @@ schedule however you like.
 
 ## Which One Should You Pick?
 
-- **macOS and want zero dependencies?** The `ns-system-appearance-change-functions`
-  hook is all you need.
+- **macOS with Emacs Plus and want zero dependencies?** The
+  `ns-system-appearance-change-functions` hook is all you need.
 - **Want OS tracking on Linux/Windows too?** `auto-dark` has you covered.
 - **Prefer time-based switching?** `circadian.el` is the polished option;
   the DIY `run-at-time` approach works if you want to keep things minimal.
