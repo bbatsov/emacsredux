@@ -49,9 +49,7 @@ it a great alternative to Flyspell:
   have sold me on it.
 - A much nicer correction UI. `M-$` (`jinx-correct`) pops up a
   `completing-read` menu (lovely if you're using `vertico`) with the
-  suggestions, and below them - entries for saving the word to your personal
-  dictionary, as a file-local word, or just for the current session. `C-u M-$`
-  corrects all the misspellings in the buffer in one go.
+  suggestions, plus entries for saving the word. More on that in a bit.
 
 ## The Setup
 
@@ -68,6 +66,12 @@ Here's the relevant bit of my config:
 `M-$` is bound to `ispell-word` by default, so rebinding it to `jinx-correct`
 feels quite natural. `jinx-languages` allows you to switch the active languages
 for the current buffer on the fly.
+
+Note that those bindings are not optional - Jinx doesn't bind any keys globally
+and `jinx-mode-map` is empty, so out of the box there's no way to even trigger
+a correction! The package does come with a few handy bindings of its own, but
+they live on the misspelled words themselves (via overlay keymaps) and are
+active only while point is on one of them. More on that in the next section.
 
 One thing to keep in mind - Jinx uses a small native module to talk to
 libenchant, and this module gets compiled automatically the first time you
@@ -86,6 +90,50 @@ Admittedly, that's a bit more setup than Flyspell, which is built-in and only
 needs an external `aspell`/`hunspell` binary. Flyspell will probably remain the
 path of least resistance, but in my opinion the small extra effort pays for
 itself many times over.
+
+## Essential Keybindings
+
+In the spirit of [Essential Flyspell]({% post_url 2025-03-31-essential-flyspell %}),
+let's go over the keybindings you actually need. The nice thing about Jinx is
+that almost everything hangs off `M-$`:
+
+- `M-$` (`jinx-correct`) - correct the nearest misspelled word
+- `C-u M-$` - correct all the misspellings in the buffer, one after another
+- `C-u C-u M-$` (`jinx-correct-word`) - correct the word before point, even if
+  Jinx doesn't consider it misspelled
+- `C-M-$` (`jinx-languages`) - switch the languages for the current buffer
+
+When point is on a misspelled word a few extra bindings light up (those are
+the overlay-map bindings I mentioned earlier):
+
+- `M-n` (`jinx-next`) and `M-p` (`jinx-previous`) - jump to the next/previous
+  misspelling. They also set up a repeat map (provided you've enabled the
+  built-in `repeat-mode`), so after the first jump you can keep going with
+  just `n` and `p`, and press `$` to correct the word you've landed on.
+- `mouse-3` (a.k.a. right click) - pops up a menu with the corrections.
+  (Flyspell used `mouse-2` for this, which always clashed with the default
+  mouse yank)
+
+The correction minibuffer has a few tricks of its own:
+
+- `1` to `9` select the corresponding suggestion right away
+- `M-n` and `M-p` move to the next/previous misspelled word without leaving
+  the minibuffer - super handy in combination with `C-u M-$`
+- below the suggestions you'll find entries for saving the word, prefixed with
+  `@` (personal dictionary), `*` (file-local), `/` (directory-local) and `+`
+  (just for the current session)
+
+If your Flyspell muscle memory is strong, here's how the old bindings map to
+the new ones:
+
+- `M-$` (`ispell-word`) is still `M-$` - that was the whole point of the
+  binding in my setup
+- `C-,` (`flyspell-goto-next-error`) becomes `M-n`
+- `C-c $` (`flyspell-correct-word-before-point`) is also covered by `M-$`, as
+  correcting a word and saving it to your dictionary live in the same menu
+- `C-.` and `C-;` (the auto-correct commands) have no direct equivalent -
+  Jinx always takes you through the correction minibuffer, although the
+  numeric quick-select keys make that almost as fast
 
 **Note:** Dropping Flyspell also frees up `C-.` and `C-;`, which happen to be
 prime keybinding real estate. In my setup they are now bound to
