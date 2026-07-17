@@ -20,6 +20,14 @@ That being said, relative line numbers are easy to enable in Emacs and quite han
 (global-display-line-numbers-mode +1)
 ```
 
+Here's how the two styles compare - absolute numbers first:
+
+![A buffer with absolute line numbers](/assets/images/line-numbers-absolute.png)
+
+And the relative variant, counting away from the current line:
+
+![The same buffer with relative line numbers](/assets/images/line-numbers-relative.png)
+
 Relative line numbers are useful with the Emacs core commands `forward-line`
 (`C-n`) and `previous-line` (`C-p`) as well.  Just trigger them with the universal prefix
 `C-u` and you can move quickly around:
