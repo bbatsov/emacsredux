@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tree-sitter Modes Still Need a Syntax Table"
-date: 2026-06-22 07:30 +0300
+date: 2026-07-17 12:15 +0300
 tags:
 - Tree-sitter
 - Major Modes
