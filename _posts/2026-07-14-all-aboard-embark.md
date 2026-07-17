@@ -41,6 +41,10 @@ The beauty of it is that you don't have to abort the minibuffer session,
 fiddle with `dired` or remember some obscure command name - the action comes to
 you, right where you are.
 
+Here's the action menu you get when you press `C-.` with point on a URL:
+
+![embark-act showing the available actions for the URL at point](/assets/images/embark-act-url.png)
+
 There's also `embark-dwim` (`C-;` here), which skips the menu and runs the
 default action directly - it opens the URL at point, visits the file at point
 and so on. I find myself using it all the time for the common cases and
