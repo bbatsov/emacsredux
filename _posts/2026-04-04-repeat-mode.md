@@ -38,6 +38,12 @@ experience out of the box. Here are some of the highlights:
 - `C-x <left> <left>` / `C-x <right> <right>` -- cycle through buffer history
 - `M-g n n n` / `M-g p p p` -- jump through next-error results
 
+Here's the window-cycling case - after the initial `C-x o` each subsequent
+press of a bare `o` keeps switching windows, and the echo area reminds you
+that the repeat map is active:
+
+![Cycling windows with C-x o and then just o](/assets/images/repeat-mode-demo.gif)
+
 The transient state ends as soon as you press any key that isn't part
 of the repeat map.
 
