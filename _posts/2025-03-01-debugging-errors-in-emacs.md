@@ -13,6 +13,9 @@ this works exactly.
 
 The obvious thing that happens when `debug-on-error` is
 enabled is that when an error happen you're seeing its backtrace (or stacktrace, depending on the terminology you prefer).
+
+![The backtrace of a failed command in the *Backtrace* buffer](/assets/images/backtrace-buffer.png)
+
 What's not so obvious (even, if it's in the name) is that this buffer is
 actually a [debugger](https://www.gnu.org/software/emacs/manual/html_node/elisp/Debugger.html) buffer and you can do a lot with it. Here are a few examples:
 
