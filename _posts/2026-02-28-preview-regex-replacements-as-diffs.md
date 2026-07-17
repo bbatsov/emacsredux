@@ -23,6 +23,10 @@ familiar unified diff format before committing to anything.
 If you're happy with the changes, you can apply them as a patch. If something
 looks off, just close the diff buffer and nothing has changed.
 
+Here's what replacing `setq` with `setopt` across a config file looks like:
+
+![The proposed replacements shown as a unified diff](/assets/images/replace-regexp-as-diff.png)
+
 ## Multi-file support
 
 It gets even better. There are two companion commands for working across files:
