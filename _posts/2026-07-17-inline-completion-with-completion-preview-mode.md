@@ -9,8 +9,9 @@ tags:
 
 As part of the ongoing overhaul of my [Emacs setup](https://github.com/bbatsov/emacs.d)
 I've been trying to make the most of the built-in functionality that recent Emacs
-releases keep quietly shipping. My in-buffer completion setup is based on `corfu`
-and `cape` these days, but it turns out I had overlooked a nice Emacs 30 addition
+releases keep quietly shipping. My in-buffer completion setup is
+[based on `corfu` and `cape`]({% post_url 2026-07-13-cape-corfus-best-friend %})
+these days, but it turns out I had overlooked a nice Emacs 30 addition
 in the same area - `completion-preview-mode`.
 It gives you inline completion suggestions - the "ghost text" UI that GitHub
 Copilot and friends made famous[^1] - except here it's powered by plain old
