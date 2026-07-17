@@ -34,6 +34,10 @@ Running `M-x delete-pair` gives you:
 print_endline "hello"
 ```
 
+Here's the whole thing in motion:
+
+![delete-pair removing both parentheses at once](/assets/images/delete-pair-demo.gif)
+
 Simple and useful! Yet `delete-pair` has **no default keybinding**, which probably explains why
 so few people know about it. If you want to use it regularly, you'll need to bind it yourself:
 
