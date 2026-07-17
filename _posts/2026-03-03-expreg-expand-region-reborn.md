@@ -66,7 +66,10 @@ The package requires Emacs 29.1+ and the setup is minimal:
 ```
 
 That's it. Two commands: `expreg-expand` and `expreg-contract`. If you've used
-expand-region, you already know the workflow.
+expand-region, you already know the workflow. Here it is in action - each press
+of `C-=` grows the selection to the next semantic unit:
+
+![expreg growing the region step by step](/assets/images/expreg-demo.gif)
 
 ## What Makes It Better Than expand-region
 
