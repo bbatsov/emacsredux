@@ -23,6 +23,11 @@ If you're not already using `M-x compile`, start today. It runs a shell command,
 captures the output in a `*compilation*` buffer, and parses error messages so you
 can jump directly to the offending source locations.
 
+Here's `next-error` having jumped straight to the offending line, with the
+parsed (and clickable) error message below:
+
+![A compilation buffer with a parsed error and the source line it points to](/assets/images/compilation-mode.png)
+
 The essential keybindings in a compilation buffer:
 
 | Keybinding  | Command                        | What it does                                      |
