@@ -51,6 +51,10 @@ it a great alternative to Flyspell:
   `completing-read` menu (lovely if you're using `vertico`) with the
   suggestions, plus entries for saving the word. More on that in a bit.
 
+Here's Jinx flagging a few typos for me:
+
+![Jinx underlining the misspelled words in a buffer](/assets/images/jinx-misspellings.png)
+
 ## The Setup
 
 Here's the relevant bit of my config:
@@ -122,6 +126,11 @@ The correction minibuffer has a few tricks of its own:
 - below the suggestions you'll find entries for saving the word, prefixed with
   `@` (personal dictionary), `*` (file-local), `/` (directory-local) and `+`
   (just for the current session)
+
+This is how correcting a word looks with `vertico` (note the numbered quick
+select keys and the squiggly underlines on the remaining typos):
+
+![jinx-correct's suggestion menu powered by vertico](/assets/images/jinx-correct-menu.png)
 
 If your Flyspell muscle memory is strong, here's how the old bindings map to
 the new ones:
