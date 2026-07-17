@@ -37,6 +37,10 @@ Emacs 27 introduced `isearch-lazy-count`:
 With this enabled, your search prompt shows something like `(3/47)` -- meaning you're on the 3rd
 match out of 47 total. Simple, built-in, and requires no external packages.
 
+Here it is in action:
+
+![isearch showing the current match and the total match count in the search prompt](/assets/images/isearch-lazy-count.png)
+
 Unlike `anzu`, which showed counts in the mode-line, `isearch-lazy-count` displays them right in
 the minibuffer alongside the search string, which is arguably a better location since your eyes
 are already there while searching.
