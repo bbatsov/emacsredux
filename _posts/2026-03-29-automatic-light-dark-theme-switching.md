@@ -16,6 +16,12 @@ Most theme families these days ship both light and dark variants. For example,
 (dark). But switching between them manually gets old fast. Here are a few ways
 to automate it.
 
+The goal - the same buffer following the OS appearance, no manual switching:
+
+![The light Tokyo Night Day variant](/assets/images/auto-theme-light.png)
+
+![The dark Tokyo Night Storm variant](/assets/images/auto-theme-dark.png)
+
 <!--more-->
 
 ## Following the OS Appearance (macOS + Emacs Plus)
