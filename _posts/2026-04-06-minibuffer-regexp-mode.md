@@ -35,6 +35,8 @@ type it* in the minibuffer. Capture groups, character classes, and
 other constructs get color-coded so you can see at a glance whether
 your grouping is right.
 
+![Composing a regexp with the groups highlighted in the minibuffer](/assets/images/minibuffer-regexp-mode.png)
+
 I find this particularly useful when building a regexp with
 multiple groups for `query-replace-regexp`, where you need to get the
 group numbering right for the replacement string (e.g., `\1`, `\2`).
