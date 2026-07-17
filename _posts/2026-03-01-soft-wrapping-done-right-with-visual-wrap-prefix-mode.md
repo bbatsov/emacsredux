@@ -60,21 +60,15 @@ can tweak `visual-wrap-extra-indent` (default `0`):
 
 ## Before and after
 
-**Without `visual-wrap-prefix-mode`** (standard `visual-line-mode`):
+**Without `visual-wrap-prefix-mode`** (standard `visual-line-mode`) the
+continuation lines start at column zero, breaking the list structure:
 
-```
-    Some deeply indented text that is quite long and
-wraps to the next line without any indentation, which
-looks terrible and breaks the visual structure.
-```
+![Continuation lines starting at column zero with plain visual-line-mode](/assets/images/visual-wrap-before.png)
 
-**With `visual-wrap-prefix-mode`:**
+**With `visual-wrap-prefix-mode`** they line up with the text of the list item
+they belong to:
 
-```
-    Some deeply indented text that is quite long and
-    wraps to the next line with proper indentation,
-    preserving the visual structure nicely.
-```
+![Continuation lines indented to match their line with visual-wrap-prefix-mode](/assets/images/visual-wrap-after.png)
 
 ## A bit of history
 
