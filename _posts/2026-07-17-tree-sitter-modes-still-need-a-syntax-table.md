@@ -20,8 +20,8 @@ I got a sharp reminder of this while building
 OCaml. The grammar parsed everything beautifully, yet `delete-pair` and
 sexp motion kept misbehaving around a couple of OCaml constructs. The
 fix turned out to be a classic tool that long predates tree-sitter:
-`syntax-propertize-function`. Here's the story, since it's useful
-knowledge for anyone writing a mode.
+`syntax-propertize-function`. Here's the story - it tripped me up for a
+good while, so maybe it'll spare you some head-scratching.
 
 <!--more-->
 
@@ -45,7 +45,7 @@ let y = '('   (* the ( is an unbalanced open paren *)
 ```
 
 **Quoted string literals.** OCaml's `{|...|}` (and tagged `{foo|...|foo}`)
-raw strings can contain anything -- including `"`, `(*`, and friends --
+raw strings can contain anything - including `"`, `(*`, and friends -
 which the syntax table reads as real string/comment delimiters:
 
 ``` ocaml
@@ -64,7 +64,7 @@ And every command that consults the syntax table inherits the confusion:
 `C-M-f` walks off into nonsense, `delete-pair` grabs the wrong delimiter,
 `electric-pair-mode` autopairs incorrectly.
 
-Note that *font-lock* looks fine here -- tree-sitter fontifies these
+Note that *font-lock* looks fine here - tree-sitter fontifies these
 constructs correctly from the parse tree. That's exactly what makes the
 bug sneaky: the buffer looks right, but the syntactic layer underneath is
 lying.
@@ -77,7 +77,7 @@ a buffer-local function that runs lazily over regions of the buffer and
 applies `syntax-table` *text properties* to override the static table
 where context demands it. Because the properties are attached to specific
 positions, `'` can be a string delimiter in `'a'` and an ordinary symbol
-character in `'a list` -- in the same buffer.
+character in `'a list` - in the same buffer.
 
 The usual way to write one is with `syntax-propertize-rules`, which maps
 regexps to the syntax classes to apply to their capture groups. Here's
@@ -125,12 +125,12 @@ Two kinds of rules are at work:
   string, so embedded quotes and comment starters are neutralized.
 
 With that in place, `syntax-ppss` tells the truth again, and `C-M-f`,
-`delete-pair`, and `electric-pair-mode` all behave -- including for the
+`delete-pair`, and `electric-pair-mode` all behave - including for the
 `delete-pair` corner case I [wrote about earlier]({% post_url 2026-03-14-removing-paired-delimiters-in-emacs %}).
 
 ## Lessons for mode writers
 
-A few things worth internalizing, whether or not you touch OCaml:
+A few things worth keeping in mind, whether or not you touch OCaml:
 
 - **Tree-sitter and the syntax table are different layers.** The parser
   handles font-lock and structural queries; the syntax table handles
@@ -139,14 +139,14 @@ A few things worth internalizing, whether or not you touch OCaml:
   [Customizing Font-Lock in the Age of Tree-sitter]({% post_url 2026-03-08-customizing-font-lock-in-the-age-of-tree-sitter %}).)
 - **Reach for `syntax-propertize` when a character's role is
   context-dependent.** Raw strings, here-docs, regex literals, character
-  literals, JSX -- anything a single syntax class can't capture. This is
+  literals, JSX - anything a single syntax class can't capture. This is
   exactly what `rust-ts-mode` and `c-ts-mode` use it for, too.
 - **The syntax-table text properties don't affect tree-sitter font-lock.**
   They're a separate channel, so you can fix the syntactic layer without
   disturbing your carefully tuned highlighting.
 - **Don't call `syntax-ppss` from inside your
-  `syntax-propertize-function`.** It's re-entrant -- `syntax-propertize`
-  is itself driven by `syntax-ppss` -- and a fragile source of subtle
+  `syntax-propertize-function`.** It's re-entrant - `syntax-propertize`
+  is itself driven by `syntax-ppss` - and a fragile source of subtle
   bugs. Match constructs whole from their opening delimiter instead, as
   the quoted-string rule above does, rather than asking "am I currently
   inside a string?".
@@ -155,8 +155,13 @@ A few things worth internalizing, whether or not you touch OCaml:
   independently of the specific character. The latter is handy for
   multi-character or asymmetric delimiters like `{tag|` ... `|tag}`.
 
-None of this is new -- `syntax-propertize` has been the right answer since
+None of this is new - `syntax-propertize` has been the right answer since
 Emacs 24. But it's easy to forget it exists when you're deep in
 tree-sitter land, and the symptoms (movement and pairing going subtly
 wrong while the colors look perfect) are puzzling until you remember which
 layer owns what.
+
+Have you run into this while writing your own tree-sitter modes? I'd love
+to hear how you tamed the syntax table in the comments.
+
+That's all I have for you today. Keep those parens balanced!
