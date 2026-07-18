@@ -114,12 +114,12 @@ and you install it in the mode body:
 
 Two kinds of rules are at work:
 
-- The **character literal** rule matches a complete `'...'` and gives both
+- The *character literal* rule matches a complete `'...'` and gives both
   quotes string-quote syntax (`"`). The contents then sit *inside a
   string* as far as the scanner is concerned, so an inner `"` or `(` is
   inert. Crucially, the regexp requires a *closing* quote, so a bare
   `'a` type variable never matches and keeps its symbol syntax.
-- The **quoted string** rule matches the opening `{tag|`, searches for the
+- The *quoted string* rule matches the opening `{tag|`, searches for the
   matching `|tag}`, and marks both the opening and closing delimiters with
   *generic string fence* syntax (`|`). Everything between two fences is a
   string, so embedded quotes and comment starters are neutralized.
@@ -132,26 +132,25 @@ With that in place, `syntax-ppss` tells the truth again, and `C-M-f`,
 
 A few things worth keeping in mind, whether or not you touch OCaml:
 
-- **Tree-sitter and the syntax table are different layers.** The parser
-  handles font-lock and structural queries; the syntax table handles
+- Tree-sitter and the syntax table are different layers. The parser
+  handles font-lock and structural queries, while the syntax table handles
   character-level motion and pairing. A great grammar doesn't save you
   from getting the syntax table right. (See also
   [Customizing Font-Lock in the Age of Tree-sitter]({% post_url 2026-03-08-customizing-font-lock-in-the-age-of-tree-sitter %}).)
-- **Reach for `syntax-propertize` when a character's role is
-  context-dependent.** Raw strings, here-docs, regex literals, character
-  literals, JSX - anything a single syntax class can't capture. This is
-  exactly what `rust-ts-mode` and `c-ts-mode` use it for, too.
-- **The syntax-table text properties don't affect tree-sitter font-lock.**
-  They're a separate channel, so you can fix the syntactic layer without
-  disturbing your carefully tuned highlighting.
-- **Don't call `syntax-ppss` from inside your
-  `syntax-propertize-function`.** It's re-entrant - `syntax-propertize`
-  is itself driven by `syntax-ppss` - and a fragile source of subtle
-  bugs. Match constructs whole from their opening delimiter instead, as
-  the quoted-string rule above does, rather than asking "am I currently
-  inside a string?".
-- **Know your string classes.** Class `"` (string quote) is delimited by
-  the *same* character; class `|` (generic string fence) pairs up
+- Reach for `syntax-propertize` whenever a character's role depends on
+  context - raw strings, here-docs, regex literals, character literals,
+  JSX, anything a single syntax class can't capture. It's exactly what
+  `rust-ts-mode` and `c-ts-mode` reach for, too.
+- The syntax-table text properties don't affect tree-sitter font-lock.
+  They live on a separate channel, so you can fix the syntactic layer
+  without disturbing your carefully tuned highlighting.
+- Don't call `syntax-ppss` from inside your `syntax-propertize-function`.
+  It's re-entrant (`syntax-propertize` is itself driven by `syntax-ppss`)
+  and a fragile source of subtle bugs. Match constructs whole from their
+  opening delimiter instead, as the quoted-string rule above does, rather
+  than asking "am I currently inside a string?".
+- Know your string classes. Class `"` (string quote) is delimited by the
+  *same* character, while class `|` (generic string fence) pairs up
   independently of the specific character. The latter is handy for
   multi-character or asymmetric delimiters like `{tag|` ... `|tag}`.
 
