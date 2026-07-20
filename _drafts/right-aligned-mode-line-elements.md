@@ -8,13 +8,15 @@ tags:
 
 Emacs users have long wanted the ability to push certain mode line elements to
 the right edge of the window. Think of it like having a left-aligned and
-right-aligned section in your mode line — buffer name on the left, maybe the time
+right-aligned section in your mode line - buffer name on the left, maybe the time
 or some status info on the right.
 
 Before Emacs 30, achieving this required various hacks involving padding
 calculations and propertized strings. It was doable, but fragile and ugly.
 
 Emacs 30 makes it trivial with `mode-line-format-right-align`.
+
+<!--more-->
 
 ## How it works
 
@@ -71,6 +73,20 @@ left, and the current line/column and major mode on the right:
                 mode-line-modes))
 ```
 
+And here's the result - the buffer name sits on the left while the position
+and major mode are pushed all the way to the right:
+
+![A mode line with the buffer name on the left and the position and modes right-aligned](/assets/images/mode-line-right-align.png)
+
 Clean, readable, and no hacks required.
 
-That's all I have for you today. Keep hacking!
+For years I put up with a mode line that was either cluttered on the left or
+propped up with fragile padding hacks that broke the moment I resized a window.
+Having a proper right-aligned section built into Emacs feels almost too easy -
+the kind of small quality-of-life fix that makes you wonder what took so long.
+
+What do you like to keep on the right side of your mode line - the time, the
+battery level, some VC info? I'd love to hear how you've arranged yours in the
+comments!
+
+That's all I have for you today. Keep your mode line in line!
