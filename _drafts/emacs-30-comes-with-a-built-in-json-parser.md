@@ -10,6 +10,8 @@ Here's a change in Emacs 30 that might not sound exciting at first, but has
 significant implications for performance: Emacs now ships with a **built-in JSON
 parser** and no longer depends on the external `libjansson` C library.
 
+<!--more-->
+
 ## What changed
 
 Prior to Emacs 30, native JSON support (the `json-serialize`, `json-parse-string`, etc.
@@ -20,13 +22,13 @@ extra dependency that wasn't always present.
 
 In Emacs 30:
 
-- JSON support is **always available** — no external library needed.
+- JSON support is **always available** - no external library needed.
 - `json-available-p` now always returns `t` (kept only for backward compatibility).
 - The `--with-json` configure flag has been removed entirely.
 
 ## Why it matters
 
-This matters most for anything that does heavy JSON processing — and in modern
+This matters most for anything that does heavy JSON processing - and in modern
 Emacs, that's primarily **LSP**. Both `eglot` and `lsp-mode` communicate with
 language servers over JSON-RPC, which means they're constantly parsing and
 serializing JSON. A faster JSON implementation translates directly into a
@@ -51,4 +53,12 @@ adjust:
 In practice, this is unlikely to affect most users, but package authors should
 take note.
 
-That's all I have for you today. Keep hacking!
+It's easy to overlook a change like this - there's no new command to learn and
+no shiny feature to play with - but a leaner, faster JSON path is exactly the
+kind of quiet plumbing improvement that makes everyday Emacs feel a little
+snappier, especially if you lean on LSP as much as I do.
+
+Have you noticed a difference in your LSP-heavy workflows since moving to Emacs
+30? I'd love to hear about it in the comments!
+
+That's all I have for you today. Keep those language servers happy!

@@ -10,12 +10,14 @@ Here's a small Emacs 30 feature that solves an annoying problem you've probably
 encountered hundreds of times without thinking about it.
 
 You're reading some deeply nested code and you want to copy a chunk of it
-somewhere — maybe into a message, a document, or a different part of the
+somewhere - maybe into a message, a document, or a different part of the
 codebase. You kill the region, yank it at the destination, and... it's indented
 way too far because it carried along all the leading whitespace from its original
 context. Then you manually fix the indentation. Every single time.
 
 Enter `kill-ring-deindent-mode`.
+
+<!--more-->
 
 ## What it does
 
@@ -40,7 +42,7 @@ long_function (argument_1 (),
                argument_3 ());
 ```
 
-The relative indentation within the killed text is preserved — only the common
+The relative indentation within the killed text is preserved - only the common
 leading indentation is removed.
 
 ## Enabling it
@@ -50,7 +52,7 @@ leading indentation is removed.
 ```
 
 That's it. No configuration needed. Once enabled, it works transparently with
-every kill command — `C-w`, `M-w`, `C-k`, and so on.
+every kill command - `C-w`, `M-w`, `C-k`, and so on.
 
 ## When is this useful?
 
@@ -60,6 +62,11 @@ every kill command — `C-w`, `M-w`, `C-k`, and so on.
 - Pretty much any time you copy indented code
 
 It's one of those features that you never knew you needed until you have it, and
-then you can't imagine going back.
+then you can't imagine going back. I flipped it on months ago and quietly
+stopped re-indenting pasted snippets by hand - which, it turns out, I'd been
+doing constantly without ever really noticing.
 
-That's all I have for you today. Keep hacking!
+Do you enable this globally, or would you rather keep the original indentation
+and fix things up on the yank side? I'd love to hear your take in the comments!
+
+That's all I have for you today. Keep your yanks tidy!

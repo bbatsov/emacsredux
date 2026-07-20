@@ -16,9 +16,11 @@ If you've written interactive commands, you've probably done something like this
 
 You build the prompt by hand, sprinkle in a "(default %s)" snippet, and pass the
 default to `read-string`. Works fine, but every package author rolls their own:
-"(default X)", "[X]", "<X>", "[X is the default]" — pick your flavor. It also
+"(default X)", "[X]", "<X>", "[X is the default]" - pick your flavor. It also
 means users can't restyle the default-value hint globally; if you wanted square
 brackets everywhere, you'd have to patch every package individually.
+
+<!--more-->
 
 Emacs 28 introduced `format-prompt` to fix exactly this:
 
@@ -40,7 +42,7 @@ A few small details worth knowing:
 
 - If the default is nil, `format-prompt` drops the suffix entirely, so you
   don't end up with `"Host (default ): "`.
-- The default can also be a list — only the first element is shown in the
+- The default can also be a list - only the first element is shown in the
   prompt, mirroring how `read-from-minibuffer` treats list defaults.
 - The trailing `": "` is added for you, so don't include it in the prompt
   string yourself.
@@ -53,4 +55,8 @@ prompt for the host. Switching to `format-prompt` is the kind of one-line cleanu
 that doesn't change behavior but quietly makes Emacs a tiny bit more consistent
 for everyone.
 
-That's all I have for you today. Keep hacking!
+Do you have a favorite way of showing default values in your own prompts, or
+have you already switched everything over to `format-prompt`? I'd love to hear
+about it in the comments!
+
+That's all I have for you today. Keep your prompts tidy!

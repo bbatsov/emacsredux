@@ -11,11 +11,13 @@ tags:
 works. Drop a `.editorconfig` file in your project root, and editors that support
 it will automatically pick up the right indentation style, tab width, line
 endings, and other formatting settings. It's particularly useful when you work
-across multiple projects with different coding conventions — or when you
+across multiple projects with different coding conventions - or when you
 collaborate with people who use different editors.
 
 Emacs users have had access to EditorConfig support via the third-party
 `editorconfig` package for years. Starting with Emacs 30, it's **built-in**.
+
+<!--more-->
 
 ## Enabling it
 
@@ -66,4 +68,12 @@ If you're already using the `editorconfig` package from MELPA, you should be abl
 simply remove it and rely on the built-in version. The built-in package is
 based on the same codebase, so the transition should be seamless.
 
-That's all I have for you today. Keep hacking!
+I've grown to rely on EditorConfig for exactly the situation it was made for -
+hopping between projects that each have their own indentation and whitespace
+conventions. Having it built in means one less package to install when I set up
+Emacs on a new machine, which is always welcome.
+
+Do you keep an `.editorconfig` in your projects, or do you prefer to configure
+formatting on the Emacs side? I'd love to hear how you handle it in the comments!
+
+That's all I have for you today. Keep your indentation consistent!
