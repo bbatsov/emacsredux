@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dedicate Windows with toggle-window-dedicated
-date: 2026-02-28 10:30 +0200
+date: 2026-07-22 09:30 +0300
 tags:
 - Emacs 30
 ---
