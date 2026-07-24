@@ -14,10 +14,11 @@ gem "jekyll", "~> 4.0"
 gem "minima", "~> 2.0"
 # gem "jekyll-theme-hydeout"
 
-# Added for compatibility with Ruby 3.4
-# TODO: Remove when this gets fixed in Jekyll
+# Standard library gems that newer Rubies no longer ship by default but
+# Jekyll still expects. Drop these once Jekyll declares them itself.
 gem "csv"
 gem "base64"
+gem "logger"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
