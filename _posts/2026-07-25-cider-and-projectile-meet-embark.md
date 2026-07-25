@@ -1,12 +1,12 @@
 ---
 layout: post
-title: CIDER Meets Embark
+title: CIDER and Projectile Meet Embark
 date: 2026-07-25 12:00 +0300
 tags:
 - CIDER
+- Projectile
 - Embark
 - Clojure
-- Completion
 ---
 
 [Embark](https://github.com/oantolin/embark) is one of those packages that
@@ -14,10 +14,12 @@ quietly rewires how you use Emacs. Think of it as a context-aware right-click:
 you invoke `embark-act` (I keep it on `C-.`) on whatever's at point - a file
 name, a symbol, a URL - and Embark offers a menu of things you can do with it.
 The neat part is that it's completely extensible, so you can teach it about new
-kinds of targets.
+kinds of targets. Lately two of my projects, CIDER and Projectile, have grown
+Embark integrations, in slightly different ways, and both are worth a look.
 
-Let's teach it about Clojure symbols, so `embark-act` on one offers a bunch of
-CIDER commands:
+Let's start with CIDER, and teach Embark about Clojure symbols, so `embark-act`
+on one offers a bunch
+of CIDER commands:
 
 ![CIDER actions in Embark](/assets/images/cider-embark.png)
 
@@ -87,11 +89,27 @@ typing a symbol to read its docs, spot it in the candidate list, decide you'd
 rather jump to its definition - `C-. .` and you're there, no retyping. Symbols
 in your code and candidates in the minibuffer end up sharing one set of actions.
 
-You might wonder why this isn't built into CIDER. I went back and forth on it,
-and decided it shouldn't be: which actions you want and how you bind them is a
-personal thing, and it's exactly the kind of glue that's happiest living in your
-own config. Tweak the keymap, drop actions you don't use, add ones I didn't
-think of.
+Projectile took the opposite tack and ships its Embark integration out of the
+box - there's nothing to configure, it wires itself up as soon as Embark is
+loaded. Two things happen. Acting on a project candidate (say, in
+`projectile-switch-project`) gives you project-specific actions - switch to it,
+open its VC interface, drop into `dired`, or remove it from the known-projects
+list - instead of the generic file actions you'd otherwise get:
+
+![Embark actions on a Projectile project](/assets/images/projectile-embark.png)
+
+And when you act on a project *file* candidate, Projectile makes sure the path
+resolves against the project root, so Embark's file actions land on the right
+file no matter what your `default-directory` happens to be.
+
+You might wonder why Projectile ships this while CIDER leaves it to you. It comes
+down to what each integration is. Projectile's is mostly about making the
+completion categories it already exposes behave correctly under Embark, plus a
+small and fairly obvious set of project actions - there isn't much to bikeshed
+there. CIDER's symbol actions are a bigger, more personal grab-bag: which
+commands you want on that menu, and which keys you put them on, is very much a
+matter of taste. A recipe you copy and tailor felt like the better fit. Same
+idea, two problems that wanted different answers.
 
 That's all I have for you today. Keep hacking!
 
