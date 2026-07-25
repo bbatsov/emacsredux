@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CIDER and Projectile Meet Embark
-date: 2026-07-25 12:00 +0300
+date: 2026-07-25 09:00 +0300
 tags:
 - CIDER
 - Projectile
