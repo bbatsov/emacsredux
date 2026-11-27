@@ -108,7 +108,40 @@ matches in the tests is `D RET`:
 
 ![Flushing every match under test/ from the search results by accepting the default the prompt suggests](/assets/images/projectile-filter-prompt.gif)
 
+## The Find File Prompt
+
+`projectile-find-file` (`s-p f`) is probably the most used Projectile command,
+and quite often the file you're after is one that the current buffer already
+points to - the module imported on the current line, a file mentioned in a
+backtrace, the test for the code you're editing. Projectile has had dedicated
+commands for all of those forever (`projectile-find-file-dwim`,
+`projectile-toggle-between-implementation-and-test`,
+`projectile-find-other-file`), but you have to remember them and their
+keybindings.
+
+Now `M-n` at the plain old find file prompt brings up the file named at point,
+followed by the test of the current file (or its implementation, if you're in a
+test) and its "other" files. After that it keeps going through the rest of the
+project's files, as before.
+
+![The find file prompt bringing up the file imported at point with M-n and then the test of the current file](/assets/images/projectile-find-file-suggestions.gif)
+
+Projectile is pretty relaxed about what counts as a file name at point - a
+bare name, a relative path, an import without the file extension, something
+like `cart.js:42` in a compilation buffer - they all work.
+
+**Note:** Those are suggestions on `M-n` and not the default value of the
+prompt for a reason. Completion UIs like Vertico move the default to the top of
+the candidate list, and that spot belongs to the file you've been visiting the
+most recently and the most often. Pressing `RET` right away should keep doing
+what it has always done.
+
 ## Odds and Ends
+
+- A few prompts that offer a handful of options now have a sensible default.
+  `projectile-switch-to-buffer` defaults to the project buffer you were in
+  last (just like `C-x b`), `projectile-run-task` to the task you ran last, and
+  `projectile-find-file-in-subproject` to the subproject of the current file.
 
 - `C-u s-p C` (`projectile-find-changed-file` with a prefix argument) asks for a
   revision to compare against. It now defaults to the project's main branch,
@@ -144,15 +177,16 @@ list as their default value, and that list is what `M-n` goes through:
 ```
 
 It doesn't get in anyone's way, it works with every completion framework, and
-it's only a few lines of code. I plan to write a bit more about `M-n` soon, as
-it certainly deserves an article of its own.
+it's only a few lines of code. I wrote a bit more about `M-n`
+[here]({% post_url 2026-11-27-m-n-and-the-minibuffer-future-history %}), as it
+certainly deserves an article of its own.
 
 ## Closing Thoughts
 
 None of those changes is a big deal on its own, but together they make
 Projectile feel a lot smarter to me. All of this will be a part of Projectile
-3.5, and most of it is already available in the `master` branch if you want to
-play with it today. If you can think of other prompts that could do a better job
+3.5, and it's already available in the `master` branch if you want to play with
+it today. If you can think of other prompts that could do a better job
 of guessing what you want - I'd love to hear about them!
 
 That's all I have for you today. Keep hacking!
