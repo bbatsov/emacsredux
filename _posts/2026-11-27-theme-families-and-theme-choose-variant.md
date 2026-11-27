@@ -15,9 +15,9 @@ family ships its own command for moving between the variants:
 `modus-themes-toggle`, `ef-themes-select`, `tokyo-night-select`,
 `batppuccin-select` and so on.
 
-What I had completely missed is that Emacs has had a built-in command for this
-since Emacs 29 - `theme-choose-variant`. I found out about it only recently, when
-I tried it with my own
+I have to admit that I had completely missed that Emacs has a built-in command
+for this since Emacs 29 - `theme-choose-variant`. I learned about its existence
+only recently, when I tried it with my own
 [Tokyo Night](https://github.com/bbatsov/tokyo-night-emacs) theme and got this
 in return:
 
@@ -25,7 +25,7 @@ in return:
 Theme `tokyo-night' does not have any known variants
 ```
 
-Four variants, and Emacs knows about none of them. Let's see why.
+Not cool, given that the theme has four variants! So, what's going on here?
 
 <!--more-->
 
@@ -46,12 +46,12 @@ with Emacs come in pairs - `tango` and `tango-dark`, `leuven` and `leuven-dark`,
 ```
 
 `M-x toggle-theme` will take you to `leuven-dark`, and another `M-x toggle-theme`
-will bring you back to `leuven`. The old theme gets disabled before the new one
-is loaded, so you don't end up with one theme stacked on top of the other. (I
-wrote about that problem in
+will bring you back to `leuven`. Pretty neat! The old theme gets disabled before
+the new one is loaded, so you don't end up with one theme stacked on top of the
+other. (I wrote about that problem in
 [Clean Unloading of Emacs Themes]({% post_url 2025-02-03-clean-unloading-of-emacs-themes %}))
 
-The Modus themes show the other side of the command. There are eight of them in
+Things are a bit different with the Modus themes. There are eight of them in
 Emacs these days, so with `modus-operandi` enabled you won't get a toggle, but a
 prompt listing the other seven. And a theme that's on its own, like `wombat`,
 gives you the same error I got:
@@ -62,9 +62,10 @@ Theme `wombat' does not have any known variants
 
 ## How themes opt in
 
-How does Emacs know that `leuven` and `leuven-dark` belong together? It doesn't
-guess from the names. Emacs 29 taught `deftheme` to accept a property list
-after the docstring, and the theme has to say what family it's a part of:
+So, how does Emacs know that `leuven` and `leuven-dark` belong together? In case
+you're wondering - it doesn't guess this from their names. In Emacs 29 `deftheme`
+started to accept a property list after the docstring, and the theme has to say
+what family it's a part of:
 
 ```emacs-lisp
 (deftheme leuven-dark
@@ -122,21 +123,21 @@ in the current Emacs session, which for most people means none of them:
 
 ## Who supports this?
 
-I went over the source of 60 or so popular themes to see how many of them have
-picked this up, and the short answer is "very few". Protesilaos's themes (Modus,
+I was curious how many themes have picked this up, so I went over the source of
+60 or so popular ones. The short answer is "very few". Protesilaos's themes (Modus,
 Ef, Standard, Doric) declare a family, and so do `doom-themes` and a handful of
 smaller packages. Pretty much everyone else declares nothing, including big
 multi-variant families like Solarized, Gruvbox and Kanagawa.
 
 What surprised me more is that I didn't find a single third-party theme that
 autoloads its properties. As far as I can tell that leaves the built-in command
-blind to the variants you haven't loaded yet, which is probably why the themes
-that did the work kept their own commands anyway. Modus, for instance, quietly
-loads its themes (without enabling them) to learn their properties.
+blind to the variants you haven't loaded yet, and I guess that's why the themes
+that did the work kept their own commands anyway. (e.g. Modus loads its themes
+without enabling them to learn their properties)
 
 ## A few rough edges
 
-The command is simple, and it shows:
+The command is pretty basic and it has a few limitations you should be aware of:
 
 - It toggles only when the family has exactly two themes. Tokyo Night has four,
   so I'd get a prompt every time. There's no way to say "these two are the ones
@@ -152,8 +153,8 @@ That last one is the reason `modus-themes-toggle` is still around. Protesilaos
 considered dropping it in favor of `toggle-theme`, and decided against it
 because of the prompts.
 
-Also keep in mind that this is a command you invoke by hand. If you want Emacs
-to follow the appearance of your OS or the time of the day, see
+**Note:** This is a command you invoke by hand. If you want Emacs to follow the
+appearance of your OS or the time of the day, check out
 [Automatic Light/Dark Theme Switching]({% post_url 2026-03-29-automatic-light-dark-theme-switching %}).
 
 ## What about older Emacs versions?
@@ -162,9 +163,8 @@ The good news is that the properties are harmless there. `deftheme` has been
 ignoring any extra arguments for ages (I checked all the way back to Emacs 24),
 so a theme that declares a family will load just fine on Emacs 27 or 28.
 
-That's about all the good news. `theme-choose-variant` doesn't exist before
-Emacs 29, so the users of the older versions get nothing out of the
-properties. The autoload trick doesn't translate either - the old autoload
+The bad news is that `theme-choose-variant` doesn't exist before Emacs 29, so
+the users of the older versions get nothing out of the properties. The autoload trick doesn't translate either - the old autoload
 generator doesn't know about `deftheme`, so it copies the whole form into the
 autoloads file and the theme gets declared at startup.
 
@@ -192,15 +192,15 @@ anyway. It's not much code:
 The theme knows its own variants, so there are no properties to autoload and no
 theme directories to scan. It works the same on every Emacs version, it doesn't
 ask you to confirm anything, and it can do things that only make sense for this
-theme, like running a hook after the switch. That's why I think theme authors
-who still support older Emacs versions shouldn't build on
-`theme-choose-variant` for now. Ship your own command, as most themes already
-do.
+theme, like running a hook after the switch. That's why I think that theme
+authors who still support older Emacs versions shouldn't rely on
+`theme-choose-variant` for now. Just ship your own command, as most themes
+already do.
 
-The two approaches don't exclude each other, of course. Declaring a family costs
-a few lines per variant, and it makes the theme play nice with the built-in
-command on Emacs 29+. I'll be adding the properties to my themes, and their own
-commands are staying.
+Of course, nothing stops you from doing both. Declaring a family takes only a
+few lines per variant, and it makes the theme play nice with the built-in
+command on Emacs 29+. I'll certainly add the properties to my themes, but their
+own commands are here to stay.
 
 Do you use `theme-choose-variant`? Did you even know it existed? I'd love to
 hear about it in the comments!
